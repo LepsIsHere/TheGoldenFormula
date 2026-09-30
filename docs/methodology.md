@@ -16,8 +16,8 @@ Reference period for 2026: **August 3, 2025 – July 19, 2026**, including inter
 2. **Role-relative normalization.** For each stat in the player's role catalog, compute the percentile within the role group (n≈2–13 per edition). A goalkeeper's PSxG save performance competes only with other keepers; a midfielder's goals are judged against other midfielders, where their rarity is already rewarded.
 3. **Stat weighting.** Your per-stat sliders, normalized within each role catalog, combine the percentiles into an individual score.
 4. **Team score.** Trophies, weighted by your competition multipliers (World Cup > UCL/WCCL > top leagues > other), scaled by a team-centrality factor (`teamGoalShare`).
-5. **Fair play.** Hybrid: quantitative card baseline (yellows, reds, second yellows, suspensions served) plus the sourced conduct event log, scaled by your severity-sensitivity slider.
-6. **Blocks.** The three block scores combine via your block weights; live sort produces the top 30. Ballot-points mode maps ranks to the real 15-12-10-7-5-4-3-2-1-1 system.
+5. **Fair play.** Hybrid: quantitative card baseline (yellows −0.5, second yellows −2, reds −3, suspensions served −1.5) plus the sourced conduct event log (severity −3…+3 per event), scaled by your severity-sensitivity slider, converted to points around a 50-point neutral baseline.
+6. **Blocks — additive points, no artificial cap.** Each block produces raw additive points, and the calibration constants (`INDIVIDUAL_SCALE`, `TEAM_SCALE`, `FAIR_PLAY_SCALE` in `src/engine/scoring.ts`) are tuned so a median shortlisted player earns ≈50 points from each block — all three blocks contribute comparably at equal block weights by default. The final score is `w_ind·IND + w_team·TEAM + w_ffp·FFP`. Nothing is clamped to 100: a monster season with multiple trophies can reach 700+; a clean trophyless season sits near 150. Fair play centers on a 50-point neutral baseline (the median player is well-behaved) and moves down with cards/conduct events and up with positive events. Ballot-points mode maps ranks to the real 15-12-10-7-5-4-3-2-1-1 system.
 
 ## Why role-relative normalization
 

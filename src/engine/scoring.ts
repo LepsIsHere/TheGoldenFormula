@@ -9,6 +9,12 @@ import { ROLE_CATALOGS } from './roleCatalogs';
 
 export const BLOCK_KEYS = ['individual', 'team', 'fairPlay'] as const;
 
+// Calibration constants: chosen so that a median shortlisted player earns
+// ~50 points from each block at default weights — blocks are equal by default.
+export const INDIVIDUAL_SCALE = 1;
+export const TEAM_SCALE = 24;
+export const FAIR_PLAY_SCALE = 5;
+
 export function percentileWithinGroup(values: number[], index: number): number {
   const v = values[index];
   let below = 0;
@@ -95,49 +101,36 @@ export function scorePlayers(
     for (const p of group) statPercentiles.set(p.id, pct);
   }
 
-  const blockNorm = normalizeBlock({
-    individual: weights.blockWeights.individual,
-    team: weights.blockWeights.team,
-    fairPlay: weights.blockWeights.fairPlay,
-  });
-  const blockSum = weights.blockWeights.individual + weights.blockWeights.team + weights.blockWeights.fairPlay;
-
   const results: ScoredPlayer[] = players.map((player) => {
     const catalog = ROLE_CATALOGS[player.role];
     const statW = normalizeBlock(weights.statWeights[player.role] ?? {});
 
-    let individual = 0;
+    let individualRaw = 0;
     const myPct = statPercentiles.get(player.id) ?? {};
     for (const stat of catalog.stats) {
       const p = myPct[`${player.id}:${stat.key}`] ?? 50;
       const w = statW[stat.key] ?? 0;
-      individual += (p / 100) * w;
+      individualRaw += p * w;
     }
 
-    let team = 0;
+    let teamRaw = 0;
     for (const trophy of player.trophies) {
-      team += competitionMultiplierFor([trophy.tier], weights.competitionMultipliers);
+      teamRaw += competitionMultiplierFor([trophy.tier], weights.competitionMultipliers);
     }
     const teamShare = player.stats.teamGoalShare ?? 0.1;
-    team *= 0.7 + 0.6 * Math.min(1.5, Math.max(0, teamShare / 0.25));
+    teamRaw *= 0.7 + 0.6 * Math.min(1.5, Math.max(0, teamShare / 0.25));
 
     const events = conductEvents[player.id] ?? [];
     const conduct = conductSummary(player, events, weights.conductSensitivity);
-    const fairPlay = Math.max(-6, Math.min(6, conduct.rawConduct));
 
-    const pct = (x: number) => 100 * Math.max(0, Math.min(1, x));
-
-    const individualScore = pct(individual * blockNorm.individual * 3);
-    const teamScore = pct(team * 0.12 * blockNorm.team * 3);
-    const fairPlayScore = pct((0.5 + fairPlay / 12) * blockNorm.fairPlay * 3);
+    const individualScore = individualRaw * INDIVIDUAL_SCALE;
+    const teamScore = teamRaw * TEAM_SCALE;
+    const fairPlayScore = 50 + conduct.rawConduct * FAIR_PLAY_SCALE;
 
     const score =
-      blockSum > 0
-        ? (weights.blockWeights.individual * individualScore +
-            weights.blockWeights.team * teamScore +
-            weights.blockWeights.fairPlay * fairPlayScore) /
-          blockSum
-        : 0;
+      weights.blockWeights.individual * individualScore +
+      weights.blockWeights.team * teamScore +
+      weights.blockWeights.fairPlay * fairPlayScore;
 
     return {
       player,
