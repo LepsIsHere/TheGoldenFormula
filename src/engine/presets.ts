@@ -53,8 +53,8 @@ export const PRESETS: Preset[] = [
     weights: (() => {
       const w = defaultWeights();
       w.blockWeights = { individual: 7, team: 2, fairPlay: 1 };
-      w.statWeights.ATT = uniformStatWeights(Object.keys(w.statWeights.ATT), { goalsPer90: 3, goals: 3, xG: 2 });
-      w.statWeights.MID = uniformStatWeights(Object.keys(w.statWeights.MID), { goals: 3 });
+      w.statWeights.ATT = uniformStatWeights(Object.keys(w.statWeights.ATT), { goalsPer90: 2, goals: 2, xG: 1 });
+      w.statWeights.MID = uniformStatWeights(Object.keys(w.statWeights.MID), { goals: 2 });
       return w;
     })(),
   },
@@ -64,7 +64,7 @@ export const PRESETS: Preset[] = [
     description: 'Shot-stoppers get their due: goalkeeping stats boosted, plus a big say for run-to-form campaigns.',
     weights: (() => {
       const w = defaultWeights();
-      w.statWeights.GK = uniformStatWeights(Object.keys(w.statWeights.GK), { psxgMinusGa: 3, savePct: 2 });
+      w.statWeights.GK = uniformStatWeights(Object.keys(w.statWeights.GK), { psxgMinusGa: 2, savePct: 1 });
       w.blockWeights = { individual: 6, team: 3, fairPlay: 1 };
       return w;
     })(),
@@ -86,8 +86,8 @@ export const PRESETS: Preset[] = [
     weights: (() => {
       const w = defaultWeights();
       w.blockWeights = { individual: 8, team: 1, fairPlay: 1 };
-      w.statWeights.ATT = uniformStatWeights(Object.keys(w.statWeights.ATT), { xG: 3, xA: 2, goals: -0.5 });
-      w.statWeights.MID = uniformStatWeights(Object.keys(w.statWeights.MID), { xA: 3, keyPasses: 2 });
+      w.statWeights.ATT = uniformStatWeights(Object.keys(w.statWeights.ATT), { xG: 2, xA: 1, goals: -0.5 });
+      w.statWeights.MID = uniformStatWeights(Object.keys(w.statWeights.MID), { xA: 2, keyPasses: 1 });
       return w;
     })(),
   },

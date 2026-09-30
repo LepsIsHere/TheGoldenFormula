@@ -238,3 +238,22 @@ button.reset:hover { background: var(--red); color: #14120a; }
 .advanced-toggle button.on { border-color: var(--gold); color: var(--gold); }
 .advanced-panel { border: 1px dashed var(--gold-dim); padding: 0.6rem 0.7rem; margin: 0.6rem 0; }
 .advanced-hint { margin: 0 0 0.5rem; color: var(--muted); font-size: 0.7rem; line-height: 1.5; }
+
+/* stat slider rows (direct points) */
+.stat-slider .base-pts { color: var(--muted); font-size: 0.62rem; margin-left: 0.4rem; }
+.stat-slider-row { display: flex; align-items: center; gap: 0.5rem; }
+.stat-slider-row input[type="range"] { flex: 1; appearance: none; -webkit-appearance: none; height: 14px; background: transparent; cursor: pointer; }
+.stat-slider-row input[type="range"]::-webkit-slider-runnable-track { height: 3px; background: var(--line); }
+.stat-slider-row input[type="range"]::-webkit-slider-thumb { appearance: none; -webkit-appearance: none; width: 9px; height: 14px; background: var(--gold); margin-top: -5.5px; border: 1px solid var(--gold-dim); }
+.stat-slider-row input[type="range"]::-moz-range-track { height: 3px; background: var(--line); }
+.stat-slider-row input[type="range"]::-moz-range-thumb { width: 9px; height: 14px; background: var(--gold); border: 1px solid var(--gold-dim); border-radius: 0; }
+.mult-value { font-family: var(--mono); font-size: 0.72rem; color: var(--gold); min-width: 2.4rem; text-align: right; font-variant-numeric: tabular-nums; }
+.eff-pts { font-family: var(--mono); font-size: 0.72rem; color: var(--text); min-width: 4.6rem; text-align: right; font-variant-numeric: tabular-nums; }
+
+/* share modal */
+.share-modal { max-width: 860px; }
+.share-canvas { width: 100%; height: auto; border: 1px solid var(--line); display: block; margin: 0.9rem 0; }
+.share-actions { display: flex; gap: 0.6rem; flex-wrap: wrap; margin-bottom: 0.7rem; }
+.share-actions .gold { background: var(--gold); color: #14120a; border-color: var(--gold); font-weight: 700; }
+.share-actions .gold:hover { color: #14120a; }
+.share-hint { color: var(--muted); font-size: 0.68rem; font-family: var(--mono); margin: 0 0 0.9rem; }

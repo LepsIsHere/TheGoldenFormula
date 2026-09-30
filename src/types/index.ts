@@ -67,6 +67,7 @@ export interface ConductEvent {
 
 export interface Weights {
   blockWeights: { individual: number; team: number; fairPlay: number };
+  /** Per-stat multipliers (0-3, × the base points defined in the role catalog). */
   statWeights: Record<Role, Record<string, number>>;
   competitionMultipliers: Record<CompetitionTier, number>;
   conductSensitivity: number;
@@ -91,11 +92,18 @@ export interface ScoredPlayer {
   conductEvents: ConductEvent[];
 }
 
+export type StatBasis = 'count' | 'per90' | 'pct';
+
 export interface StatDefinition {
   key: string;
   label: string;
   higherIsBetter: boolean;
-  per90: boolean;
+  /** How the raw value is interpreted: season count, per-90 rate (converted
+   *  to a season total via minutes), or a 0-1 fraction (converted to
+   *  percentage points). */
+  basis: StatBasis;
+  /** Points earned per unit at multiplier ×1 — the reference value users see. */
+  basePoints: number;
   description: string;
 }
 

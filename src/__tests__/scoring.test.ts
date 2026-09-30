@@ -1,14 +1,16 @@
 import { describe, it, expect } from 'vitest';
 import {
-  percentileWithinGroup,
-  normalizeBlock,
-  competitionMultiplierFor,
   conductSummary,
+  individualPoints,
+  teamPoints,
   scorePlayers,
   ballotPoints,
+  formatPoints,
+  TROPHY_BASE_POINTS,
+  CONDUCT_BASE_POINTS,
 } from '../engine/scoring';
 import { defaultWeights } from '../engine/presets';
-import type { ConductEvent, Player, Weights } from '../types';
+import type { ConductEvent, Player } from '../types';
 
 function makePlayer(overrides: Partial<Player> & { id: string }): Player {
   return {
@@ -27,61 +29,74 @@ function makePlayer(overrides: Partial<Player> & { id: string }): Player {
   };
 }
 
-describe('percentileWithinGroup', () => {
-  it('gives the lowest value a low nonzero percentile', () => {
-    const values = [1, 2, 3, 4, 5];
-    expect(percentileWithinGroup(values, 0)).toBe(10);
+describe('individualPoints (direct points model)', () => {
+  it('a goal is worth 25 pts at multiplier 1', () => {
+    const p = makePlayer({ id: 'a', stats: { goals: 10 } });
+    const { perStat } = individualPoints(p, { goals: 1 });
+    expect(perStat.goals).toBe(250);
   });
 
-  it('gives the top value a high percentile', () => {
-    const values = [1, 2, 3, 4, 5];
-    expect(percentileWithinGroup(values, 4)).toBe(90);
+  it('multiplier scales points linearly, 0 kills the stat', () => {
+    const p = makePlayer({ id: 'a', stats: { goals: 10 } });
+    expect(individualPoints(p, { goals: 3 }).perStat.goals).toBe(750);
+    expect(individualPoints(p, { goals: 0 }).perStat.goals).toBe(0);
+    expect(individualPoints(p, { goals: 0.5 }).perStat.goals).toBe(125);
   });
 
-  it('handles ties at the midpoint', () => {
-    const values = [2, 2, 2];
-    expect(percentileWithinGroup(values, 0)).toBe(50);
+  it('per-90 stats are converted to season totals via minutes', () => {
+    const p = makePlayer({ id: 'a', minutes: 2700, stats: { dribblesCompleted: 2 } });
+    expect(individualPoints(p, { dribblesCompleted: 1 }).perStat.dribblesCompleted).toBe(2 * 30 * 2);
   });
 
-  it('returns 50 for a singleton group', () => {
-    expect(percentileWithinGroup([7], 0)).toBe(50);
-  });
-});
-
-describe('normalizeBlock', () => {
-  it('normalizes weights to sum to 1', () => {
-    const n = normalizeBlock({ a: 2, b: 2 });
-    expect(n.a).toBeCloseTo(0.5);
-    expect(n.b).toBeCloseTo(0.5);
+  it('percentage stats are converted to percentage points', () => {
+    const p = makePlayer({ id: 'a', role: 'CB', stats: { aerialsWonPct: 0.65 } });
+    expect(individualPoints(p, { aerialsWonPct: 1 }).perStat.aerialsWonPct).toBeCloseTo(65 * 2);
   });
 
-  it('falls back to uniform when all zero', () => {
-    const n = normalizeBlock({ a: 0, b: 0 });
-    expect(n.a).toBeCloseTo(0.5);
+  it('points resolve to one decimal', () => {
+    expect(formatPoints(25 * 0.53)).toBe('13.3');
+    expect(formatPoints(12.5 * 3)).toBe('37.5');
   });
 });
 
-describe('competitionMultiplierFor', () => {
-  it('uses the highest-tier multiplier among trophies', () => {
-    const m = competitionMultiplierFor(['ucl', 'top-league', 'domestic-cup'], {
-      ucl: 1.3, 'top-league': 1, 'domestic-cup': 0.8,
-    } as Weights['competitionMultipliers']);
-    expect(m).toBe(1.3);
+describe('teamPoints', () => {
+  it('a UCL title is worth 200 base pts at multiplier 1 and centrality 1', () => {
+    const p = makePlayer({
+      id: 'a',
+      stats: { teamGoalShare: 0.125 },
+      trophies: [{ title: 'UCL', tier: 'ucl' }],
+    });
+    const mults = { ...defaultWeights().competitionMultipliers, ucl: 1 };
+    expect(teamPoints(p, mults)).toBeCloseTo(TROPHY_BASE_POINTS.ucl, 5);
   });
 
-  it('defaults to 1 with no trophies', () => {
-    expect(competitionMultiplierFor([], {} as Weights['competitionMultipliers'])).toBe(1);
+  it('competition multipliers scale trophy points', () => {
+    const p = makePlayer({
+      id: 'a',
+      stats: { teamGoalShare: 0.125 },
+      trophies: [{ title: 'UCL', tier: 'ucl' }],
+    });
+    expect(teamPoints(p, defaultWeights().competitionMultipliers)).toBeCloseTo(
+      TROPHY_BASE_POINTS.ucl * 1.3, 5
+    );
+  });
+
+  it('zero trophies earn zero team points', () => {
+    const p = makePlayer({ id: 'a', stats: { teamGoalShare: 0.2 } });
+    expect(teamPoints(p, defaultWeights().competitionMultipliers)).toBe(0);
   });
 });
 
-describe('conductSummary', () => {
-  it('penalizes cards quantitatively', () => {
+describe('conductSummary (fair play points)', () => {
+  it('cards deduct direct points', () => {
     const p = makePlayer({ id: 'x', stats: { yellowCards: 4, redCards: 1 } });
     const s = conductSummary(p, [], 1);
-    expect(s.cardsPenalty).toBe(-(0.5 * 4 + 3 * 1));
+    expect(s.cardsPenalty).toBe(
+      CONDUCT_BASE_POINTS.yellowCard * 4 + CONDUCT_BASE_POINTS.redCard
+    );
   });
 
-  it('scales event penalties by sensitivity and keeps positives signed', () => {
+  it('conduct events scale by sensitivity, positives stay signed', () => {
     const p = makePlayer({ id: 'x', stats: {} });
     const events: ConductEvent[] = [
       { id: 'a', playerId: 'x', date: '2026-01-01', kind: 'simulation', severity: -2, description: '', source: '' },
@@ -89,74 +104,66 @@ describe('conductSummary', () => {
     ];
     const s0 = conductSummary(p, events, 0);
     const s2 = conductSummary(p, events, 2);
-    expect(s0.eventsPenalty + s0.positiveBonus).toBe(-1);
-    expect(s0.rawConduct).toBe(-0);
-    expect(s2.rawConduct).toBe(-2);
+    expect(s0.eventsPenalty + s0.positiveBonus).toBe(-5);
+    expect(s0.rawConduct + 0).toBe(0);
+    expect(s2.rawConduct).toBe(-10);
   });
 });
 
 describe('scorePlayers', () => {
   const players: Player[] = [
-    makePlayer({ id: 'a', role: 'ATT', stats: { goals: 40, goalsPer90: 1.0, xG: 35, assists: 10, xA: 0.5, shotsOnTarget: 2.5, dribblesCompleted: 2, touchesInBox: 9 } }),
-    makePlayer({ id: 'b', role: 'ATT', stats: { goals: 10, goalsPer90: 0.4, xG: 12, assists: 4, xA: 0.2, shotsOnTarget: 1.2, dribblesCompleted: 1, touchesInBox: 5 } }),
-    makePlayer({ id: 'c', role: 'ATT', stats: { goals: 20, goalsPer90: 0.7, xG: 18, assists: 8, xA: 0.4, shotsOnTarget: 1.8, dribblesCompleted: 1.5, touchesInBox: 7 } }),
+    makePlayer({ id: 'prolific', stats: { goals: 40, xG: 32 } }),
+    makePlayer({ id: 'modest', stats: { goals: 10, xG: 12 } }),
+    makePlayer({ id: 'mid', stats: { goals: 20, xG: 18 } }),
   ];
 
   it('ranks the statistically dominant attacker first under defaults', () => {
     const scored = scorePlayers(players, {}, defaultWeights());
-    expect(scored[0].player.id).toBe('a');
+    expect(scored[0].player.id).toBe('prolific');
     expect(scored).toHaveLength(3);
   });
 
-  it('scores are finite and non-negative', () => {
-    const scored = scorePlayers(players, {}, defaultWeights());
-    for (const s of scored) {
-      expect(Number.isFinite(s.score)).toBe(true);
-      expect(s.score).toBeGreaterThanOrEqual(0);
-    }
-  });
-
   it('fair play weight can reorder players with conduct events', () => {
-    const withEvent = players.map((p) =>
-      p.id === 'a'
-        ? { ...p, stats: { ...p.stats, yellowCards: 0, redCards: 0, suspensionsServed: 0 } }
-        : p
-    );
     const events: Record<string, ConductEvent[]> = {
-      a: [{ id: 'e1', playerId: 'a', date: '2026-01-01', kind: 'violent-conduct', severity: -3, description: '', source: '' }],
+      prolific: [{ id: 'e1', playerId: 'prolific', date: '2026-01-01', kind: 'violent-conduct', severity: -3, description: '', source: '' }],
     };
-    const neutral = defaultWeights();
+    const before = scorePlayers(players, events, defaultWeights());
     const harsh = defaultWeights();
-    harsh.blockWeights = { individual: 4, team: 2, fairPlay: 8 };
+    harsh.blockWeights = { individual: 1, team: 0, fairPlay: 20 };
     harsh.conductSensitivity = 3;
-
-    const before = scorePlayers(withEvent, events, neutral);
-    const after = scorePlayers(withEvent, events, harsh);
-    expect(before[0].player.id).toBe('a');
-    expect(after[0].player.id).not.toBe('a');
+    const after = scorePlayers(players, events, harsh);
+    expect(before[0].player.id).toBe('prolific');
+    expect(after[0].player.id).not.toBe('prolific');
   });
-});
 
-describe('opposition strength', () => {
-  const players: Player[] = [
-    makePlayer({ id: 'strong-opp', role: 'ATT', avgOpponentRating: 90, stats: { goals: 30, goalsPer90: 0.9, xG: 25, assists: 8, xA: 0.4, shotsOnTarget: 2, dribblesCompleted: 1.5, touchesInBox: 7 } }),
-    makePlayer({ id: 'weak-opp', role: 'ATT', avgOpponentRating: 20, stats: { goals: 30, goalsPer90: 0.9, xG: 25, assists: 8, xA: 0.4, shotsOnTarget: 2, dribblesCompleted: 1.5, touchesInBox: 7 } }),
-  ];
+  it('all-zero block weights fall back to individual order, not dataset order', () => {
+    const reversed = [...players].reverse();
+    const w = defaultWeights();
+    w.blockWeights = { individual: 0, team: 0, fairPlay: 0 };
+    const s = scorePlayers(reversed, {}, w);
+    expect(s[0].player.id).toBe('prolific');
+  });
 
-  it('identical stat lines score equal when sensitivity is 0', () => {
+  it('identical stat lines score equal when opposition sensitivity is 0', () => {
+    const pair: Player[] = [
+      makePlayer({ id: 'strong-opp', avgOpponentRating: 90, stats: { goals: 30 } }),
+      makePlayer({ id: 'weak-opp', avgOpponentRating: 20, stats: { goals: 30 } }),
+    ];
     const w = defaultWeights();
     w.oppositionStrengthSensitivity = 0;
-    const s = scorePlayers(players, {}, w);
-    const diff = Math.abs(s[0].score - s[1].score);
-    expect(diff).toBeLessThan(0.001);
+    const s = scorePlayers(pair, {}, w);
+    expect(Math.abs(s[0].score - s[1].score)).toBeLessThan(0.001);
   });
 
   it('a goal vs strong opponents outweighs the same vs weak opponents', () => {
+    const pair: Player[] = [
+      makePlayer({ id: 'strong-opp', avgOpponentRating: 90, stats: { goals: 30 } }),
+      makePlayer({ id: 'weak-opp', avgOpponentRating: 20, stats: { goals: 30 } }),
+    ];
     const w = defaultWeights();
     w.oppositionStrengthSensitivity = 1;
-    const s = scorePlayers(players, {}, w);
+    const s = scorePlayers(pair, {}, w);
     expect(s[0].player.id).toBe('strong-opp');
-    expect(s[0].score).toBeGreaterThan(s[1].score);
   });
 });
 

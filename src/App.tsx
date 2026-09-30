@@ -1,12 +1,13 @@
 import { useMemo, useState } from 'react';
 import type { ConductEvent, Dataset, Weights } from './types';
-import { scorePlayers, ballotPoints } from './engine/scoring';
+import { scorePlayers } from './engine/scoring';
 import { PRESETS, defaultWeights } from './engine/presets';
 import { useHashState } from './hooks/useHashState';
 import CriteriaPanel from './components/CriteriaPanel';
 import Leaderboard from './components/Leaderboard';
 import EditionPicker from './components/EditionPicker';
 import ConductModal from './components/ConductModal';
+import ShareModal from './components/ShareModal';
 import menData from '../data/men-2026.json';
 import womenData from '../data/women-2026.json';
 import conductLog from '../data/conduct-log.json';
@@ -20,6 +21,7 @@ export default function App() {
   const [state, updateState] = useHashState();
   const [selectedRoleTab, setSelectedRoleTab] = useState<string>('GK');
   const [conductPlayerId, setConductPlayerId] = useState<string | null>(null);
+  const [shareOpen, setShareOpen] = useState(false);
 
   const dataset = DATASETS[state.edition];
   const eventsByPlayer = useMemo(() => {
@@ -37,7 +39,6 @@ export default function App() {
 
   const setWeights = (w: Weights) => updateState({ ...state, weights: w });
   const setEdition = (edition: 'men' | 'women') => updateState({ ...state, edition });
-  const copyShareLink = () => navigator.clipboard?.writeText(window.location.href);
 
   const conductPlayer = conductPlayerId
     ? scored.find((s) => s.player.id === conductPlayerId) ?? null
@@ -55,9 +56,7 @@ export default function App() {
         <div className="header-actions">
           <EditionPicker edition={state.edition} onChange={setEdition} />
           <div className="export-buttons">
-            <button onClick={() => exportRanking(scored, 'text')}>Export TXT</button>
-            <button onClick={() => exportRanking(scored, 'json')}>Export JSON</button>
-            <button className="reset" onClick={copyShareLink}>Copy link</button>
+            <button onClick={() => setShareOpen(true)}>Export / Share</button>
           </div>
         </div>
       </header>
@@ -86,6 +85,15 @@ export default function App() {
         />
       </main>
 
+      {shareOpen && (
+        <ShareModal
+          scored={scored}
+          edition={state.edition}
+          url={window.location.href}
+          onClose={() => setShareOpen(false)}
+        />
+      )}
+
       {conductPlayer && (
         <ConductModal
           scored={conductPlayer}
@@ -106,23 +114,4 @@ export default function App() {
 
 function editionLabel(edition: 'men' | 'women') {
   return edition === 'men' ? "MEN'S" : "WOMEN'S";
-}
-
-function exportRanking(scored: ReturnType<typeof scorePlayers>, mode: 'text' | 'json') {
-  if (mode === 'text') {
-    const lines = scored.map(
-      (s, i) => `${i + 1}. ${s.player.name} (${s.player.club}) — ${s.score.toFixed(1)} pts`
-    );
-    navigator.clipboard?.writeText(lines.join('\n'));
-  } else {
-    const payload = scored.map((s, i) => ({
-      rank: i + 1,
-      ballotPoints: ballotPoints(i),
-      player: s.player.name,
-      club: s.player.club,
-      role: s.player.role,
-      score: Math.round(s.score * 10) / 10,
-    }));
-    navigator.clipboard?.writeText(JSON.stringify(payload, null, 2));
-  }
 }

@@ -12,16 +12,16 @@ Reference period for 2026: **August 3, 2025 – July 19, 2026**, including inter
 
 ## Scoring pipeline
 
-1. **Role assignment.** Each player carries a role tag: GK / CB / FB / MID / ATT. Roles are per-player tags because modern roles blur (e.g. an attacking full-back).
-2. **Role-relative normalization.** For each stat in the player's role catalog, compute the percentile within the role group (n≈2–13 per edition). A goalkeeper's PSxG save performance competes only with other keepers; a midfielder's goals are judged against other midfielders, where their rarity is already rewarded.
-3. **Stat weighting.** Your per-stat sliders, normalized within each role catalog, combine the percentiles into an individual score.
-4. **Team score.** Trophies, weighted by your competition multipliers (World Cup > UCL/WCCL > top leagues > other), scaled by a team-centrality factor (`teamGoalShare`).
-5. **Fair play.** Hybrid: quantitative card baseline (yellows −0.5, second yellows −2, reds −3, suspensions served −1.5) plus the sourced conduct event log (severity −3…+3 per event), scaled by your severity-sensitivity slider, converted to points around a 50-point neutral baseline.
-6. **Blocks — additive points, no artificial cap.** Each block produces raw additive points, and the calibration constants (`INDIVIDUAL_SCALE`, `TEAM_SCALE`, `FAIR_PLAY_SCALE` in `src/engine/scoring.ts`) are tuned so a median shortlisted player earns ≈50 points from each block — all three blocks contribute comparably at equal block weights by default. The final score is `w_ind·IND + w_team·TEAM + w_ffp·FFP`. Nothing is clamped to 100: a monster season with multiple trophies can reach 700+; a clean trophyless season sits near 150. Fair play centers on a 50-point neutral baseline (the median player is well-behaved) and moves down with cards/conduct events and up with positive events. Ballot-points mode maps ranks to the real 15-12-10-7-5-4-3-2-1-1 system.
+1. **Role assignment.** Each player carries a role tag: GK / CB / FB / MID / ATT. Roles are per-player tags because modern roles blur (e.g. an attacking full-back). Each role has its own stat catalog with **direct points per stat event** — the reference values users see and adjust.
+2. **Individual block — direct points.** Each stat event earns its base points: a goal = 25 pts, an assist = 12.5 pts, a goal saved above expectation (PSxG−GA) = 15 pts, a penalty save = 20 pts, a clean sheet = 15 pts, a through ball = 10 pts, etc. Per-90 rates are converted to season totals via minutes; percentages are converted to percentage points. Your sliders are multipliers on the base points (0–3×, one-decimal resolution). Points are additive and uncapped — a 40-goal season earns 1000 pts on goals alone at ×1.
+3. **Team block.** Each trophy earns tier base points (World Cup 300, UCL/WCCL 200, international 150, top league 120, other league 60, domestic cup 50, other 30), scaled by your competition multipliers and a team-centrality factor (`teamGoalShare` — how central the player was to the trophy).
+4. **Fair play block.** Direct points: yellow −2.5, second yellow −10, red −15, suspension served −7.5, plus conduct events at ±5 pts per severity unit (−3…+3), scaled by your severity-sensitivity slider (0 disables the event log; cards always count).
+5. **Opposition strength (advanced).** Optionally scales individual points by the player's `avgOpponentRating` (UEFA club coefficients / FIFA national rankings, minutes-weighted, edition-median-centered). A goal vs PSG counts more than a goal vs Leipzig. 0 = off.
+6. **Final score.** `w_ind·IND + w_team·TEAM + w_ffp·FFP` — uncapped, additive, one-decimal resolution. If all block weights are zero, the ranking falls back to individual order. Ballot-points mode maps ranks to the real 15-12-10-7-5-4-3-2-1-1 system.
 
-## Why role-relative normalization
+## Why direct points instead of normalized coefficients
 
-Raw stats embed role bias: attackers accumulate goals, defenders accumulate tackles, and neither tells you who was better *at their job*. Percentiles within role groups put every role on the same 0–100 scale, so your philosophy about which roles matter is expressed in the role stat sliders — not hidden in the stat selection.
+Percentile/coeffient models hide the physics of the game behind a normalization layer; users can't answer "what is a goal worth to me?" Direct points make every value legible and adjustable: 25 pts per goal, ×2 if you think goals decide everything, ×0 if you don't. The trade-off is that raw stat volume differs by role and team style — which is honest, and is exactly the debate the tool is designed to surface (role catalogs give each position its own priced stat set, and the advanced opposition-strength mode adjusts for quality of opposition).
 
 ## Known limitations (deliberately not hidden)
 
@@ -33,8 +33,8 @@ Raw stats embed role bias: attackers accumulate goals, defenders accumulate tack
 
 ## Fair-play layers
 
-1. **Quantitative baseline:** yellow −0.5, second yellow −2, red −3, suspension served −1.5.
-2. **Conduct event log:** severity −3…+3 per event, scaled by your sensitivity slider (0 disables the log entirely; cards still count).
+1. **Quantitative baseline:** yellow −2.5 pts, second yellow −10 pts, red −15 pts, suspension served −7.5 pts.
+2. **Conduct event log:** ±5 pts per severity unit (−3…+3 per event), scaled by your sensitivity slider (0 disables the log entirely; cards still count).
 3. **Your weight:** the Block 3 slider, defaulting to tiebreaker level per the official ranking.
 
 ## Sources

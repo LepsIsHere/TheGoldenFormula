@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import type { CompetitionTier, Role, Weights } from '../types';
+import { formatPoints } from '../engine/scoring';
 import { ROLE_CATALOGS, ROLE_ORDER } from '../engine/roleCatalogs';
 import { DEFAULT_COMPETITION_MULTIPLIERS } from '../engine/presets';
 
@@ -96,16 +97,25 @@ export default function CriteriaPanel({
         <div className="stat-sliders">
           {roleCatalog.stats.map((stat) => (
             <div key={stat.key} className="stat-slider" title={stat.description}>
-              <label>{stat.label}</label>
-              <Slider
-                label=""
-                value={weights.statWeights[selectedRole]?.[stat.key] ?? 1}
-                min={0}
-                max={5}
-                step={0.5}
-                hideLabel
-                onChange={(v) => setStat(selectedRole, stat.key, v)}
-              />
+              <label>
+                {stat.label}
+                <span className="base-pts">
+                  {stat.basePoints} pts/{stat.basis === 'count' ? 'unit' : stat.basis === 'per90' ? '90min' : 'pct-pt'}
+                </span>
+              </label>
+              <div className="stat-slider-row">
+                <input
+                  type="range"
+                  min={0}
+                  max={3}
+                  step={0.1}
+                  value={weights.statWeights[selectedRole]?.[stat.key] ?? 1}
+                  aria-label={stat.label}
+                  onChange={(e) => setStat(selectedRole, stat.key, Number(e.target.value))}
+                />
+                <span className="mult-value">×{(weights.statWeights[selectedRole]?.[stat.key] ?? 1).toFixed(1)}</span>
+                <span className="eff-pts">= {formatPoints(stat.basePoints * (weights.statWeights[selectedRole]?.[stat.key] ?? 1))} pts</span>
+              </div>
             </div>
           ))}
         </div>

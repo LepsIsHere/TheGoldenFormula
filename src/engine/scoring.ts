@@ -9,11 +9,28 @@ import { ROLE_CATALOGS } from './roleCatalogs';
 
 export const BLOCK_KEYS = ['individual', 'team', 'fairPlay'] as const;
 
-// Calibration constants: chosen so that a median shortlisted player earns
-// ~50 points from each block at default weights — blocks are equal by default.
 export const INDIVIDUAL_SCALE = 1;
 export const TEAM_SCALE = 24;
 export const FAIR_PLAY_SCALE = 5;
+
+export const TROPHY_BASE_POINTS: Record<CompetitionTier, number> = {
+  'world-cup': 300,
+  ucl: 200,
+  wccl: 200,
+  'top-league': 120,
+  'other-league': 60,
+  'domestic-cup': 50,
+  international: 150,
+  other: 30,
+};
+
+export const CONDUCT_BASE_POINTS = {
+  yellowCard: -2.5,
+  secondYellow: -10,
+  redCard: -15,
+  suspensionServed: -7.5,
+  eventUnit: 5,
+};
 
 function median(values: number[]): number {
   if (values.length === 0) return 50;
@@ -22,64 +39,66 @@ function median(values: number[]): number {
   return sorted.length % 2 ? sorted[mid] : (sorted[mid - 1] + sorted[mid]) / 2;
 }
 
-export function percentileWithinGroup(values: number[], index: number): number {
-  const v = values[index];
-  let below = 0;
-  let equal = 0;
-  for (const other of values) {
-    if (other < v) below++;
-    else if (other === v) equal++;
-  }
-  if (values.length <= 1) return 50;
-  return (100 * (below + 0.5 * equal)) / values.length;
-}
-
-export function normalizeBlock(weights: Record<string, number>): Record<string, number> {
-  const total = Object.values(weights).reduce((a, b) => a + b, 0);
-  if (total <= 0) {
-    const uniform = 1 / Math.max(1, Object.keys(weights).length);
-    return Object.fromEntries(Object.keys(weights).map((k) => [k, uniform]));
-  }
-  return Object.fromEntries(Object.entries(weights).map(([k, w]) => [k, w / total]));
-}
-
-export function competitionMultiplierFor(
-  tiers: CompetitionTier[],
-  multipliers: Record<CompetitionTier, number>
-): number {
-  if (tiers.length === 0) return 1;
-  const best = tiers.reduce((maxTier, tier) =>
-    multipliers[tier] > multipliers[maxTier] ? tier : maxTier
-  );
-  return multipliers[best];
-}
-
-export interface ConductSummary {
-  cardsPenalty: number;
-  eventsPenalty: number;
-  positiveBonus: number;
-  rawConduct: number;
-}
-
 export function conductSummary(
   player: Player,
   events: ConductEvent[],
   sensitivity: number
-): ConductSummary {
+): { cardsPenalty: number; eventsPenalty: number; positiveBonus: number; rawConduct: number } {
   const y = player.stats.yellowCards ?? 0;
   const r = player.stats.redCards ?? 0;
   const y2 = player.stats.secondYellows ?? 0;
   const susp = player.stats.suspensionsServed ?? 0;
-  const cardsPenalty = -(0.5 * y + 3 * r + 2 * y2 + 1.5 * susp);
+  const cardsPenalty =
+    CONDUCT_BASE_POINTS.yellowCard * y +
+    CONDUCT_BASE_POINTS.redCard * r +
+    CONDUCT_BASE_POINTS.secondYellow * y2 +
+    CONDUCT_BASE_POINTS.suspensionServed * susp;
 
   let eventsPenalty = 0;
   let positiveBonus = 0;
   for (const ev of events) {
-    if (ev.severity < 0) eventsPenalty += ev.severity;
-    else positiveBonus += ev.severity;
+    const pts = ev.severity * CONDUCT_BASE_POINTS.eventUnit;
+    if (ev.severity < 0) eventsPenalty += pts;
+    else positiveBonus += pts;
   }
   const rawConduct = cardsPenalty + (eventsPenalty + positiveBonus) * sensitivity;
   return { cardsPenalty, eventsPenalty, positiveBonus, rawConduct };
+}
+
+export function statSeasonTotal(player: Player, key: string, basis: 'count' | 'per90' | 'pct'): number {
+  const v = player.stats[key] ?? 0;
+  if (basis === 'count') return v;
+  if (basis === 'per90') return v * (player.minutes / 90);
+  return v * 100;
+}
+
+export function individualPoints(
+  player: Player,
+  statMultipliers: Record<string, number>
+): { total: number; perStat: Record<string, number> } {
+  const catalog = ROLE_CATALOGS[player.role];
+  const perStat: Record<string, number> = {};
+  let total = 0;
+  for (const stat of catalog.stats) {
+    const seasonTotal = statSeasonTotal(player, stat.key, stat.basis);
+    const mult = statMultipliers[stat.key] ?? 1;
+    const pts = seasonTotal * stat.basePoints * mult;
+    perStat[stat.key] = pts;
+    total += pts;
+  }
+  return { total, perStat };
+}
+
+export function teamPoints(
+  player: Player,
+  competitionMultipliers: Record<CompetitionTier, number>
+): number {
+  let total = 0;
+  for (const trophy of player.trophies) {
+    total += (TROPHY_BASE_POINTS[trophy.tier] ?? 0) * (competitionMultipliers[trophy.tier] ?? 1);
+  }
+  const teamShare = player.stats.teamGoalShare ?? 0.1;
+  return total * (0.7 + 0.6 * Math.min(1.5, Math.max(0, teamShare / 0.25)));
 }
 
 export function scorePlayers(
@@ -87,58 +106,22 @@ export function scorePlayers(
   conductEvents: Record<string, ConductEvent[]>,
   weights: Weights
 ): ScoredPlayer[] {
-  const roleGroups = new Map<string, Player[]>();
-  for (const p of players) {
-    const list = roleGroups.get(p.role) ?? [];
-    list.push(p);
-    roleGroups.set(p.role, list);
-  }
-
-  const statPercentiles = new Map<string, Record<string, number>>();
-  for (const [role, group] of roleGroups) {
-    const catalog = ROLE_CATALOGS[role as keyof typeof ROLE_CATALOGS];
-    const pct: Record<string, number> = {};
-    for (const stat of catalog.stats) {
-      const values = group.map((p) => p.stats[stat.key] ?? 0);
-      const pcts = group.map((_, i) => percentileWithinGroup(values, i));
-      group.forEach((p, i) => {
-        pct[`${p.id}:${stat.key}`] = pcts[i];
-      });
-    }
-    for (const p of group) statPercentiles.set(p.id, pct);
-  }
-
   const medianOpp = median(players.map((p) => p.avgOpponentRating ?? 50));
 
   const results: ScoredPlayer[] = players.map((player) => {
-    const catalog = ROLE_CATALOGS[player.role];
-    const statW = normalizeBlock(weights.statWeights[player.role] ?? {});
-
-    let individualRaw = 0;
-    const myPct = statPercentiles.get(player.id) ?? {};
-    for (const stat of catalog.stats) {
-      const p = myPct[`${player.id}:${stat.key}`] ?? 50;
-      const w = statW[stat.key] ?? 0;
-      individualRaw += p * w;
-    }
+    const statMult = weights.statWeights[player.role] ?? {};
+    const ind = individualPoints(player, statMult);
 
     const oppRating = player.avgOpponentRating ?? 50;
     const oppFactor =
       1 + weights.oppositionStrengthSensitivity * ((oppRating - medianOpp) / 100);
-    const individualScore = Math.max(0, individualRaw * INDIVIDUAL_SCALE * oppFactor);
+    const individualScore = Math.max(0, ind.total * INDIVIDUAL_SCALE * oppFactor);
 
-    let teamRaw = 0;
-    for (const trophy of player.trophies) {
-      teamRaw += competitionMultiplierFor([trophy.tier], weights.competitionMultipliers);
-    }
-    const teamShare = player.stats.teamGoalShare ?? 0.1;
-    teamRaw *= 0.7 + 0.6 * Math.min(1.5, Math.max(0, teamShare / 0.25));
+    const teamScore = teamPoints(player, weights.competitionMultipliers);
 
     const events = conductEvents[player.id] ?? [];
     const conduct = conductSummary(player, events, weights.conductSensitivity);
-
-    const teamScore = teamRaw * TEAM_SCALE;
-    const fairPlayScore = 50 + conduct.rawConduct * FAIR_PLAY_SCALE;
+    const fairPlayScore = conduct.rawConduct;
 
     const score =
       weights.blockWeights.individual * individualScore +
@@ -151,12 +134,18 @@ export function scorePlayers(
       individualScore,
       teamScore,
       fairPlayScore,
-      statPercentiles: myPct,
+      statPercentiles: ind.perStat,
       conductEvents: events,
     };
   });
 
-  results.sort((a, b) => b.score - a.score);
+  const blockSum =
+    weights.blockWeights.individual + weights.blockWeights.team + weights.blockWeights.fairPlay;
+  if (blockSum === 0) {
+    results.sort((a, b) => b.individualScore - a.individualScore);
+  } else {
+    results.sort((a, b) => b.score - a.score);
+  }
   return results;
 }
 
@@ -164,4 +153,8 @@ export const BALLOT_POINTS = [15, 12, 10, 7, 5, 4, 3, 2, 1, 1] as const;
 
 export function ballotPoints(rankIndex: number): number {
   return BALLOT_POINTS[rankIndex] ?? (rankIndex >= 10 ? 1 : 0);
+}
+
+export function formatPoints(x: number): string {
+  return (Math.round(x * 10) / 10).toFixed(1);
 }
