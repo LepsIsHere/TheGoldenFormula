@@ -37,6 +37,7 @@ export default function App() {
 
   const setWeights = (w: Weights) => updateState({ ...state, weights: w });
   const setEdition = (edition: 'men' | 'women') => updateState({ ...state, edition });
+  const copyShareLink = () => navigator.clipboard?.writeText(window.location.href);
 
   const conductPlayer = conductPlayerId
     ? scored.find((s) => s.player.id === conductPlayerId) ?? null
@@ -45,18 +46,28 @@ export default function App() {
   return (
     <div className="app">
       <header className="header">
-        <div>
-          <h1>Ballon d'Or Lab</h1>
+        <div className="brand">
+          <h1>
+            <span className="star">★</span> Ballon d'Or Lab
+          </h1>
           <p className="tagline">Build your own Ballon d'Or — men's & women's 2026.</p>
         </div>
         <div className="header-actions">
           <EditionPicker edition={state.edition} onChange={setEdition} />
           <div className="export-buttons">
-            <button onClick={() => exportRanking(scored, 'text')}>Copy ranking</button>
-            <button onClick={() => exportRanking(scored, 'json')}>Copy JSON</button>
+            <button onClick={() => exportRanking(scored, 'text')}>Export TXT</button>
+            <button onClick={() => exportRanking(scored, 'json')}>Export JSON</button>
+            <button className="reset" onClick={copyShareLink}>Copy link</button>
           </div>
         </div>
       </header>
+      <div className="ticker" role="status">
+        <span className="live">● LIVE</span>
+        <span>REF 2025-08-03 → 2026-07-19</span>
+        <span>N={scored.length}</span>
+        <span>{editionLabel(state.edition)} EDITION</span>
+        <span className="warn">DATA: DRAFT</span>
+      </div>
 
       <main className="layout">
         <CriteriaPanel
@@ -91,6 +102,10 @@ export default function App() {
       </footer>
     </div>
   );
+}
+
+function editionLabel(edition: 'men' | 'women') {
+  return edition === 'men' ? "MEN'S" : "WOMEN'S";
 }
 
 function exportRanking(scored: ReturnType<typeof scorePlayers>, mode: 'text' | 'json') {

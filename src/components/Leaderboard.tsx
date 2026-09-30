@@ -20,16 +20,29 @@ export default function Leaderboard({
   useEffect(() => {
     const next: PrevPositions = {};
     scored.forEach((s, i) => (next[s.player.id] = i));
-    return () => {
-      prevPositions.current = next;
-    };
+    prevPositions.current = next;
   }, [scored]);
 
   const maxScore = Math.max(...scored.map((s) => s.score), 1);
 
   return (
     <section className="leaderboard" aria-label="Live top 30">
-      <h2>Top 30 — live ranking ({edition === 'men' ? "men's" : "women's"} edition)</h2>
+      <h2>
+        <span>Top 30 — live ranking / {edition === 'men' ? "men's" : "women's"} edition</span>
+        <span className="count">REF 2025-08-03 → 2026-07-19</span>
+      </h2>
+      <div className="lb-head">
+        <span>RK</span>
+        <span>Δ</span>
+        <span> </span>
+        <span>Player</span>
+        <span>IND</span>
+        <span>TEAM</span>
+        <span>FFP</span>
+        <span> </span>
+        <span>Score</span>
+        <span>Ballot</span>
+      </div>
       <ol className="rows">
         {scored.map((s, i) => {
           const prev = prevPositions.current[s.player.id] ?? i;
@@ -37,12 +50,11 @@ export default function Leaderboard({
           return (
             <li
               key={s.player.id}
-              className="row"
-              style={{ transform: `translateY(${(prev - i) * 0}px)` }}
+              className={`row${i < 3 ? ' top' : ''}`}
             >
-              <span className="rank">{i + 1}</span>
-              <span className="movement">
-                {movement > 0 ? `▲${movement}` : movement < 0 ? `▼${-movement}` : ''}
+              <span className="rank">{String(i + 1).padStart(2, '0')}</span>
+              <span className={`movement${movement > 0 ? ' up' : movement < 0 ? ' down' : ''}`}>
+                {movement > 0 ? `▲${movement}` : movement < 0 ? `▼${-movement}` : '–'}
               </span>
               <span className="flag">{s.player.flag}</span>
               <div className="identity">
@@ -51,14 +63,19 @@ export default function Leaderboard({
                   {s.player.club} · <span className={`role-badge role-${s.player.role.toLowerCase()}`}>{s.player.role}</span>
                 </span>
               </div>
-              {s.conductEvents.length > 0 && (
+              <span className="cell">{s.individualScore.toFixed(1)}</span>
+              <span className="cell">{s.teamScore.toFixed(1)}</span>
+              <span className="cell">{s.fairPlayScore.toFixed(1)}</span>
+              {s.conductEvents.length > 0 ? (
                 <button
                   className="conduct-flag"
                   onClick={() => onFlagClick(s.player.id)}
                   title="Fair-play events — click to inspect sources"
                 >
-                  ⚑
+                  ⚑{s.conductEvents.length}
                 </button>
+              ) : (
+                <span />
               )}
               <div className="score-track">
                 <div className="score-bar" style={{ width: `${(s.score / maxScore) * 100}%` }} />
