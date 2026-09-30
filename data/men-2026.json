@@ -1,0 +1,1073 @@
+{
+  "edition": "men",
+  "season": "2025-26",
+  "referencePeriod": "2025-08-03 to 2026-07-19",
+  "status": "draft",
+  "note": "DRAFT dataset: roster names follow the reported 2026 shortlists; stat lines are generated placeholders for engine development. Run the Week 1 FBref/Transfermarkt data pass and replace stats before public launch. See docs/data-refresh.md.",
+  "players": [
+    {
+      "id": "harry-kane",
+      "name": "Harry Kane",
+      "country": "England",
+      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+      "club": "Bayern Munich",
+      "league": "Bundesliga",
+      "role": "ATT",
+      "minutes": 4200,
+      "stats": {
+        "goalsPer90": 1.578,
+        "goals": 74,
+        "xG": 27,
+        "assists": 12,
+        "xA": 1.087,
+        "shotsOnTarget": 3.105,
+        "dribblesCompleted": 4.736,
+        "touchesInBox": 10.823,
+        "yellowCards": 8,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 1,
+        "teamGoalShare": 0.373
+      },
+      "trophies": [
+        {
+          "title": "League title",
+          "tier": "top-league"
+        },
+        {
+          "title": "Domestic cup",
+          "tier": "domestic-cup"
+        },
+        {
+          "title": "UEFA Champions League",
+          "tier": "ucl"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "kylian-mbappe",
+      "name": "Kylian Mbappé",
+      "country": "France",
+      "flag": "🇫🇷",
+      "club": "Real Madrid",
+      "league": "La Liga",
+      "role": "ATT",
+      "minutes": 3800,
+      "stats": {
+        "goalsPer90": 1.058,
+        "goals": 45,
+        "xG": 29,
+        "assists": 18,
+        "xA": 0.562,
+        "shotsOnTarget": 1.922,
+        "dribblesCompleted": 4.301,
+        "touchesInBox": 11.796,
+        "yellowCards": 3,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 0,
+        "teamGoalShare": 0.322
+      },
+      "trophies": [
+        {
+          "title": "League title",
+          "tier": "top-league"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "lamine-yamal",
+      "name": "Lamine Yamal",
+      "country": "Spain",
+      "flag": "🇪🇸",
+      "club": "Barcelona",
+      "league": "La Liga",
+      "role": "ATT",
+      "minutes": 3600,
+      "stats": {
+        "goalsPer90": 1.645,
+        "goals": 66,
+        "xG": 66,
+        "assists": 24,
+        "xA": 0.318,
+        "shotsOnTarget": 3.093,
+        "dribblesCompleted": 4.933,
+        "touchesInBox": 10.165,
+        "yellowCards": 9,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 0,
+        "teamGoalShare": 0.679
+      },
+      "trophies": [
+        {
+          "title": "League title",
+          "tier": "top-league"
+        },
+        {
+          "title": "Domestic cup",
+          "tier": "domestic-cup"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "lionel-messi",
+      "name": "Lionel Messi",
+      "country": "Argentina",
+      "flag": "🇦🇷",
+      "club": "Inter Miami",
+      "league": "MLS",
+      "role": "ATT",
+      "minutes": 3000,
+      "stats": {
+        "goalsPer90": 1.247,
+        "goals": 42,
+        "xG": 37,
+        "assists": 12,
+        "xA": 1.134,
+        "shotsOnTarget": 5.428,
+        "dribblesCompleted": 3.687,
+        "touchesInBox": 10.505,
+        "yellowCards": 7,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 1,
+        "teamGoalShare": 0.779
+      },
+      "trophies": [
+        {
+          "title": "League title (other)",
+          "tier": "other-league"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "erling-haaland",
+      "name": "Erling Haaland",
+      "country": "Norway",
+      "flag": "🇳🇴",
+      "club": "Manchester City",
+      "league": "Premier League",
+      "role": "ATT",
+      "minutes": 3400,
+      "stats": {
+        "goalsPer90": 0.875,
+        "goals": 33,
+        "xG": 27,
+        "assists": 12,
+        "xA": 0.964,
+        "shotsOnTarget": 3.266,
+        "dribblesCompleted": 3.104,
+        "touchesInBox": 17.156,
+        "yellowCards": 2,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 1,
+        "teamGoalShare": 0.327
+      },
+      "trophies": [],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "jude-bellingham",
+      "name": "Jude Bellingham",
+      "country": "England",
+      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+      "club": "Real Madrid",
+      "league": "La Liga",
+      "role": "MID",
+      "minutes": 3500,
+      "stats": {
+        "progressivePasses": 16.574,
+        "passesIntoPA": 4.127,
+        "throughBalls": 0.406,
+        "xA": 0.42,
+        "keyPasses": 4.277,
+        "passesAttempted": 81.736,
+        "duelsWonPct": 0.947,
+        "tacklesPlusIntPer90": 3.931,
+        "goals": 14.011,
+        "yellowCards": 7,
+        "redCards": 1,
+        "secondYellows": 0,
+        "suspensionsServed": 1,
+        "teamGoalShare": 0.219
+      },
+      "trophies": [
+        {
+          "title": "League title",
+          "tier": "top-league"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "vinicius-junior",
+      "name": "Vinícius Júnior",
+      "country": "Brazil",
+      "flag": "🇧🇷",
+      "club": "Real Madrid",
+      "league": "La Liga",
+      "role": "ATT",
+      "minutes": 3200,
+      "stats": {
+        "goalsPer90": 1.544,
+        "goals": 55,
+        "xG": 28,
+        "assists": 11,
+        "xA": 0.491,
+        "shotsOnTarget": 3.407,
+        "dribblesCompleted": 3.724,
+        "touchesInBox": 18.14,
+        "yellowCards": 9,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 1,
+        "teamGoalShare": 0.364
+      },
+      "trophies": [
+        {
+          "title": "League title",
+          "tier": "top-league"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "ousmane-dembele",
+      "name": "Ousmane Dembélé",
+      "country": "France",
+      "flag": "🇫🇷",
+      "club": "Paris Saint-Germain",
+      "league": "Ligue 1",
+      "role": "ATT",
+      "minutes": 3300,
+      "stats": {
+        "goalsPer90": 1.202,
+        "goals": 44,
+        "xG": 69,
+        "assists": 27,
+        "xA": 0.853,
+        "shotsOnTarget": 2.077,
+        "dribblesCompleted": 4.166,
+        "touchesInBox": 19.089,
+        "yellowCards": 9,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 1,
+        "teamGoalShare": 0.65
+      },
+      "trophies": [
+        {
+          "title": "UEFA Champions League",
+          "tier": "ucl"
+        },
+        {
+          "title": "League title",
+          "tier": "top-league"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "achraf-hakimi",
+      "name": "Achraf Hakimi",
+      "country": "Morocco",
+      "flag": "🇲🇦",
+      "club": "Paris Saint-Germain",
+      "league": "Ligue 1",
+      "role": "FB",
+      "minutes": 3600,
+      "stats": {
+        "tacklesPer90": 5.609,
+        "interceptionsPer90": 2.68,
+        "aerialsWonPct": 0.816,
+        "progressiveCarries": 2.422,
+        "progressivePasses": 11.623,
+        "assists": 22.422,
+        "xA": 0.531,
+        "keyPasses": 1.689,
+        "passCompletion": 1.214,
+        "goals": 6.945,
+        "yellowCards": 10,
+        "redCards": 1,
+        "secondYellows": 0,
+        "suspensionsServed": 1,
+        "teamGoalShare": 0.258
+      },
+      "trophies": [
+        {
+          "title": "UEFA Champions League",
+          "tier": "ucl"
+        },
+        {
+          "title": "League title",
+          "tier": "top-league"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "khvicha-kvaratskhelia",
+      "name": "Khvicha Kvaratskhelia",
+      "country": "Georgia",
+      "flag": "🇬🇪",
+      "club": "Paris Saint-Germain",
+      "league": "Ligue 1",
+      "role": "ATT",
+      "minutes": 3100,
+      "stats": {
+        "goalsPer90": 1.012,
+        "goals": 35,
+        "xG": 41,
+        "assists": 18,
+        "xA": 0.87,
+        "shotsOnTarget": 2.126,
+        "dribblesCompleted": 2.702,
+        "touchesInBox": 10.481,
+        "yellowCards": 6,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 0,
+        "teamGoalShare": 0.538
+      },
+      "trophies": [
+        {
+          "title": "UEFA Champions League",
+          "tier": "ucl"
+        },
+        {
+          "title": "League title",
+          "tier": "top-league"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "marquinhos",
+      "name": "Marquinhos",
+      "country": "Brazil",
+      "flag": "🇧🇷",
+      "club": "Paris Saint-Germain",
+      "league": "Ligue 1",
+      "role": "CB",
+      "minutes": 3400,
+      "stats": {
+        "tacklesPer90": 4.787,
+        "interceptionsPer90": 3.276,
+        "blocksPer90": 2.775,
+        "clearancesPer90": 4.476,
+        "aerialsWonPct": 0.876,
+        "progressivePasses": 5.477,
+        "passCompletion": 1.664,
+        "passesFinalThird": 9.554,
+        "goals": 1.849,
+        "yellowCards": 6,
+        "redCards": 1,
+        "secondYellows": 0,
+        "suspensionsServed": 2,
+        "teamGoalShare": 0.148
+      },
+      "trophies": [
+        {
+          "title": "UEFA Champions League",
+          "tier": "ucl"
+        },
+        {
+          "title": "League title",
+          "tier": "top-league"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "nuno-mendes",
+      "name": "Nuno Mendes",
+      "country": "Portugal",
+      "flag": "🇵🇹",
+      "club": "Paris Saint-Germain",
+      "league": "Ligue 1",
+      "role": "FB",
+      "minutes": 3300,
+      "stats": {
+        "tacklesPer90": 5.693,
+        "interceptionsPer90": 3.339,
+        "aerialsWonPct": 0.912,
+        "progressiveCarries": 7.323,
+        "progressivePasses": 11.438,
+        "assists": 14.797,
+        "xA": 0.93,
+        "keyPasses": 2.35,
+        "passCompletion": 1.662,
+        "goals": 9.129,
+        "yellowCards": 8,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 1,
+        "teamGoalShare": 0.302
+      },
+      "trophies": [
+        {
+          "title": "UEFA Champions League",
+          "tier": "ucl"
+        },
+        {
+          "title": "League title",
+          "tier": "top-league"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "joao-neves",
+      "name": "João Neves",
+      "country": "Portugal",
+      "flag": "🇵🇹",
+      "club": "Paris Saint-Germain",
+      "league": "Ligue 1",
+      "role": "MID",
+      "minutes": 3800,
+      "stats": {
+        "progressivePasses": 11.899,
+        "passesIntoPA": 5.245,
+        "throughBalls": 0.783,
+        "xA": 0.871,
+        "keyPasses": 2.638,
+        "passesAttempted": 143.743,
+        "duelsWonPct": 0.86,
+        "tacklesPlusIntPer90": 4.866,
+        "goals": 17.837,
+        "yellowCards": 8,
+        "redCards": 1,
+        "secondYellows": 0,
+        "suspensionsServed": 0,
+        "teamGoalShare": 0.311
+      },
+      "trophies": [
+        {
+          "title": "UEFA Champions League",
+          "tier": "ucl"
+        },
+        {
+          "title": "League title",
+          "tier": "top-league"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "willian-pacho",
+      "name": "Willian Pacho",
+      "country": "Ecuador",
+      "flag": "🇪🇨",
+      "club": "Paris Saint-Germain",
+      "league": "Ligue 1",
+      "role": "CB",
+      "minutes": 3500,
+      "stats": {
+        "tacklesPer90": 4.37,
+        "interceptionsPer90": 1.393,
+        "blocksPer90": 2.08,
+        "clearancesPer90": 4.192,
+        "aerialsWonPct": 1.32,
+        "progressivePasses": 13.93,
+        "passCompletion": 1.542,
+        "passesFinalThird": 5.567,
+        "goals": 3.447,
+        "yellowCards": 10,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 2,
+        "teamGoalShare": 0.062
+      },
+      "trophies": [
+        {
+          "title": "UEFA Champions League",
+          "tier": "ucl"
+        },
+        {
+          "title": "League title",
+          "tier": "top-league"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "ferran-torres",
+      "name": "Ferran Torres",
+      "country": "Spain",
+      "flag": "🇪🇸",
+      "club": "Barcelona",
+      "league": "La Liga",
+      "role": "ATT",
+      "minutes": 2800,
+      "stats": {
+        "goalsPer90": 0.747,
+        "goals": 23,
+        "xG": 17,
+        "assists": 6,
+        "xA": 0.695,
+        "shotsOnTarget": 2.13,
+        "dribblesCompleted": 3.1,
+        "touchesInBox": 7.05,
+        "yellowCards": 4,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 1,
+        "teamGoalShare": 0.282
+      },
+      "trophies": [
+        {
+          "title": "League title",
+          "tier": "top-league"
+        },
+        {
+          "title": "Domestic cup",
+          "tier": "domestic-cup"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "fabian-ruiz",
+      "name": "Fabián Ruiz",
+      "country": "Spain",
+      "flag": "🇪🇸",
+      "club": "Paris Saint-Germain",
+      "league": "Ligue 1",
+      "role": "MID",
+      "minutes": 3500,
+      "stats": {
+        "progressivePasses": 5.431,
+        "passesIntoPA": 4.249,
+        "throughBalls": 0.353,
+        "xA": 0.169,
+        "keyPasses": 1.165,
+        "passesAttempted": 75.902,
+        "duelsWonPct": 0.553,
+        "tacklesPlusIntPer90": 3.241,
+        "goals": 11.713,
+        "yellowCards": 5,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 0,
+        "teamGoalShare": 0.201
+      },
+      "trophies": [
+        {
+          "title": "UEFA Champions League",
+          "tier": "ucl"
+        },
+        {
+          "title": "League title",
+          "tier": "top-league"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "vitinha",
+      "name": "Vitinha",
+      "country": "Portugal",
+      "flag": "🇵🇹",
+      "club": "Paris Saint-Germain",
+      "league": "Ligue 1",
+      "role": "MID",
+      "minutes": 3900,
+      "stats": {
+        "progressivePasses": 13.984,
+        "passesIntoPA": 6.8,
+        "throughBalls": 0.307,
+        "xA": 0.714,
+        "keyPasses": 2.766,
+        "passesAttempted": 123.346,
+        "duelsWonPct": 0.967,
+        "tacklesPlusIntPer90": 4.369,
+        "goals": 5.85,
+        "yellowCards": 12,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 1,
+        "teamGoalShare": 0.234
+      },
+      "trophies": [
+        {
+          "title": "UEFA Champions League",
+          "tier": "ucl"
+        },
+        {
+          "title": "League title",
+          "tier": "top-league"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "mohamed-salah",
+      "name": "Mohamed Salah",
+      "country": "Egypt",
+      "flag": "🇪🇬",
+      "club": "Liverpool",
+      "league": "Premier League",
+      "role": "ATT",
+      "minutes": 3600,
+      "stats": {
+        "goalsPer90": 1.8,
+        "goals": 72,
+        "xG": 42,
+        "assists": 19,
+        "xA": 0.823,
+        "shotsOnTarget": 5.297,
+        "dribblesCompleted": 2.99,
+        "touchesInBox": 15.253,
+        "yellowCards": 6,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 0,
+        "teamGoalShare": 0.417
+      },
+      "trophies": [
+        {
+          "title": "League title",
+          "tier": "top-league"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "raphinha",
+      "name": "Raphinha",
+      "country": "Brazil",
+      "flag": "🇧🇷",
+      "club": "Barcelona",
+      "league": "La Liga",
+      "role": "ATT",
+      "minutes": 3500,
+      "stats": {
+        "goalsPer90": 0.709,
+        "goals": 28,
+        "xG": 60,
+        "assists": 21,
+        "xA": 0.839,
+        "shotsOnTarget": 3.461,
+        "dribblesCompleted": 3.776,
+        "touchesInBox": 12.764,
+        "yellowCards": 7,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 1,
+        "teamGoalShare": 0.715
+      },
+      "trophies": [
+        {
+          "title": "League title",
+          "tier": "top-league"
+        },
+        {
+          "title": "Domestic cup",
+          "tier": "domestic-cup"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "pedri",
+      "name": "Pedri",
+      "country": "Spain",
+      "flag": "🇪🇸",
+      "club": "Barcelona",
+      "league": "La Liga",
+      "role": "MID",
+      "minutes": 3700,
+      "stats": {
+        "progressivePasses": 11.017,
+        "passesIntoPA": 6.092,
+        "throughBalls": 0.557,
+        "xA": 0.744,
+        "keyPasses": 4.367,
+        "passesAttempted": 158.736,
+        "duelsWonPct": 0.845,
+        "tacklesPlusIntPer90": 5.085,
+        "goals": 15.127,
+        "yellowCards": 11,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 2,
+        "teamGoalShare": 0.512
+      },
+      "trophies": [
+        {
+          "title": "League title",
+          "tier": "top-league"
+        },
+        {
+          "title": "Domestic cup",
+          "tier": "domestic-cup"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "rodri",
+      "name": "Rodri",
+      "country": "Spain",
+      "flag": "🇪🇸",
+      "club": "Manchester City",
+      "league": "Premier League",
+      "role": "MID",
+      "minutes": 2600,
+      "stats": {
+        "progressivePasses": 9.679,
+        "passesIntoPA": 2.058,
+        "throughBalls": 0.145,
+        "xA": 0.596,
+        "keyPasses": 1.07,
+        "passesAttempted": 64.646,
+        "duelsWonPct": 0.629,
+        "tacklesPlusIntPer90": 2.858,
+        "goals": 11.537,
+        "yellowCards": 4,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 1,
+        "teamGoalShare": 0.224
+      },
+      "trophies": [],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "thibaut-courtois",
+      "name": "Thibaut Courtois",
+      "country": "Belgium",
+      "flag": "🇧🇪",
+      "club": "Real Madrid",
+      "league": "La Liga",
+      "role": "GK",
+      "minutes": 3300,
+      "stats": {
+        "psxgMinusGa": 3.95,
+        "savePct": 1.35,
+        "cleanSheets": 13.501,
+        "penaltySaves": 1.3,
+        "crossesStoppedPct": 12.033,
+        "defActionsOutsideBox": 3.676,
+        "passCompletion": 1.485,
+        "launches": 7.575,
+        "yellowCards": 3,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 1,
+        "teamGoalShare": 0.168
+      },
+      "trophies": [
+        {
+          "title": "League title",
+          "tier": "top-league"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "gianluigi-donnarumma",
+      "name": "Gianluigi Donnarumma",
+      "country": "Italy",
+      "flag": "🇮🇹",
+      "club": "Manchester City",
+      "league": "Premier League",
+      "role": "GK",
+      "minutes": 3400,
+      "stats": {
+        "psxgMinusGa": 8.344,
+        "savePct": 1.259,
+        "cleanSheets": 16.207,
+        "penaltySaves": 4.097,
+        "crossesStoppedPct": 15.674,
+        "defActionsOutsideBox": 2.093,
+        "passCompletion": 1.307,
+        "launches": 9.693,
+        "yellowCards": 3,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 0,
+        "teamGoalShare": 0.126
+      },
+      "trophies": [],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "vozinha",
+      "name": "Vozinha",
+      "country": "Cape Verde",
+      "flag": "🇨🇻",
+      "club": "Avaí",
+      "league": "Brasileirão",
+      "role": "GK",
+      "minutes": 2800,
+      "stats": {
+        "psxgMinusGa": 1.518,
+        "savePct": 1.136,
+        "cleanSheets": 30.782,
+        "penaltySaves": 0.008,
+        "crossesStoppedPct": 16.364,
+        "defActionsOutsideBox": 1.566,
+        "passCompletion": 1.164,
+        "launches": 15.046,
+        "yellowCards": 3,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 0,
+        "teamGoalShare": 0.291
+      },
+      "trophies": [
+        {
+          "title": "World Cup",
+          "tier": "world-cup"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "alessandro-bastoni",
+      "name": "Alessandro Bastoni",
+      "country": "Italy",
+      "flag": "🇮🇹",
+      "club": "Inter Milan",
+      "league": "Serie A",
+      "role": "CB",
+      "minutes": 3500,
+      "stats": {
+        "tacklesPer90": 1.595,
+        "interceptionsPer90": 2.093,
+        "blocksPer90": 1.932,
+        "clearancesPer90": 2.578,
+        "aerialsWonPct": 0.669,
+        "progressivePasses": 5.029,
+        "passCompletion": 0.907,
+        "passesFinalThird": 6.894,
+        "goals": 4.565,
+        "yellowCards": 5,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 1,
+        "teamGoalShare": 0.113
+      },
+      "trophies": [],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "declan-rice",
+      "name": "Declan Rice",
+      "country": "England",
+      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+      "club": "Arsenal",
+      "league": "Premier League",
+      "role": "MID",
+      "minutes": 3700,
+      "stats": {
+        "progressivePasses": 5.633,
+        "passesIntoPA": 2.028,
+        "throughBalls": 0.26,
+        "xA": 0.591,
+        "keyPasses": 2.012,
+        "passesAttempted": 84.038,
+        "duelsWonPct": 0.484,
+        "tacklesPlusIntPer90": 2.804,
+        "goals": 9.638,
+        "yellowCards": 8,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 0,
+        "teamGoalShare": 0.288
+      },
+      "trophies": [],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "bruno-fernandes",
+      "name": "Bruno Fernandes",
+      "country": "Portugal",
+      "flag": "🇵🇹",
+      "club": "Manchester United",
+      "league": "Premier League",
+      "role": "MID",
+      "minutes": 3800,
+      "stats": {
+        "progressivePasses": 6.144,
+        "passesIntoPA": 3.294,
+        "throughBalls": 0.295,
+        "xA": 0.208,
+        "keyPasses": 1.576,
+        "passesAttempted": 82.771,
+        "duelsWonPct": 0.587,
+        "tacklesPlusIntPer90": 2.132,
+        "goals": 8.616,
+        "yellowCards": 4,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 1,
+        "teamGoalShare": 0.278
+      },
+      "trophies": [],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "lautaro-martinez",
+      "name": "Lautaro Martínez",
+      "country": "Argentina",
+      "flag": "🇦🇷",
+      "club": "Inter Milan",
+      "league": "Serie A",
+      "role": "ATT",
+      "minutes": 3200,
+      "stats": {
+        "goalsPer90": 0.839,
+        "goals": 30,
+        "xG": 37,
+        "assists": 11,
+        "xA": 0.62,
+        "shotsOnTarget": 1.91,
+        "dribblesCompleted": 2.577,
+        "touchesInBox": 7.729,
+        "yellowCards": 4,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 0,
+        "teamGoalShare": 0.211
+      },
+      "trophies": [],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "ruben-dias",
+      "name": "Rúben Dias",
+      "country": "Portugal",
+      "flag": "🇵🇹",
+      "club": "Manchester City",
+      "league": "Premier League",
+      "role": "CB",
+      "minutes": 3600,
+      "stats": {
+        "tacklesPer90": 1.208,
+        "interceptionsPer90": 1.794,
+        "blocksPer90": 1.259,
+        "clearancesPer90": 2.316,
+        "aerialsWonPct": 0.554,
+        "progressivePasses": 3.751,
+        "passCompletion": 0.905,
+        "passesFinalThird": 3.406,
+        "goals": 1.172,
+        "yellowCards": 4,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 1,
+        "teamGoalShare": 0.049
+      },
+      "trophies": [],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "michael-olise",
+      "name": "Michael Olise",
+      "country": "France",
+      "flag": "🇫🇷",
+      "club": "Bayern Munich",
+      "league": "Bundesliga",
+      "role": "ATT",
+      "minutes": 3400,
+      "stats": {
+        "goalsPer90": 0.86,
+        "goals": 32,
+        "xG": 20,
+        "assists": 8,
+        "xA": 0.489,
+        "shotsOnTarget": 1.948,
+        "dribblesCompleted": 3.04,
+        "touchesInBox": 5.506,
+        "yellowCards": 2,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 1,
+        "teamGoalShare": 0.483
+      },
+      "trophies": [
+        {
+          "title": "League title",
+          "tier": "top-league"
+        },
+        {
+          "title": "Domestic cup",
+          "tier": "domestic-cup"
+        },
+        {
+          "title": "UEFA Champions League",
+          "tier": "ucl"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    }
+  ]
+}

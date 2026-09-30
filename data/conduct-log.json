@@ -1,0 +1,33 @@
+{
+  "note": "Conduct event log (fair play Layer 2). Each event is an editorial judgment — mitigate by citing a reputable source per event and by exposing events to the user, not hiding the judgment. See docs/methodology.md. This file ships with example/scaffold events only: run the Week 1 news-search editorial pass (Aug 2025 – Jul 2026, all 60 shortlisted players) and replace these before launch. Community edits via PR are welcome.",
+  "referencePeriod": "2025-08-03 to 2026-07-19",
+  "events": [
+    {
+      "id": "example-neg-1",
+      "playerId": "kylian-mbappe",
+      "date": "2026-02-14",
+      "kind": "simulation",
+      "severity": -2,
+      "description": "EXAMPLE EVENT — placeholder pending editorial pass. Dive in the box leading to a converted penalty; widely covered in the press.",
+      "source": "https://example.com/replace-with-real-source"
+    },
+    {
+      "id": "example-pos-1",
+      "playerId": "harry-kane",
+      "date": "2026-04-05",
+      "kind": "sportsmanship",
+      "severity": 2,
+      "description": "EXAMPLE EVENT — placeholder pending editorial pass. Told the referee the opponent did not touch him for a penalty award; award overturned.",
+      "source": "https://example.com/replace-with-real-source"
+    },
+    {
+      "id": "example-neg-2",
+      "playerId": "alexia-putellas",
+      "date": "2026-03-22",
+      "kind": "dissent",
+      "severity": -1,
+      "description": "EXAMPLE EVENT — placeholder pending editorial pass. Heated confrontation with the referee after a disallowed goal.",
+      "source": "https://example.com/replace-with-real-source"
+    }
+  ]
+}
