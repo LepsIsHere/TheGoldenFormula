@@ -1,0 +1,1051 @@
+{
+  "edition": "women",
+  "season": "2025-26",
+  "referencePeriod": "2025-08-03 to 2026-07-19",
+  "status": "draft",
+  "note": "DRAFT dataset: roster names follow the reported 2026 shortlists; stat lines are generated placeholders for engine development. Run the Week 1 FBref/Transfermarkt data pass and replace stats before public launch. See docs/data-refresh.md.",
+  "players": [
+    {
+      "id": "alexia-putellas",
+      "name": "Alexia Putellas",
+      "country": "Spain",
+      "flag": "🇪🇸",
+      "club": "Barcelona",
+      "league": "Liga F",
+      "role": "MID",
+      "minutes": 2800,
+      "stats": {
+        "progressivePasses": 8.439,
+        "passesIntoPA": 7.901,
+        "throughBalls": 0.533,
+        "xA": 0.645,
+        "keyPasses": 3.7,
+        "passesAttempted": 113.942,
+        "duelsWonPct": 0.946,
+        "tacklesPlusIntPer90": 3.618,
+        "goals": 18.102,
+        "yellowCards": 9,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 1,
+        "teamGoalShare": 0.383
+      },
+      "trophies": [
+        {
+          "title": "Women's Champions League",
+          "tier": "wccl"
+        },
+        {
+          "title": "League title",
+          "tier": "top-league"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "khadija-bunny-shaw",
+      "name": "Khadija Bunny Shaw",
+      "country": "Jamaica",
+      "flag": "🇯🇲",
+      "club": "Manchester City",
+      "league": "WSL",
+      "role": "ATT",
+      "minutes": 2200,
+      "stats": {
+        "goalsPer90": 1.38,
+        "goals": 34,
+        "xG": 30,
+        "assists": 6,
+        "xA": 0.66,
+        "shotsOnTarget": 2.464,
+        "dribblesCompleted": 2.206,
+        "touchesInBox": 12.409,
+        "yellowCards": 4,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 1,
+        "teamGoalShare": 0.335
+      },
+      "trophies": [],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "alessia-russo",
+      "name": "Alessia Russo",
+      "country": "England",
+      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+      "club": "Arsenal",
+      "league": "WSL",
+      "role": "ATT",
+      "minutes": 2600,
+      "stats": {
+        "goalsPer90": 1.185,
+        "goals": 34,
+        "xG": 27,
+        "assists": 9,
+        "xA": 0.786,
+        "shotsOnTarget": 3.852,
+        "dribblesCompleted": 1.801,
+        "touchesInBox": 12.633,
+        "yellowCards": 3,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 1,
+        "teamGoalShare": 0.827
+      },
+      "trophies": [
+        {
+          "title": "Women's Champions League",
+          "tier": "wccl"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "selma-bacha",
+      "name": "Selma Bacha",
+      "country": "France",
+      "flag": "🇫🇷",
+      "club": "Lyon",
+      "league": "Première Ligue",
+      "role": "FB",
+      "minutes": 2700,
+      "stats": {
+        "tacklesPer90": 3.452,
+        "interceptionsPer90": 3.962,
+        "aerialsWonPct": 1.225,
+        "progressiveCarries": 6.167,
+        "progressivePasses": 7.13,
+        "assists": 10.473,
+        "xA": 0.768,
+        "keyPasses": 2.84,
+        "passCompletion": 1.4,
+        "goals": 15.163,
+        "yellowCards": 4,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 1,
+        "teamGoalShare": 0.253
+      },
+      "trophies": [
+        {
+          "title": "League title",
+          "tier": "top-league"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "barbra-banda",
+      "name": "Barbra Banda",
+      "country": "Zambia",
+      "flag": "🇿🇲",
+      "club": "Orlando Pride",
+      "league": "NWSL",
+      "role": "ATT",
+      "minutes": 2500,
+      "stats": {
+        "goalsPer90": 1.98,
+        "goals": 55,
+        "xG": 23,
+        "assists": 22,
+        "xA": 0.745,
+        "shotsOnTarget": 4,
+        "dribblesCompleted": 4.771,
+        "touchesInBox": 12.746,
+        "yellowCards": 8,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 1,
+        "teamGoalShare": 0.468
+      },
+      "trophies": [],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "klara-buhl",
+      "name": "Klara Buhl",
+      "country": "Germany",
+      "flag": "🇩🇪",
+      "club": "Bayern Munich",
+      "league": "Frauen-Bundesliga",
+      "role": "ATT",
+      "minutes": 2400,
+      "stats": {
+        "goalsPer90": 1.448,
+        "goals": 39,
+        "xG": 21,
+        "assists": 4,
+        "xA": 0.431,
+        "shotsOnTarget": 1.379,
+        "dribblesCompleted": 1.729,
+        "touchesInBox": 9.177,
+        "yellowCards": 4,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 0,
+        "teamGoalShare": 0.26
+      },
+      "trophies": [
+        {
+          "title": "League title",
+          "tier": "top-league"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "esmee-brugts",
+      "name": "Esmee Brugts",
+      "country": "Netherlands",
+      "flag": "🇳🇱",
+      "club": "Barcelona",
+      "league": "Liga F",
+      "role": "MID",
+      "minutes": 2300,
+      "stats": {
+        "progressivePasses": 4.185,
+        "passesIntoPA": 4.329,
+        "throughBalls": 0.139,
+        "xA": 0.485,
+        "keyPasses": 1.586,
+        "passesAttempted": 78.9,
+        "duelsWonPct": 0.498,
+        "tacklesPlusIntPer90": 1.94,
+        "goals": 5.467,
+        "yellowCards": 6,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 0,
+        "teamGoalShare": 0.263
+      },
+      "trophies": [
+        {
+          "title": "Women's Champions League",
+          "tier": "wccl"
+        },
+        {
+          "title": "League title",
+          "tier": "top-league"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "mariona-caldentey",
+      "name": "Mariona Caldentey",
+      "country": "Spain",
+      "flag": "🇪🇸",
+      "club": "Arsenal",
+      "league": "WSL",
+      "role": "MID",
+      "minutes": 2500,
+      "stats": {
+        "progressivePasses": 9.904,
+        "passesIntoPA": 2.323,
+        "throughBalls": 0.164,
+        "xA": 0.483,
+        "keyPasses": 2.589,
+        "passesAttempted": 72.765,
+        "duelsWonPct": 0.586,
+        "tacklesPlusIntPer90": 2.509,
+        "goals": 10.292,
+        "yellowCards": 2,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 0,
+        "teamGoalShare": 0.148
+      },
+      "trophies": [
+        {
+          "title": "Women's Champions League",
+          "tier": "wccl"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "kiana-correa-camberos",
+      "name": "Kiana Correa Camberos",
+      "country": "Mexico",
+      "flag": "🇲🇽",
+      "club": "Rayadas",
+      "league": "Liga MX Femenil",
+      "role": "ATT",
+      "minutes": 2400,
+      "stats": {
+        "goalsPer90": 1.047,
+        "goals": 28,
+        "xG": 12,
+        "assists": 11,
+        "xA": 0.398,
+        "shotsOnTarget": 2.781,
+        "dribblesCompleted": 1.921,
+        "touchesInBox": 8.312,
+        "yellowCards": 1,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 0,
+        "teamGoalShare": 0.276
+      },
+      "trophies": [],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "caitlin-casparij",
+      "name": "Caitlin Casparij",
+      "country": "Netherlands",
+      "flag": "🇳🇱",
+      "club": "Manchester City",
+      "league": "WSL",
+      "role": "FB",
+      "minutes": 2600,
+      "stats": {
+        "tacklesPer90": 2.649,
+        "interceptionsPer90": 0.988,
+        "aerialsWonPct": 0.514,
+        "progressiveCarries": 2.179,
+        "progressivePasses": 4.629,
+        "assists": 8.597,
+        "xA": 0.481,
+        "keyPasses": 1.498,
+        "passCompletion": 0.808,
+        "goals": 4.374,
+        "yellowCards": 7,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 0,
+        "teamGoalShare": 0.138
+      },
+      "trophies": [],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "tabitha-chawinga",
+      "name": "Tabitha Chawinga",
+      "country": "Malawi",
+      "flag": "🇲🇼",
+      "club": "Lyon",
+      "league": "Première Ligue",
+      "role": "ATT",
+      "minutes": 2400,
+      "stats": {
+        "goalsPer90": 0.797,
+        "goals": 21,
+        "xG": 26,
+        "assists": 10,
+        "xA": 0.611,
+        "shotsOnTarget": 1.784,
+        "dribblesCompleted": 1.903,
+        "touchesInBox": 9.744,
+        "yellowCards": 6,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 1,
+        "teamGoalShare": 0.233
+      },
+      "trophies": [
+        {
+          "title": "League title",
+          "tier": "top-league"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "sandra-panos-coll",
+      "name": "Sandra Paños Coll",
+      "country": "Spain",
+      "flag": "🇪🇸",
+      "club": "Barcelona",
+      "league": "Liga F",
+      "role": "GK",
+      "minutes": 2000,
+      "stats": {
+        "psxgMinusGa": 3.003,
+        "savePct": 0.782,
+        "cleanSheets": 13.867,
+        "penaltySaves": 1.038,
+        "crossesStoppedPct": 10.596,
+        "defActionsOutsideBox": 1.525,
+        "passCompletion": 0.775,
+        "launches": 4.332,
+        "yellowCards": 1,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 0,
+        "teamGoalShare": 0.105
+      },
+      "trophies": [
+        {
+          "title": "Women's Champions League",
+          "tier": "wccl"
+        },
+        {
+          "title": "League title",
+          "tier": "top-league"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "melchie-dumornay",
+      "name": "Melchie Dumornay",
+      "country": "Haiti",
+      "flag": "🇭🇹",
+      "club": "Lyon",
+      "league": "Première Ligue",
+      "role": "MID",
+      "minutes": 2400,
+      "stats": {
+        "progressivePasses": 10.605,
+        "passesIntoPA": 2.266,
+        "throughBalls": 0.472,
+        "xA": 0.424,
+        "keyPasses": 1.801,
+        "passesAttempted": 64.638,
+        "duelsWonPct": 0.62,
+        "tacklesPlusIntPer90": 1.6,
+        "goals": 4.296,
+        "yellowCards": 7,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 1,
+        "teamGoalShare": 0.171
+      },
+      "trophies": [
+        {
+          "title": "League title",
+          "tier": "top-league"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "caroline-graham-hansen",
+      "name": "Caroline Graham Hansen",
+      "country": "Norway",
+      "flag": "🇳🇴",
+      "club": "Barcelona",
+      "league": "Liga F",
+      "role": "ATT",
+      "minutes": 2600,
+      "stats": {
+        "goalsPer90": 1.239,
+        "goals": 36,
+        "xG": 43,
+        "assists": 17,
+        "xA": 0.716,
+        "shotsOnTarget": 3.81,
+        "dribblesCompleted": 2.94,
+        "touchesInBox": 8.518,
+        "yellowCards": 7,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 1,
+        "teamGoalShare": 0.796
+      },
+      "trophies": [
+        {
+          "title": "Women's Champions League",
+          "tier": "wccl"
+        },
+        {
+          "title": "League title",
+          "tier": "top-league"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "alex-greenwood",
+      "name": "Alex Greenwood",
+      "country": "England",
+      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+      "club": "Manchester City",
+      "league": "WSL",
+      "role": "CB",
+      "minutes": 2700,
+      "stats": {
+        "tacklesPer90": 2.899,
+        "interceptionsPer90": 2.556,
+        "blocksPer90": 3.109,
+        "clearancesPer90": 6.876,
+        "aerialsWonPct": 1.018,
+        "progressivePasses": 11.601,
+        "passCompletion": 1.436,
+        "passesFinalThird": 8.65,
+        "goals": 6.94,
+        "yellowCards": 9,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 2,
+        "teamGoalShare": 0.075
+      },
+      "trophies": [],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "maya-le-tissier-guilbert",
+      "name": "Maya Le Tissier Guilbert",
+      "country": "England",
+      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+      "club": "Manchester City",
+      "league": "WSL",
+      "role": "CB",
+      "minutes": 2800,
+      "stats": {
+        "tacklesPer90": 3.912,
+        "interceptionsPer90": 1.52,
+        "blocksPer90": 2.208,
+        "clearancesPer90": 5.327,
+        "aerialsWonPct": 0.971,
+        "progressivePasses": 9.818,
+        "passCompletion": 1.686,
+        "passesFinalThird": 12.24,
+        "goals": 7.83,
+        "yellowCards": 7,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 1,
+        "teamGoalShare": 0.095
+      },
+      "trophies": [],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "christian-press",
+      "name": "Christian Press",
+      "country": "United States",
+      "flag": "🇺🇸",
+      "club": "Angel City",
+      "league": "NWSL",
+      "role": "ATT",
+      "minutes": 1800,
+      "stats": {
+        "goalsPer90": 1.12,
+        "goals": 22,
+        "xG": 11,
+        "assists": 8,
+        "xA": 0.694,
+        "shotsOnTarget": 1.833,
+        "dribblesCompleted": 1.318,
+        "touchesInBox": 10.765,
+        "yellowCards": 5,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 0,
+        "teamGoalShare": 0.477
+      },
+      "trophies": [],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "trinity-rodman",
+      "name": "Trinity Rodman",
+      "country": "United States",
+      "flag": "🇺🇸",
+      "club": "Washington Spirit",
+      "league": "NWSL",
+      "role": "ATT",
+      "minutes": 2000,
+      "stats": {
+        "goalsPer90": 0.628,
+        "goals": 14,
+        "xG": 15,
+        "assists": 4,
+        "xA": 0.53,
+        "shotsOnTarget": 2.479,
+        "dribblesCompleted": 2.417,
+        "touchesInBox": 6.426,
+        "yellowCards": 5,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 0,
+        "teamGoalShare": 0.275
+      },
+      "trophies": [],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "keira-walsh",
+      "name": "Keira Walsh",
+      "country": "England",
+      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+      "club": "Chelsea",
+      "league": "WSL",
+      "role": "MID",
+      "minutes": 2600,
+      "stats": {
+        "progressivePasses": 5.189,
+        "passesIntoPA": 3.409,
+        "throughBalls": 0.527,
+        "xA": 0.17,
+        "keyPasses": 1.694,
+        "passesAttempted": 68.813,
+        "duelsWonPct": 0.485,
+        "tacklesPlusIntPer90": 2.208,
+        "goals": 3.738,
+        "yellowCards": 3,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 0,
+        "teamGoalShare": 0.172
+      },
+      "trophies": [
+        {
+          "title": "League title",
+          "tier": "top-league"
+        },
+        {
+          "title": "Domestic cup",
+          "tier": "domestic-cup"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "lauren-james",
+      "name": "Lauren James",
+      "country": "England",
+      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+      "club": "Chelsea",
+      "league": "WSL",
+      "role": "ATT",
+      "minutes": 2000,
+      "stats": {
+        "goalsPer90": 1.369,
+        "goals": 30,
+        "xG": 36,
+        "assists": 11,
+        "xA": 0.609,
+        "shotsOnTarget": 3.697,
+        "dribblesCompleted": 1.817,
+        "touchesInBox": 13.889,
+        "yellowCards": 11,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 1,
+        "teamGoalShare": 0.729
+      },
+      "trophies": [
+        {
+          "title": "League title",
+          "tier": "top-league"
+        },
+        {
+          "title": "Domestic cup",
+          "tier": "domestic-cup"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "beth-mead",
+      "name": "Beth Mead",
+      "country": "England",
+      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+      "club": "Arsenal",
+      "league": "WSL",
+      "role": "ATT",
+      "minutes": 2300,
+      "stats": {
+        "goalsPer90": 0.897,
+        "goals": 23,
+        "xG": 23,
+        "assists": 3,
+        "xA": 0.534,
+        "shotsOnTarget": 2.562,
+        "dribblesCompleted": 3.101,
+        "touchesInBox": 5.705,
+        "yellowCards": 4,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 0,
+        "teamGoalShare": 0.286
+      },
+      "trophies": [
+        {
+          "title": "Women's Champions League",
+          "tier": "wccl"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "lucy-bronze",
+      "name": "Lucy Bronze",
+      "country": "England",
+      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+      "club": "Chelsea",
+      "league": "WSL",
+      "role": "FB",
+      "minutes": 2300,
+      "stats": {
+        "tacklesPer90": 2.759,
+        "interceptionsPer90": 2.098,
+        "aerialsWonPct": 0.519,
+        "progressiveCarries": 2.447,
+        "progressivePasses": 6.82,
+        "assists": 9.867,
+        "xA": 0.269,
+        "keyPasses": 2.335,
+        "passCompletion": 0.857,
+        "goals": 8.544,
+        "yellowCards": 2,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 0,
+        "teamGoalShare": 0.147
+      },
+      "trophies": [
+        {
+          "title": "League title",
+          "tier": "top-league"
+        },
+        {
+          "title": "Domestic cup",
+          "tier": "domestic-cup"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "irene-paredes",
+      "name": "Irene Paredes",
+      "country": "Spain",
+      "flag": "🇪🇸",
+      "club": "Barcelona",
+      "league": "Liga F",
+      "role": "CB",
+      "minutes": 2400,
+      "stats": {
+        "tacklesPer90": 2.539,
+        "interceptionsPer90": 2.011,
+        "blocksPer90": 1.908,
+        "clearancesPer90": 3.574,
+        "aerialsWonPct": 0.698,
+        "progressivePasses": 3.772,
+        "passCompletion": 0.931,
+        "passesFinalThird": 5.288,
+        "goals": 1.563,
+        "yellowCards": 3,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 0,
+        "teamGoalShare": 0.034
+      },
+      "trophies": [
+        {
+          "title": "Women's Champions League",
+          "tier": "wccl"
+        },
+        {
+          "title": "League title",
+          "tier": "top-league"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "patri-guijarro",
+      "name": "Patri Guijarro",
+      "country": "Spain",
+      "flag": "🇪🇸",
+      "club": "Barcelona",
+      "league": "Liga F",
+      "role": "MID",
+      "minutes": 2600,
+      "stats": {
+        "progressivePasses": 8.231,
+        "passesIntoPA": 2.869,
+        "throughBalls": 0.191,
+        "xA": 0.52,
+        "keyPasses": 1.031,
+        "passesAttempted": 55.549,
+        "duelsWonPct": 0.486,
+        "tacklesPlusIntPer90": 3.095,
+        "goals": 4.084,
+        "yellowCards": 5,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 1,
+        "teamGoalShare": 0.216
+      },
+      "trophies": [
+        {
+          "title": "Women's Champions League",
+          "tier": "wccl"
+        },
+        {
+          "title": "League title",
+          "tier": "top-league"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "claudia-pina",
+      "name": "Clàudia Pina",
+      "country": "Spain",
+      "flag": "🇪🇸",
+      "club": "Barcelona",
+      "league": "Liga F",
+      "role": "ATT",
+      "minutes": 2400,
+      "stats": {
+        "goalsPer90": 0.939,
+        "goals": 25,
+        "xG": 37,
+        "assists": 31,
+        "xA": 0.87,
+        "shotsOnTarget": 5.32,
+        "dribblesCompleted": 2.618,
+        "touchesInBox": 11.557,
+        "yellowCards": 6,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 0,
+        "teamGoalShare": 0.428
+      },
+      "trophies": [
+        {
+          "title": "Women's Champions League",
+          "tier": "wccl"
+        },
+        {
+          "title": "League title",
+          "tier": "top-league"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "salma-paralluelo",
+      "name": "Salma Paralluelo",
+      "country": "Spain",
+      "flag": "🇪🇸",
+      "club": "Barcelona",
+      "league": "Liga F",
+      "role": "ATT",
+      "minutes": 1900,
+      "stats": {
+        "goalsPer90": 1.074,
+        "goals": 23,
+        "xG": 35,
+        "assists": 13,
+        "xA": 0.473,
+        "shotsOnTarget": 2.799,
+        "dribblesCompleted": 2.997,
+        "touchesInBox": 8.066,
+        "yellowCards": 2,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 0,
+        "teamGoalShare": 0.371
+      },
+      "trophies": [
+        {
+          "title": "Women's Champions League",
+          "tier": "wccl"
+        },
+        {
+          "title": "League title",
+          "tier": "top-league"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "mary-earps",
+      "name": "Mary Earps",
+      "country": "England",
+      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+      "club": "Paris FC",
+      "league": "Première Ligue",
+      "role": "GK",
+      "minutes": 2200,
+      "stats": {
+        "psxgMinusGa": 2.544,
+        "savePct": 0.752,
+        "cleanSheets": 11.17,
+        "penaltySaves": 0.31,
+        "crossesStoppedPct": 8.818,
+        "defActionsOutsideBox": 2.08,
+        "passCompletion": 0.64,
+        "launches": 8.113,
+        "yellowCards": 1,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 0,
+        "teamGoalShare": 0.102
+      },
+      "trophies": [],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "naomi-girma",
+      "name": "Naomi Girma",
+      "country": "United States",
+      "flag": "🇺🇸",
+      "club": "Chelsea",
+      "league": "WSL",
+      "role": "CB",
+      "minutes": 2400,
+      "stats": {
+        "tacklesPer90": 1.81,
+        "interceptionsPer90": 1.792,
+        "blocksPer90": 1.138,
+        "clearancesPer90": 1.877,
+        "aerialsWonPct": 0.706,
+        "progressivePasses": 8.215,
+        "passCompletion": 0.932,
+        "passesFinalThird": 5.505,
+        "goals": 1.313,
+        "yellowCards": 3,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 1,
+        "teamGoalShare": 0.062
+      },
+      "trophies": [
+        {
+          "title": "League title",
+          "tier": "top-league"
+        },
+        {
+          "title": "Domestic cup",
+          "tier": "domestic-cup"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "sakina-karchaoui",
+      "name": "Sakina Karchaoui",
+      "country": "France",
+      "flag": "🇫🇷",
+      "club": "Lyon",
+      "league": "Première Ligue",
+      "role": "FB",
+      "minutes": 2600,
+      "stats": {
+        "tacklesPer90": 2.205,
+        "interceptionsPer90": 1.533,
+        "aerialsWonPct": 0.591,
+        "progressiveCarries": 2.9,
+        "progressivePasses": 6.782,
+        "assists": 11.067,
+        "xA": 0.123,
+        "keyPasses": 1.853,
+        "passCompletion": 0.819,
+        "goals": 5.83,
+        "yellowCards": 6,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 0,
+        "teamGoalShare": 0.149
+      },
+      "trophies": [
+        {
+          "title": "League title",
+          "tier": "top-league"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    },
+    {
+      "id": "lena-oberdorf",
+      "name": "Lena Oberdorf",
+      "country": "Germany",
+      "flag": "🇩🇪",
+      "club": "Bayern Munich",
+      "league": "Frauen-Bundesliga",
+      "role": "MID",
+      "minutes": 2200,
+      "stats": {
+        "progressivePasses": 10.018,
+        "passesIntoPA": 2.032,
+        "throughBalls": 0.535,
+        "xA": 0.212,
+        "keyPasses": 1.357,
+        "passesAttempted": 64.823,
+        "duelsWonPct": 0.578,
+        "tacklesPlusIntPer90": 1.85,
+        "goals": 13.605,
+        "yellowCards": 5,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 1,
+        "teamGoalShare": 0.097
+      },
+      "trophies": [
+        {
+          "title": "League title",
+          "tier": "top-league"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+    }
+  ]
+}
