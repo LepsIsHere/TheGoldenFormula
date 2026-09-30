@@ -53,7 +53,7 @@ node scripts/generate-datasets.mjs   # regenerate draft datasets (deterministic 
 
 ## Deployment
 
-Pushes to `main` trigger the GitHub Actions workflow (`.github/workflows/deploy.yml`) which builds and deploys to GitHub Pages at `LepsIsHere.github.io/golden-formula`. Enable Pages in repo settings with **Source: GitHub Actions**.
+Pushes to `main` trigger the GitHub Actions workflow (`.github/workflows/deploy.yml`) which builds and deploys this repo's GitHub Pages project site at `LepsIsHere.github.io/TheGoldenFormula/`. Your root `LepsIsHere.github.io` site remains the portfolio hub and simply links to each project site. Enable Pages in repo settings with **Source: GitHub Actions**.
 
 ## Roadmap
 
