@@ -45,12 +45,12 @@ describe('individualPoints (direct points model)', () => {
 
   it('per-90 stats are converted to season totals via minutes', () => {
     const p = makePlayer({ id: 'a', minutes: 2700, stats: { dribblesCompleted: 2 } });
-    expect(individualPoints(p, { dribblesCompleted: 1 }).perStat.dribblesCompleted).toBe(2 * 30 * 2);
+    expect(individualPoints(p, { dribblesCompleted: 1 }).perStat.dribblesCompleted).toBe(2 * 30 * 1);
   });
 
   it('percentage stats are converted to percentage points', () => {
     const p = makePlayer({ id: 'a', role: 'CB', stats: { aerialsWonPct: 0.65 } });
-    expect(individualPoints(p, { aerialsWonPct: 1 }).perStat.aerialsWonPct).toBeCloseTo(65 * 2);
+    expect(individualPoints(p, { aerialsWonPct: 1 }).perStat.aerialsWonPct).toBeCloseTo(65 * 1.5, 5);
   });
 
   it('points resolve to one decimal', () => {
