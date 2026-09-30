@@ -14,6 +14,7 @@ export function encodeState(state: AppState): string {
     s: state.weights.statWeights,
     c: state.weights.competitionMultipliers,
     f: Math.round(state.weights.conductSensitivity * 10) / 10,
+    o: state.weights.oppositionStrengthSensitivity,
   };
   return btoa(unescape(encodeURIComponent(JSON.stringify(compact))))
     .replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
@@ -33,6 +34,7 @@ export function decodeState(hash: string): AppState | null {
         statWeights: mergeStatWeights(defaults.statWeights, parsed.s),
         competitionMultipliers: { ...defaults.competitionMultipliers, ...parsed.c },
         conductSensitivity: typeof parsed.f === 'number' ? parsed.f : 1,
+        oppositionStrengthSensitivity: typeof parsed.o === 'number' ? parsed.o : 0,
       },
     };
   } catch {

@@ -23,7 +23,7 @@ Export once, clean in a notebook, commit the JSON. Per role:
 - **MID:** FBref *Passing* (progressive passes, passes into penalty area, through balls, volume) + chance creation (xA, key passes) + duels + defensive contribution.
 - **ATT:** FBref *Standard Shooting + Goal and Shot Creation* — goals, xG, assists, xA, shots on target, dribbles, touches in box.
 
-Also record `teamGoalShare` (player's share of team goal contributions) for the team-centrality factor, and card/suspension counts for the fair-play baseline.
+Also record `teamGoalShare` (player's share of team goal contributions) for the team-centrality factor, card/suspension counts for the fair-play baseline, and `avgOpponentRating` (0–100) — the player's minutes-weighted average opposition strength from UEFA club coefficients (club matches) and FIFA-SEP-style national rankings (internationals), normalized so ~50 is the edition median. This powers the Advanced opposition-strength mode; omit it or set 50 to neutral.
 
 Women's edition: same tables for WSL / Première Ligue / Women's Champions League and any covered league; fall back to national-team stats where league coverage is thin, and set `dataConfidence: "partial"` with a `dataNotes` explanation.
 

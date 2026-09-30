@@ -9,7 +9,7 @@
       "id": "alexia-putellas",
       "name": "Alexia Putellas",
       "country": "Spain",
-      "flag": "🇪🇸",
+      "flag": "\ud83c\uddea\ud83c\uddf8",
       "club": "Barcelona",
       "league": "Liga F",
       "role": "MID",
@@ -42,13 +42,14 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 58.3
     },
     {
       "id": "khadija-bunny-shaw",
       "name": "Khadija Bunny Shaw",
       "country": "Jamaica",
-      "flag": "🇯🇲",
+      "flag": "\ud83c\uddef\ud83c\uddf2",
       "club": "Manchester City",
       "league": "WSL",
       "role": "ATT",
@@ -71,13 +72,14 @@
       "trophies": [],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 41.9
     },
     {
       "id": "alessia-russo",
       "name": "Alessia Russo",
       "country": "England",
-      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+      "flag": "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f",
       "club": "Arsenal",
       "league": "WSL",
       "role": "ATT",
@@ -105,15 +107,16 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 46.1
     },
     {
       "id": "selma-bacha",
       "name": "Selma Bacha",
       "country": "France",
-      "flag": "🇫🇷",
+      "flag": "\ud83c\uddeb\ud83c\uddf7",
       "club": "Lyon",
-      "league": "Première Ligue",
+      "league": "Premi\u00e8re Ligue",
       "role": "FB",
       "minutes": 2700,
       "stats": {
@@ -141,13 +144,14 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 34.5
     },
     {
       "id": "barbra-banda",
       "name": "Barbra Banda",
       "country": "Zambia",
-      "flag": "🇿🇲",
+      "flag": "\ud83c\uddff\ud83c\uddf2",
       "club": "Orlando Pride",
       "league": "NWSL",
       "role": "ATT",
@@ -170,13 +174,14 @@
       "trophies": [],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 34.4
     },
     {
       "id": "klara-buhl",
       "name": "Klara Buhl",
       "country": "Germany",
-      "flag": "🇩🇪",
+      "flag": "\ud83c\udde9\ud83c\uddea",
       "club": "Bayern Munich",
       "league": "Frauen-Bundesliga",
       "role": "ATT",
@@ -204,13 +209,14 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 37.9
     },
     {
       "id": "esmee-brugts",
       "name": "Esmee Brugts",
       "country": "Netherlands",
-      "flag": "🇳🇱",
+      "flag": "\ud83c\uddf3\ud83c\uddf1",
       "club": "Barcelona",
       "league": "Liga F",
       "role": "MID",
@@ -243,13 +249,14 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 59.3
     },
     {
       "id": "mariona-caldentey",
       "name": "Mariona Caldentey",
       "country": "Spain",
-      "flag": "🇪🇸",
+      "flag": "\ud83c\uddea\ud83c\uddf8",
       "club": "Arsenal",
       "league": "WSL",
       "role": "MID",
@@ -278,13 +285,14 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 43.3
     },
     {
       "id": "kiana-correa-camberos",
       "name": "Kiana Correa Camberos",
       "country": "Mexico",
-      "flag": "🇲🇽",
+      "flag": "\ud83c\uddf2\ud83c\uddfd",
       "club": "Rayadas",
       "league": "Liga MX Femenil",
       "role": "ATT",
@@ -307,13 +315,14 @@
       "trophies": [],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 40.5
     },
     {
       "id": "caitlin-casparij",
       "name": "Caitlin Casparij",
       "country": "Netherlands",
-      "flag": "🇳🇱",
+      "flag": "\ud83c\uddf3\ud83c\uddf1",
       "club": "Manchester City",
       "league": "WSL",
       "role": "FB",
@@ -338,15 +347,16 @@
       "trophies": [],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 47.1
     },
     {
       "id": "tabitha-chawinga",
       "name": "Tabitha Chawinga",
       "country": "Malawi",
-      "flag": "🇲🇼",
+      "flag": "\ud83c\uddf2\ud83c\uddfc",
       "club": "Lyon",
-      "league": "Première Ligue",
+      "league": "Premi\u00e8re Ligue",
       "role": "ATT",
       "minutes": 2400,
       "stats": {
@@ -372,13 +382,14 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 43.9
     },
     {
       "id": "sandra-panos-coll",
-      "name": "Sandra Paños Coll",
+      "name": "Sandra Pa\u00f1os Coll",
       "country": "Spain",
-      "flag": "🇪🇸",
+      "flag": "\ud83c\uddea\ud83c\uddf8",
       "club": "Barcelona",
       "league": "Liga F",
       "role": "GK",
@@ -410,15 +421,16 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 50.2
     },
     {
       "id": "melchie-dumornay",
       "name": "Melchie Dumornay",
       "country": "Haiti",
-      "flag": "🇭🇹",
+      "flag": "\ud83c\udded\ud83c\uddf9",
       "club": "Lyon",
-      "league": "Première Ligue",
+      "league": "Premi\u00e8re Ligue",
       "role": "MID",
       "minutes": 2400,
       "stats": {
@@ -445,13 +457,14 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 52.1
     },
     {
       "id": "caroline-graham-hansen",
       "name": "Caroline Graham Hansen",
       "country": "Norway",
-      "flag": "🇳🇴",
+      "flag": "\ud83c\uddf3\ud83c\uddf4",
       "club": "Barcelona",
       "league": "Liga F",
       "role": "ATT",
@@ -483,13 +496,14 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 59.8
     },
     {
       "id": "alex-greenwood",
       "name": "Alex Greenwood",
       "country": "England",
-      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+      "flag": "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f",
       "club": "Manchester City",
       "league": "WSL",
       "role": "CB",
@@ -513,13 +527,14 @@
       "trophies": [],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 38.9
     },
     {
       "id": "maya-le-tissier-guilbert",
       "name": "Maya Le Tissier Guilbert",
       "country": "England",
-      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+      "flag": "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f",
       "club": "Manchester City",
       "league": "WSL",
       "role": "CB",
@@ -543,13 +558,14 @@
       "trophies": [],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 46.8
     },
     {
       "id": "christian-press",
       "name": "Christian Press",
       "country": "United States",
-      "flag": "🇺🇸",
+      "flag": "\ud83c\uddfa\ud83c\uddf8",
       "club": "Angel City",
       "league": "NWSL",
       "role": "ATT",
@@ -572,13 +588,14 @@
       "trophies": [],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 45.6
     },
     {
       "id": "trinity-rodman",
       "name": "Trinity Rodman",
       "country": "United States",
-      "flag": "🇺🇸",
+      "flag": "\ud83c\uddfa\ud83c\uddf8",
       "club": "Washington Spirit",
       "league": "NWSL",
       "role": "ATT",
@@ -601,13 +618,14 @@
       "trophies": [],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 54.0
     },
     {
       "id": "keira-walsh",
       "name": "Keira Walsh",
       "country": "England",
-      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+      "flag": "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f",
       "club": "Chelsea",
       "league": "WSL",
       "role": "MID",
@@ -640,13 +658,14 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 50.5
     },
     {
       "id": "lauren-james",
       "name": "Lauren James",
       "country": "England",
-      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+      "flag": "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f",
       "club": "Chelsea",
       "league": "WSL",
       "role": "ATT",
@@ -678,13 +697,14 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 39.9
     },
     {
       "id": "beth-mead",
       "name": "Beth Mead",
       "country": "England",
-      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+      "flag": "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f",
       "club": "Arsenal",
       "league": "WSL",
       "role": "ATT",
@@ -712,13 +732,14 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 56.5
     },
     {
       "id": "lucy-bronze",
       "name": "Lucy Bronze",
       "country": "England",
-      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+      "flag": "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f",
       "club": "Chelsea",
       "league": "WSL",
       "role": "FB",
@@ -752,13 +773,14 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 35.8
     },
     {
       "id": "irene-paredes",
       "name": "Irene Paredes",
       "country": "Spain",
-      "flag": "🇪🇸",
+      "flag": "\ud83c\uddea\ud83c\uddf8",
       "club": "Barcelona",
       "league": "Liga F",
       "role": "CB",
@@ -791,13 +813,14 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 53.0
     },
     {
       "id": "patri-guijarro",
       "name": "Patri Guijarro",
       "country": "Spain",
-      "flag": "🇪🇸",
+      "flag": "\ud83c\uddea\ud83c\uddf8",
       "club": "Barcelona",
       "league": "Liga F",
       "role": "MID",
@@ -830,13 +853,14 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 61.2
     },
     {
       "id": "claudia-pina",
-      "name": "Clàudia Pina",
+      "name": "Cl\u00e0udia Pina",
       "country": "Spain",
-      "flag": "🇪🇸",
+      "flag": "\ud83c\uddea\ud83c\uddf8",
       "club": "Barcelona",
       "league": "Liga F",
       "role": "ATT",
@@ -868,13 +892,14 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 46.6
     },
     {
       "id": "salma-paralluelo",
       "name": "Salma Paralluelo",
       "country": "Spain",
-      "flag": "🇪🇸",
+      "flag": "\ud83c\uddea\ud83c\uddf8",
       "club": "Barcelona",
       "league": "Liga F",
       "role": "ATT",
@@ -906,15 +931,16 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 54.7
     },
     {
       "id": "mary-earps",
       "name": "Mary Earps",
       "country": "England",
-      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+      "flag": "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f",
       "club": "Paris FC",
-      "league": "Première Ligue",
+      "league": "Premi\u00e8re Ligue",
       "role": "GK",
       "minutes": 2200,
       "stats": {
@@ -935,13 +961,14 @@
       "trophies": [],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 43.9
     },
     {
       "id": "naomi-girma",
       "name": "Naomi Girma",
       "country": "United States",
-      "flag": "🇺🇸",
+      "flag": "\ud83c\uddfa\ud83c\uddf8",
       "club": "Chelsea",
       "league": "WSL",
       "role": "CB",
@@ -974,15 +1001,16 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 49.0
     },
     {
       "id": "sakina-karchaoui",
       "name": "Sakina Karchaoui",
       "country": "France",
-      "flag": "🇫🇷",
+      "flag": "\ud83c\uddeb\ud83c\uddf7",
       "club": "Lyon",
-      "league": "Première Ligue",
+      "league": "Premi\u00e8re Ligue",
       "role": "FB",
       "minutes": 2600,
       "stats": {
@@ -1010,13 +1038,14 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 51.3
     },
     {
       "id": "lena-oberdorf",
       "name": "Lena Oberdorf",
       "country": "Germany",
-      "flag": "🇩🇪",
+      "flag": "\ud83c\udde9\ud83c\uddea",
       "club": "Bayern Munich",
       "league": "Frauen-Bundesliga",
       "role": "MID",
@@ -1045,7 +1074,8 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 46.8
     }
   ]
 }

@@ -137,6 +137,29 @@ describe('scorePlayers', () => {
   });
 });
 
+describe('opposition strength', () => {
+  const players: Player[] = [
+    makePlayer({ id: 'strong-opp', role: 'ATT', avgOpponentRating: 90, stats: { goals: 30, goalsPer90: 0.9, xG: 25, assists: 8, xA: 0.4, shotsOnTarget: 2, dribblesCompleted: 1.5, touchesInBox: 7 } }),
+    makePlayer({ id: 'weak-opp', role: 'ATT', avgOpponentRating: 20, stats: { goals: 30, goalsPer90: 0.9, xG: 25, assists: 8, xA: 0.4, shotsOnTarget: 2, dribblesCompleted: 1.5, touchesInBox: 7 } }),
+  ];
+
+  it('identical stat lines score equal when sensitivity is 0', () => {
+    const w = defaultWeights();
+    w.oppositionStrengthSensitivity = 0;
+    const s = scorePlayers(players, {}, w);
+    const diff = Math.abs(s[0].score - s[1].score);
+    expect(diff).toBeLessThan(0.001);
+  });
+
+  it('a goal vs strong opponents outweighs the same vs weak opponents', () => {
+    const w = defaultWeights();
+    w.oppositionStrengthSensitivity = 1;
+    const s = scorePlayers(players, {}, w);
+    expect(s[0].player.id).toBe('strong-opp');
+    expect(s[0].score).toBeGreaterThan(s[1].score);
+  });
+});
+
 describe('ballotPoints', () => {
   it('assigns 15, 12, 10 to the podium and 1 beyond tenth', () => {
     expect(ballotPoints(0)).toBe(15);

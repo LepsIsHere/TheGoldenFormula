@@ -35,6 +35,7 @@ export function defaultWeights(): Weights {
     statWeights,
     competitionMultipliers: { ...DEFAULT_COMPETITION_MULTIPLIERS },
     conductSensitivity: 1,
+    oppositionStrengthSensitivity: 0,
   };
 }
 

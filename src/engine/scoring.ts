@@ -15,6 +15,13 @@ export const INDIVIDUAL_SCALE = 1;
 export const TEAM_SCALE = 24;
 export const FAIR_PLAY_SCALE = 5;
 
+function median(values: number[]): number {
+  if (values.length === 0) return 50;
+  const sorted = [...values].sort((a, b) => a - b);
+  const mid = Math.floor(sorted.length / 2);
+  return sorted.length % 2 ? sorted[mid] : (sorted[mid - 1] + sorted[mid]) / 2;
+}
+
 export function percentileWithinGroup(values: number[], index: number): number {
   const v = values[index];
   let below = 0;
@@ -101,6 +108,8 @@ export function scorePlayers(
     for (const p of group) statPercentiles.set(p.id, pct);
   }
 
+  const medianOpp = median(players.map((p) => p.avgOpponentRating ?? 50));
+
   const results: ScoredPlayer[] = players.map((player) => {
     const catalog = ROLE_CATALOGS[player.role];
     const statW = normalizeBlock(weights.statWeights[player.role] ?? {});
@@ -113,6 +122,11 @@ export function scorePlayers(
       individualRaw += p * w;
     }
 
+    const oppRating = player.avgOpponentRating ?? 50;
+    const oppFactor =
+      1 + weights.oppositionStrengthSensitivity * ((oppRating - medianOpp) / 100);
+    const individualScore = Math.max(0, individualRaw * INDIVIDUAL_SCALE * oppFactor);
+
     let teamRaw = 0;
     for (const trophy of player.trophies) {
       teamRaw += competitionMultiplierFor([trophy.tier], weights.competitionMultipliers);
@@ -123,7 +137,6 @@ export function scorePlayers(
     const events = conductEvents[player.id] ?? [];
     const conduct = conductSummary(player, events, weights.conductSensitivity);
 
-    const individualScore = individualRaw * INDIVIDUAL_SCALE;
     const teamScore = teamRaw * TEAM_SCALE;
     const fairPlayScore = 50 + conduct.rawConduct * FAIR_PLAY_SCALE;
 

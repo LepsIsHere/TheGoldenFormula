@@ -29,6 +29,14 @@ export interface Player {
   conductEventIds: string[];
   dataConfidence: 'full' | 'partial';
   dataNotes?: string;
+  /**
+   * Average opposition strength over the reference period, 0-100.
+   * Compiled at data time from UEFA club coefficients and FIFA-SEP-style
+   * national rankings: each opponent match is scored (e.g. UEFA coefficient
+   * percentile for clubs, FIFA ranking-derived strength for national teams),
+   * then averaged per player weighted by minutes. 50 ≈ edition median.
+   */
+  avgOpponentRating?: number;
 }
 
 export interface Dataset {
@@ -62,6 +70,8 @@ export interface Weights {
   statWeights: Record<Role, Record<string, number>>;
   competitionMultipliers: Record<CompetitionTier, number>;
   conductSensitivity: number;
+  /** 0 = off (opposition strength ignored); 1 = full effect. */
+  oppositionStrengthSensitivity: number;
 }
 
 export interface Preset {

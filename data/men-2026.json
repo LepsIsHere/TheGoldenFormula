@@ -9,7 +9,7 @@
       "id": "harry-kane",
       "name": "Harry Kane",
       "country": "England",
-      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+      "flag": "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f",
       "club": "Bayern Munich",
       "league": "Bundesliga",
       "role": "ATT",
@@ -45,13 +45,14 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 40.8
     },
     {
       "id": "kylian-mbappe",
-      "name": "Kylian Mbappé",
+      "name": "Kylian Mbapp\u00e9",
       "country": "France",
-      "flag": "🇫🇷",
+      "flag": "\ud83c\uddeb\ud83c\uddf7",
       "club": "Real Madrid",
       "league": "La Liga",
       "role": "ATT",
@@ -79,13 +80,14 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 46.6
     },
     {
       "id": "lamine-yamal",
       "name": "Lamine Yamal",
       "country": "Spain",
-      "flag": "🇪🇸",
+      "flag": "\ud83c\uddea\ud83c\uddf8",
       "club": "Barcelona",
       "league": "La Liga",
       "role": "ATT",
@@ -117,13 +119,14 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 58.6
     },
     {
       "id": "lionel-messi",
       "name": "Lionel Messi",
       "country": "Argentina",
-      "flag": "🇦🇷",
+      "flag": "\ud83c\udde6\ud83c\uddf7",
       "club": "Inter Miami",
       "league": "MLS",
       "role": "ATT",
@@ -151,13 +154,14 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 34.7
     },
     {
       "id": "erling-haaland",
       "name": "Erling Haaland",
       "country": "Norway",
-      "flag": "🇳🇴",
+      "flag": "\ud83c\uddf3\ud83c\uddf4",
       "club": "Manchester City",
       "league": "Premier League",
       "role": "ATT",
@@ -180,13 +184,14 @@
       "trophies": [],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 45.9
     },
     {
       "id": "jude-bellingham",
       "name": "Jude Bellingham",
       "country": "England",
-      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+      "flag": "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f",
       "club": "Real Madrid",
       "league": "La Liga",
       "role": "MID",
@@ -215,13 +220,14 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 51.8
     },
     {
       "id": "vinicius-junior",
-      "name": "Vinícius Júnior",
+      "name": "Vin\u00edcius J\u00fanior",
       "country": "Brazil",
-      "flag": "🇧🇷",
+      "flag": "\ud83c\udde7\ud83c\uddf7",
       "club": "Real Madrid",
       "league": "La Liga",
       "role": "ATT",
@@ -249,13 +255,14 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 44.4
     },
     {
       "id": "ousmane-dembele",
-      "name": "Ousmane Dembélé",
+      "name": "Ousmane Demb\u00e9l\u00e9",
       "country": "France",
-      "flag": "🇫🇷",
+      "flag": "\ud83c\uddeb\ud83c\uddf7",
       "club": "Paris Saint-Germain",
       "league": "Ligue 1",
       "role": "ATT",
@@ -287,13 +294,14 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 55.2
     },
     {
       "id": "achraf-hakimi",
       "name": "Achraf Hakimi",
       "country": "Morocco",
-      "flag": "🇲🇦",
+      "flag": "\ud83c\uddf2\ud83c\udde6",
       "club": "Paris Saint-Germain",
       "league": "Ligue 1",
       "role": "FB",
@@ -327,13 +335,14 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 43.9
     },
     {
       "id": "khvicha-kvaratskhelia",
       "name": "Khvicha Kvaratskhelia",
       "country": "Georgia",
-      "flag": "🇬🇪",
+      "flag": "\ud83c\uddec\ud83c\uddea",
       "club": "Paris Saint-Germain",
       "league": "Ligue 1",
       "role": "ATT",
@@ -365,13 +374,14 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 53.4
     },
     {
       "id": "marquinhos",
       "name": "Marquinhos",
       "country": "Brazil",
-      "flag": "🇧🇷",
+      "flag": "\ud83c\udde7\ud83c\uddf7",
       "club": "Paris Saint-Germain",
       "league": "Ligue 1",
       "role": "CB",
@@ -404,13 +414,14 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 44.7
     },
     {
       "id": "nuno-mendes",
       "name": "Nuno Mendes",
       "country": "Portugal",
-      "flag": "🇵🇹",
+      "flag": "\ud83c\uddf5\ud83c\uddf9",
       "club": "Paris Saint-Germain",
       "league": "Ligue 1",
       "role": "FB",
@@ -444,13 +455,14 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 45.2
     },
     {
       "id": "joao-neves",
-      "name": "João Neves",
+      "name": "Jo\u00e3o Neves",
       "country": "Portugal",
-      "flag": "🇵🇹",
+      "flag": "\ud83c\uddf5\ud83c\uddf9",
       "club": "Paris Saint-Germain",
       "league": "Ligue 1",
       "role": "MID",
@@ -483,13 +495,14 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 53.2
     },
     {
       "id": "willian-pacho",
       "name": "Willian Pacho",
       "country": "Ecuador",
-      "flag": "🇪🇨",
+      "flag": "\ud83c\uddea\ud83c\udde8",
       "club": "Paris Saint-Germain",
       "league": "Ligue 1",
       "role": "CB",
@@ -522,13 +535,14 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 62.8
     },
     {
       "id": "ferran-torres",
       "name": "Ferran Torres",
       "country": "Spain",
-      "flag": "🇪🇸",
+      "flag": "\ud83c\uddea\ud83c\uddf8",
       "club": "Barcelona",
       "league": "La Liga",
       "role": "ATT",
@@ -560,13 +574,14 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 46.0
     },
     {
       "id": "fabian-ruiz",
-      "name": "Fabián Ruiz",
+      "name": "Fabi\u00e1n Ruiz",
       "country": "Spain",
-      "flag": "🇪🇸",
+      "flag": "\ud83c\uddea\ud83c\uddf8",
       "club": "Paris Saint-Germain",
       "league": "Ligue 1",
       "role": "MID",
@@ -599,13 +614,14 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 48.4
     },
     {
       "id": "vitinha",
       "name": "Vitinha",
       "country": "Portugal",
-      "flag": "🇵🇹",
+      "flag": "\ud83c\uddf5\ud83c\uddf9",
       "club": "Paris Saint-Germain",
       "league": "Ligue 1",
       "role": "MID",
@@ -638,13 +654,14 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 58.1
     },
     {
       "id": "mohamed-salah",
       "name": "Mohamed Salah",
       "country": "Egypt",
-      "flag": "🇪🇬",
+      "flag": "\ud83c\uddea\ud83c\uddec",
       "club": "Liverpool",
       "league": "Premier League",
       "role": "ATT",
@@ -672,13 +689,14 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 55.7
     },
     {
       "id": "raphinha",
       "name": "Raphinha",
       "country": "Brazil",
-      "flag": "🇧🇷",
+      "flag": "\ud83c\udde7\ud83c\uddf7",
       "club": "Barcelona",
       "league": "La Liga",
       "role": "ATT",
@@ -710,13 +728,14 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 56.9
     },
     {
       "id": "pedri",
       "name": "Pedri",
       "country": "Spain",
-      "flag": "🇪🇸",
+      "flag": "\ud83c\uddea\ud83c\uddf8",
       "club": "Barcelona",
       "league": "La Liga",
       "role": "MID",
@@ -749,13 +768,14 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 52.5
     },
     {
       "id": "rodri",
       "name": "Rodri",
       "country": "Spain",
-      "flag": "🇪🇸",
+      "flag": "\ud83c\uddea\ud83c\uddf8",
       "club": "Manchester City",
       "league": "Premier League",
       "role": "MID",
@@ -779,13 +799,14 @@
       "trophies": [],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 56.4
     },
     {
       "id": "thibaut-courtois",
       "name": "Thibaut Courtois",
       "country": "Belgium",
-      "flag": "🇧🇪",
+      "flag": "\ud83c\udde7\ud83c\uddea",
       "club": "Real Madrid",
       "league": "La Liga",
       "role": "GK",
@@ -813,13 +834,14 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 44.1
     },
     {
       "id": "gianluigi-donnarumma",
       "name": "Gianluigi Donnarumma",
       "country": "Italy",
-      "flag": "🇮🇹",
+      "flag": "\ud83c\uddee\ud83c\uddf9",
       "club": "Manchester City",
       "league": "Premier League",
       "role": "GK",
@@ -842,15 +864,16 @@
       "trophies": [],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 53.6
     },
     {
       "id": "vozinha",
       "name": "Vozinha",
       "country": "Cape Verde",
-      "flag": "🇨🇻",
-      "club": "Avaí",
-      "league": "Brasileirão",
+      "flag": "\ud83c\udde8\ud83c\uddfb",
+      "club": "Ava\u00ed",
+      "league": "Brasileir\u00e3o",
       "role": "GK",
       "minutes": 2800,
       "stats": {
@@ -876,13 +899,14 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 40.0
     },
     {
       "id": "alessandro-bastoni",
       "name": "Alessandro Bastoni",
       "country": "Italy",
-      "flag": "🇮🇹",
+      "flag": "\ud83c\uddee\ud83c\uddf9",
       "club": "Inter Milan",
       "league": "Serie A",
       "role": "CB",
@@ -906,13 +930,14 @@
       "trophies": [],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 36.5
     },
     {
       "id": "declan-rice",
       "name": "Declan Rice",
       "country": "England",
-      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+      "flag": "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f",
       "club": "Arsenal",
       "league": "Premier League",
       "role": "MID",
@@ -936,13 +961,14 @@
       "trophies": [],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 35.8
     },
     {
       "id": "bruno-fernandes",
       "name": "Bruno Fernandes",
       "country": "Portugal",
-      "flag": "🇵🇹",
+      "flag": "\ud83c\uddf5\ud83c\uddf9",
       "club": "Manchester United",
       "league": "Premier League",
       "role": "MID",
@@ -966,13 +992,14 @@
       "trophies": [],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 40.4
     },
     {
       "id": "lautaro-martinez",
-      "name": "Lautaro Martínez",
+      "name": "Lautaro Mart\u00ednez",
       "country": "Argentina",
-      "flag": "🇦🇷",
+      "flag": "\ud83c\udde6\ud83c\uddf7",
       "club": "Inter Milan",
       "league": "Serie A",
       "role": "ATT",
@@ -995,13 +1022,14 @@
       "trophies": [],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 52.6
     },
     {
       "id": "ruben-dias",
-      "name": "Rúben Dias",
+      "name": "R\u00faben Dias",
       "country": "Portugal",
-      "flag": "🇵🇹",
+      "flag": "\ud83c\uddf5\ud83c\uddf9",
       "club": "Manchester City",
       "league": "Premier League",
       "role": "CB",
@@ -1025,13 +1053,14 @@
       "trophies": [],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 37.3
     },
     {
       "id": "michael-olise",
       "name": "Michael Olise",
       "country": "France",
-      "flag": "🇫🇷",
+      "flag": "\ud83c\uddeb\ud83c\uddf7",
       "club": "Bayern Munich",
       "league": "Bundesliga",
       "role": "ATT",
@@ -1067,7 +1096,8 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass."
+      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
+      "avgOpponentRating": 47.0
     }
   ]
 }

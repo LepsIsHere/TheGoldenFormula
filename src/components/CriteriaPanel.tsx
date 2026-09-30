@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import type { CompetitionTier, Role, Weights } from '../types';
 import { ROLE_CATALOGS, ROLE_ORDER } from '../engine/roleCatalogs';
 import { DEFAULT_COMPETITION_MULTIPLIERS } from '../engine/presets';
@@ -39,6 +40,7 @@ export default function CriteriaPanel({
   onPreset,
   onReset,
 }: Props) {
+  const [showAdvanced, setShowAdvanced] = useState(false);
   const setBlock = (key: keyof Weights['blockWeights'], v: number) =>
     onWeightsChange({ ...weights, blockWeights: { ...weights.blockWeights, [key]: v } });
 
@@ -114,6 +116,31 @@ export default function CriteriaPanel({
           <span className="block-number">2</span> Collective performances & titles
         </h2>
         <p className="block-hint">Titles won — weighted by competition context.</p>
+        <div className="advanced-toggle">
+          <button
+            className={showAdvanced ? 'on' : ''}
+            onClick={() => setShowAdvanced(!showAdvanced)}
+          >
+            {showAdvanced ? '▼' : '▶'} ADV MODE: opposition strength
+          </button>
+        </div>
+        {showAdvanced && (
+          <div className="advanced-panel">
+            <p className="advanced-hint">
+              Scales individual points by the average strength of opponents faced
+              (UEFA club coefficients / FIFA national rankings, 0-100 per player).
+              A goal vs PSG counts more than a goal vs Leipzig. 0 = off.
+            </p>
+            <Slider
+              label="Opposition strength"
+              value={weights.oppositionStrengthSensitivity}
+              min={0}
+              max={2}
+              step={0.1}
+              onChange={(v) => onWeightsChange({ ...weights, oppositionStrengthSensitivity: v })}
+            />
+          </div>
+        )}
         <Slider label="Block weight" value={weights.blockWeights.team} min={0} max={10} onChange={(v) => setBlock('team', v)} />
         <div className="stat-sliders">
           {(Object.keys(DEFAULT_COMPETITION_MULTIPLIERS) as CompetitionTier[]).map((tier) => (

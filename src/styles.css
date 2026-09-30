@@ -11,13 +11,13 @@
   --accent: #4f7cff;
   --red: #e05555;
   --green: #4fc77f;
-  --sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --sans: "SF Mono", "Cascadia Code", "JetBrains Mono", Consolas, "Liberation Mono", monospace;
   --mono: "SF Mono", "Cascadia Code", "JetBrains Mono", Consolas, "Liberation Mono", monospace;
 }
 
 * { box-sizing: border-box; border-radius: 0; }
 
-body { margin: 0; background: var(--bg); color: var(--text); font-family: var(--sans); }
+body { margin: 0; background: var(--bg); color: var(--text); font-family: var(--mono); }
 
 .app { max-width: 1440px; margin: 0 auto; padding: 0 1.5rem 2rem; }
 
@@ -233,3 +233,8 @@ button.reset:hover { background: var(--red); color: #14120a; }
 
 /* ---------- footer ---------- */
 .footer { margin-top: 1.2rem; color: var(--muted); font-size: 0.72rem; border-top: 1px solid var(--line); padding-top: 0.7rem; }
+
+/* advanced mode */
+.advanced-toggle button.on { border-color: var(--gold); color: var(--gold); }
+.advanced-panel { border: 1px dashed var(--gold-dim); padding: 0.6rem 0.7rem; margin: 0.6rem 0; }
+.advanced-hint { margin: 0 0 0.5rem; color: var(--muted); font-size: 0.7rem; line-height: 1.5; }
