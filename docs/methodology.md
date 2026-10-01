@@ -14,7 +14,19 @@ Reference period for 2026: **August 3, 2025 – July 19, 2026**, including inter
 
 1. **Role assignment.** Each player carries a role tag: GK / CB / FB / MID / ATT. Roles are per-player tags because modern roles blur (e.g. an attacking full-back). Each role has its own stat catalog with **direct points per stat event** — the reference values users see and adjust.
 2. **Individual block — direct points.** Each stat event earns its base points: a goal = 25 pts, an assist = 12.5 pts, a goal saved above expectation (PSxG−GA) = 15 pts, a penalty save = 20 pts, a clean sheet = 15 pts, a through ball = 10 pts, etc. Per-90 rates are converted to season totals via minutes; percentages are converted to percentage points. Your sliders are multipliers on the base points (0–3×, one-decimal resolution). Points are additive and uncapped — a 40-goal season earns 1000 pts on goals alone at ×1.
-3. **Team block.** Each trophy earns tier base points (World Cup 300, UCL/WCCL 200, international 150, top league 120, other league 60, domestic cup 50, other 30), scaled by your competition multipliers and a team-centrality factor (`teamGoalShare` — how central the player was to the trophy).
+3. **Team block — direct points per title.** Each trophy earns tier base points, and the prices are legible in the UI with 0–3× multiplier sliders, same as individual stats:
+
+   | Tier | Base pts | Priced as… |
+   |---|---|---|
+   | World Cup | **300** | the pinnacle — 2 goals per game for a whole tournament, or ~13 assists. Nothing else in football comes close. |
+   | Champions League / Women's CL | **200** | 8 goals — the hardest club trophy, a season-defining campaign. |
+   | International trophy (Euros/Nations League/continental) | **150** | 6 goals — a major international honour. |
+   | Top-5 league title | **120** | ~5 goals — a full dominant league season. |
+   | Other league title | **60** | 2.4 goals — a real trophy in a lesser-weighted league. |
+   | Domestic cup | **50** | 2 goals — real silverware, fewer decisive minutes. |
+   | Other (Supercups, play-offs) | **30** | 1.2 goals — marginal silverware. |
+
+   Your multipliers scale these (e.g. crank the World Cup to ×3 = 900 pts if you think a World Cup defines an era). Every title is then scaled by a **centrality factor** — `0.7 + 0.6 × min(1.5, teamGoalShare/0.25)` — from ×0.7 for a fringe squad member to ×1.6 for the talisman: being *central* to the trophy is worth more than merely being on the bus.
 4. **Fair play block.** Direct points: yellow −2.5, second yellow −10, red −15, suspension served −7.5, plus conduct events at ±5 pts per severity unit (−3…+3), scaled by your severity-sensitivity slider (0 disables the event log; cards always count).
 5. **Opposition strength (advanced).** Optionally scales individual points by the player's `avgOpponentRating` (UEFA club coefficients / FIFA national rankings, minutes-weighted, edition-median-centered). A goal vs PSG counts more than a goal vs Leipzig. 0 = off.
 6. **Final score.** `w_ind·IND + w_team·TEAM + w_ffp·FFP` — uncapped, additive, one-decimal resolution. If all block weights are zero, the ranking falls back to individual order. Ballot-points mode maps ranks to the real 15-12-10-7-5-4-3-2-1-1 system.

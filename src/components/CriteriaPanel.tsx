@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import type { CompetitionTier, Role, Weights } from '../types';
-import { formatPoints } from '../engine/scoring';
+import { formatPoints, TROPHY_BASE_POINTS } from '../engine/scoring';
 import { ROLE_CATALOGS, ROLE_ORDER } from '../engine/roleCatalogs';
 import { DEFAULT_COMPETITION_MULTIPLIERS } from '../engine/presets';
 
@@ -153,21 +153,37 @@ export default function CriteriaPanel({
         )}
         <Slider label="Block weight" value={weights.blockWeights.team} min={0} max={10} onChange={(v) => setBlock('team', v)} />
         <div className="stat-sliders">
-          {(Object.keys(DEFAULT_COMPETITION_MULTIPLIERS) as CompetitionTier[]).map((tier) => (
-            <div key={tier} className="stat-slider">
-              <label>{COMP_LABELS[tier]}</label>
-              <Slider
-                label=""
-                value={weights.competitionMultipliers[tier]}
-                min={0}
-                max={2}
-                step={0.1}
-                hideLabel
-                onChange={(v) => setTier(tier, v)}
-              />
-            </div>
-          ))}
+          {(Object.keys(DEFAULT_COMPETITION_MULTIPLIERS) as CompetitionTier[]).map((tier) => {
+            const base = TROPHY_BASE_POINTS[tier];
+            const mult = weights.competitionMultipliers[tier] ?? 1;
+            return (
+              <div key={tier} className="stat-slider">
+                <label>
+                  {COMP_LABELS[tier]}
+                  <span className="base-pts">{base} pts/title</span>
+                </label>
+                <div className="stat-slider-row">
+                  <input
+                    type="range"
+                    min={0}
+                    max={3}
+                    step={0.1}
+                    value={mult}
+                    aria-label={COMP_LABELS[tier]}
+                    onChange={(e) => setTier(tier, Number(e.target.value))}
+                  />
+                  <span className="mult-value">×{mult.toFixed(1)}</span>
+                  <span className="eff-pts">= {formatPoints(base * mult)} pts</span>
+                </div>
+              </div>
+            );
+          })}
         </div>
+        <p className="block-hint">
+          Team points are also scaled by centrality — how big the player's share of the
+          team's goal contributions was (teamGoalShare), from ×0.7 for a fringe role to
+          ×1.6 for the talisman.
+        </p>
       </section>
 
       <section className="criteria-block">
