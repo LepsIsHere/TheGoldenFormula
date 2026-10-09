@@ -13,7 +13,7 @@
       "club": "Real Madrid",
       "league": "La Liga",
       "role": "MID",
-      "minutes": 3500,
+      "minutes": 2880,
       "stats": {
         "progressivePasses": 14.151,
         "passesIntoPA": 8.227,
@@ -23,7 +23,7 @@
         "passesAttempted": 106.751,
         "duelsWonPct": 1.003,
         "tacklesPlusIntPer90": 3.316,
-        "goals": 19.051,
+        "goals": 8,
         "yellowCards": 4,
         "redCards": 1,
         "secondYellows": 0,
@@ -33,7 +33,7 @@
       "trophies": [],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (40) and goals (8) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
     },
     {
       "id": "pau-cubarsi",
@@ -43,7 +43,7 @@
       "club": "Barcelona",
       "league": "La Liga",
       "role": "CB",
-      "minutes": 3200,
+      "minutes": 3456,
       "stats": {
         "tacklesPer90": 2.94,
         "interceptionsPer90": 2.002,
@@ -53,7 +53,7 @@
         "progressivePasses": 11.401,
         "passCompletion": 1.576,
         "passesFinalThird": 5.034,
-        "goals": 7.63,
+        "goals": 1,
         "yellowCards": 7,
         "redCards": 0,
         "secondYellows": 0,
@@ -72,7 +72,7 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (48) and goals (1) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
     },
     {
       "id": "marc-cucurella",
@@ -82,7 +82,7 @@
       "club": "Real Madrid",
       "league": "La Liga",
       "role": "FB",
-      "minutes": 3300,
+      "minutes": 3600,
       "stats": {
         "tacklesPer90": 5.326,
         "interceptionsPer90": 3.629,
@@ -93,7 +93,7 @@
         "xA": 0.777,
         "keyPasses": 3.069,
         "passCompletion": 1.61,
-        "goals": 5.682,
+        "goals": 1,
         "yellowCards": 11,
         "redCards": 0,
         "secondYellows": 0,
@@ -108,7 +108,7 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (50) and goals (1) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
     },
     {
       "id": "ousmane-dembele",
@@ -118,10 +118,10 @@
       "club": "Paris Saint-Germain",
       "league": "Ligue 1",
       "role": "ATT",
-      "minutes": 3300,
+      "minutes": 2880,
       "stats": {
-        "goalsPer90": 2.377,
-        "goals": 87,
+        "goalsPer90": 0.625,
+        "goals": 20,
         "xG": 41,
         "assists": 11,
         "xA": 0.883,
@@ -146,7 +146,7 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (40) and goals (20) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
     },
     {
       "id": "luis-diaz",
@@ -156,10 +156,10 @@
       "club": "Bayern Munich",
       "league": "Bundesliga",
       "role": "ATT",
-      "minutes": 3000,
+      "minutes": 3672,
       "stats": {
-        "goalsPer90": 0.45,
-        "goals": 15,
+        "goalsPer90": 0.78,
+        "goals": 26,
         "xG": 34,
         "assists": 24,
         "xA": 0.29,
@@ -184,7 +184,7 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Goals (15) verified from published season tallies — 15 Bundesliga goals. Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (51) and goals (26) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
     },
     {
       "id": "bruno-fernandes",
@@ -194,7 +194,7 @@
       "club": "Manchester United",
       "league": "Premier League",
       "role": "MID",
-      "minutes": 3600,
+      "minutes": 2664,
       "stats": {
         "progressivePasses": 8.006,
         "passesIntoPA": 4.96,
@@ -204,7 +204,7 @@
         "passesAttempted": 56.7,
         "duelsWonPct": 0.547,
         "tacklesPlusIntPer90": 2.369,
-        "goals": 7.602,
+        "goals": 9,
         "yellowCards": 6,
         "redCards": 0,
         "secondYellows": 0,
@@ -214,7 +214,7 @@
       "trophies": [],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (37) and goals (9) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
     },
     {
       "id": "gabriel-magalhaes",
@@ -224,7 +224,7 @@
       "club": "Arsenal",
       "league": "Premier League",
       "role": "CB",
-      "minutes": 3200,
+      "minutes": 3672,
       "stats": {
         "tacklesPer90": 3.418,
         "interceptionsPer90": 2.808,
@@ -234,7 +234,7 @@
         "progressivePasses": 7.419,
         "passCompletion": 1.362,
         "passesFinalThird": 5.429,
-        "goals": 5.309,
+        "goals": 4,
         "yellowCards": 7,
         "redCards": 1,
         "secondYellows": 0,
@@ -249,7 +249,7 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (51) and goals (4) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
     },
     {
       "id": "erling-haaland",
@@ -259,10 +259,10 @@
       "club": "Manchester City",
       "league": "Premier League",
       "role": "ATT",
-      "minutes": 3000,
+      "minutes": 3744,
       "stats": {
-        "goalsPer90": 0.81,
-        "goals": 27,
+        "goalsPer90": 0.913,
+        "goals": 38,
         "xG": 55,
         "assists": 14,
         "xA": 1.207,
@@ -283,7 +283,7 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Goals (27) verified from published season tallies — 27 Premier League goals (Golden Boot). Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (52) and goals (38) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
     },
     {
       "id": "achraf-hakimi",
@@ -293,7 +293,7 @@
       "club": "Paris Saint-Germain",
       "league": "Ligue 1",
       "role": "FB",
-      "minutes": 3300,
+      "minutes": 2304,
       "stats": {
         "tacklesPer90": 4.382,
         "interceptionsPer90": 3.218,
@@ -304,7 +304,7 @@
         "xA": 0.669,
         "keyPasses": 4.519,
         "passCompletion": 1.55,
-        "goals": 4.936,
+        "goals": 3,
         "yellowCards": 4,
         "redCards": 0,
         "secondYellows": 0,
@@ -323,7 +323,7 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (32) and goals (3) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
     },
     {
       "id": "harry-kane",
@@ -333,10 +333,10 @@
       "club": "Bayern Munich",
       "league": "Bundesliga",
       "role": "ATT",
-      "minutes": 3400,
+      "minutes": 3672,
       "stats": {
-        "goalsPer90": 0.953,
-        "goals": 36,
+        "goalsPer90": 1.495,
+        "goals": 61,
         "xG": 38,
         "assists": 11,
         "xA": 0.698,
@@ -361,7 +361,7 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Goals (36) verified from published season tallies — 36 Bundesliga goals (plus 10 in the DFB-Pokal). Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (51) and goals (61) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
     },
     {
       "id": "khvicha-kvaratskhelia",
@@ -371,10 +371,10 @@
       "club": "Paris Saint-Germain",
       "league": "Ligue 1",
       "role": "ATT",
-      "minutes": 2900,
+      "minutes": 3456,
       "stats": {
-        "goalsPer90": 1.47,
-        "goals": 47,
+        "goalsPer90": 0.495,
+        "goals": 19,
         "xG": 73,
         "assists": 22,
         "xA": 0.86,
@@ -399,7 +399,7 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (48) and goals (19) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
     },
     {
       "id": "sadio-mane",
@@ -409,10 +409,10 @@
       "club": "Al Nassr",
       "league": "Saudi Pro League",
       "role": "ATT",
-      "minutes": 2900,
+      "minutes": 2592,
       "stats": {
-        "goalsPer90": 1.34,
-        "goals": 43,
+        "goalsPer90": 0.486,
+        "goals": 14,
         "xG": 39,
         "assists": 6,
         "xA": 0.435,
@@ -428,7 +428,7 @@
       "trophies": [],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (36) and goals (14) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
     },
     {
       "id": "marquinhos",
@@ -438,7 +438,7 @@
       "club": "Paris Saint-Germain",
       "league": "Ligue 1",
       "role": "CB",
-      "minutes": 3000,
+      "minutes": 2304,
       "stats": {
         "tacklesPer90": 1.97,
         "interceptionsPer90": 1.762,
@@ -448,7 +448,7 @@
         "progressivePasses": 8.906,
         "passCompletion": 0.917,
         "passesFinalThird": 3.544,
-        "goals": 3.526,
+        "goals": 2,
         "yellowCards": 5,
         "redCards": 0,
         "secondYellows": 0,
@@ -467,7 +467,7 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (32) and goals (2) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
     },
     {
       "id": "lautaro-martinez",
@@ -477,10 +477,10 @@
       "club": "Inter Milan",
       "league": "Serie A",
       "role": "ATT",
-      "minutes": 3100,
+      "minutes": 2952,
       "stats": {
-        "goalsPer90": 0.494,
-        "goals": 17,
+        "goalsPer90": 0.671,
+        "goals": 22,
         "xG": 63,
         "assists": 26,
         "xA": 0.383,
@@ -501,7 +501,7 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Goals (17) verified from published season tallies — 17 Serie A goals (capocannoniere). Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (41) and goals (22) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
     },
     {
       "id": "kylian-mbappe",
@@ -511,10 +511,10 @@
       "club": "Real Madrid",
       "league": "La Liga",
       "role": "ATT",
-      "minutes": 3200,
+      "minutes": 3168,
       "stats": {
-        "goalsPer90": 0.703,
-        "goals": 25,
+        "goalsPer90": 1.193,
+        "goals": 42,
         "xG": 39,
         "assists": 8,
         "xA": 0.366,
@@ -530,7 +530,7 @@
       "trophies": [],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Goals (25) verified from published season tallies — 25 La Liga goals. Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (44) and goals (42) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
     },
     {
       "id": "nuno-mendes",
@@ -540,7 +540,7 @@
       "club": "Paris Saint-Germain",
       "league": "Ligue 1",
       "role": "FB",
-      "minutes": 3200,
+      "minutes": 2952,
       "stats": {
         "tacklesPer90": 3.797,
         "interceptionsPer90": 2.4,
@@ -551,7 +551,7 @@
         "xA": 0.187,
         "keyPasses": 2.179,
         "passCompletion": 1.611,
-        "goals": 11.651,
+        "goals": 6,
         "yellowCards": 7,
         "redCards": 0,
         "secondYellows": 0,
@@ -570,7 +570,7 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (41) and goals (6) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
     },
     {
       "id": "lionel-messi",
@@ -580,10 +580,10 @@
       "club": "Inter Miami",
       "league": "MLS",
       "role": "ATT",
-      "minutes": 3000,
+      "minutes": 2088,
       "stats": {
-        "goalsPer90": 0.24,
-        "goals": 8,
+        "goalsPer90": 1.078,
+        "goals": 25,
         "xG": 59,
         "assists": 24,
         "xA": 0.409,
@@ -604,7 +604,7 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Goals (8) verified from published season tallies — 8 goals at the 2026 World Cup (Silver Boot). Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (29) and goals (25) for season 2026 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md). Calendar-year league (MLS): the season row overlaps the Aug 2025–Jul 2026 reference window only partially."
     },
     {
       "id": "joao-neves",
@@ -614,7 +614,7 @@
       "club": "Paris Saint-Germain",
       "league": "Ligue 1",
       "role": "MID",
-      "minutes": 3300,
+      "minutes": 2736,
       "stats": {
         "progressivePasses": 7.2,
         "passesIntoPA": 7.507,
@@ -624,7 +624,7 @@
         "passesAttempted": 101.196,
         "duelsWonPct": 0.776,
         "tacklesPlusIntPer90": 5.604,
-        "goals": 14.364,
+        "goals": 7,
         "yellowCards": 10,
         "redCards": 0,
         "secondYellows": 1,
@@ -643,7 +643,7 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (38) and goals (7) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
     },
     {
       "id": "michael-olise",
@@ -653,10 +653,10 @@
       "club": "Bayern Munich",
       "league": "Bundesliga",
       "role": "ATT",
-      "minutes": 3100,
+      "minutes": 3744,
       "stats": {
-        "goalsPer90": 0.435,
-        "goals": 15,
+        "goalsPer90": 0.529,
+        "goals": 22,
         "xG": 21,
         "assists": 13,
         "xA": 0.505,
@@ -681,7 +681,7 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Goals (15) verified from published season tallies — 15 Bundesliga goals. Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (52) and goals (22) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
     },
     {
       "id": "willian-pacho",
@@ -691,7 +691,7 @@
       "club": "Paris Saint-Germain",
       "league": "Ligue 1",
       "role": "CB",
-      "minutes": 3300,
+      "minutes": 3168,
       "stats": {
         "tacklesPer90": 3.291,
         "interceptionsPer90": 2.813,
@@ -701,7 +701,7 @@
         "progressivePasses": 8.791,
         "passCompletion": 1.567,
         "passesFinalThird": 7.301,
-        "goals": 6.266,
+        "goals": 2,
         "yellowCards": 10,
         "redCards": 1,
         "secondYellows": 0,
@@ -720,7 +720,7 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (44) and goals (2) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
     },
     {
       "id": "julian-quinones",
@@ -730,10 +730,10 @@
       "club": "Al-Qadsiah",
       "league": "Saudi Pro League",
       "role": "ATT",
-      "minutes": 2600,
+      "minutes": 2520,
       "stats": {
-        "goalsPer90": 1.05,
-        "goals": 30,
+        "goalsPer90": 1.321,
+        "goals": 37,
         "xG": 28,
         "assists": 14,
         "xA": 0.515,
@@ -749,7 +749,7 @@
       "trophies": [],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (35) and goals (37) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
     },
     {
       "id": "declan-rice",
@@ -759,7 +759,7 @@
       "club": "Arsenal",
       "league": "Premier League",
       "role": "MID",
-      "minutes": 3400,
+      "minutes": 3960,
       "stats": {
         "progressivePasses": 16.616,
         "passesIntoPA": 6.236,
@@ -769,7 +769,7 @@
         "passesAttempted": 115.766,
         "duelsWonPct": 0.855,
         "tacklesPlusIntPer90": 4.498,
-        "goals": 7.318,
+        "goals": 5,
         "yellowCards": 10,
         "redCards": 1,
         "secondYellows": 0,
@@ -784,7 +784,7 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (55) and goals (5) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
     },
     {
       "id": "rodri",
@@ -794,7 +794,7 @@
       "club": "Manchester City",
       "league": "Premier League",
       "role": "MID",
-      "minutes": 2600,
+      "minutes": 2376,
       "stats": {
         "progressivePasses": 10.383,
         "passesIntoPA": 8.057,
@@ -804,7 +804,7 @@
         "passesAttempted": 134.575,
         "duelsWonPct": 0.893,
         "tacklesPlusIntPer90": 5.291,
-        "goals": 13.975,
+        "goals": 2,
         "yellowCards": 12,
         "redCards": 0,
         "secondYellows": 0,
@@ -823,7 +823,7 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (33) and goals (2) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
     },
     {
       "id": "fabian-ruiz",
@@ -833,7 +833,7 @@
       "club": "Paris Saint-Germain",
       "league": "Ligue 1",
       "role": "MID",
-      "minutes": 3200,
+      "minutes": 2448,
       "stats": {
         "progressivePasses": 8.412,
         "passesIntoPA": 4.636,
@@ -843,7 +843,7 @@
         "passesAttempted": 48.823,
         "duelsWonPct": 0.635,
         "tacklesPlusIntPer90": 1.5,
-        "goals": 3.381,
+        "goals": 2,
         "yellowCards": 5,
         "redCards": 0,
         "secondYellows": 0,
@@ -866,7 +866,7 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (34) and goals (2) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
     },
     {
       "id": "william-saliba",
@@ -876,7 +876,7 @@
       "club": "Arsenal",
       "league": "Premier League",
       "role": "CB",
-      "minutes": 3300,
+      "minutes": 3600,
       "stats": {
         "tacklesPer90": 1.768,
         "interceptionsPer90": 1.956,
@@ -886,7 +886,7 @@
         "progressivePasses": 6.916,
         "passCompletion": 0.845,
         "passesFinalThird": 5.131,
-        "goals": 3.358,
+        "goals": 1,
         "yellowCards": 6,
         "redCards": 0,
         "secondYellows": 0,
@@ -901,7 +901,7 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (50) and goals (1) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
     },
     {
       "id": "ferran-torres",
@@ -911,10 +911,10 @@
       "club": "Barcelona",
       "league": "La Liga",
       "role": "ATT",
-      "minutes": 2600,
+      "minutes": 3528,
       "stats": {
-        "goalsPer90": 0.554,
-        "goals": 16,
+        "goalsPer90": 0.536,
+        "goals": 21,
         "xG": 14,
         "assists": 12,
         "xA": 0.553,
@@ -939,7 +939,7 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Goals (16) verified from published season tallies — 16 La Liga goals; scored the winning goal in the World Cup final. Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (49) and goals (21) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
     },
     {
       "id": "dayot-upamecano",
@@ -949,7 +949,7 @@
       "club": "Bayern Munich",
       "league": "Bundesliga",
       "role": "CB",
-      "minutes": 3100,
+      "minutes": 3024,
       "stats": {
         "tacklesPer90": 2.448,
         "interceptionsPer90": 1.77,
@@ -959,7 +959,7 @@
         "progressivePasses": 8.505,
         "passCompletion": 0.863,
         "passesFinalThird": 2.754,
-        "goals": 2.279,
+        "goals": 2,
         "yellowCards": 7,
         "redCards": 0,
         "secondYellows": 0,
@@ -978,7 +978,7 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (42) and goals (2) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
     },
     {
       "id": "vinicius-junior",
@@ -988,10 +988,10 @@
       "club": "Real Madrid",
       "league": "La Liga",
       "role": "ATT",
-      "minutes": 2900,
+      "minutes": 3816,
       "stats": {
-        "goalsPer90": 0.497,
-        "goals": 16,
+        "goalsPer90": 0.519,
+        "goals": 22,
         "xG": 33,
         "assists": 12,
         "xA": 0.586,
@@ -1007,7 +1007,7 @@
       "trophies": [],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Goals (16) verified from published season tallies — 16 La Liga goals. Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (53) and goals (22) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
     },
     {
       "id": "vitinha",
@@ -1027,7 +1027,7 @@
         "passesAttempted": 87.644,
         "duelsWonPct": 0.915,
         "tacklesPlusIntPer90": 3.138,
-        "goals": 14.9,
+        "goals": 7,
         "yellowCards": 5,
         "redCards": 0,
         "secondYellows": 0,
@@ -1046,7 +1046,7 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (50) and goals (7) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
     },
     {
       "id": "lamine-yamal",
@@ -1056,10 +1056,10 @@
       "club": "Barcelona",
       "league": "La Liga",
       "role": "ATT",
-      "minutes": 3300,
+      "minutes": 3240,
       "stats": {
-        "goalsPer90": 0.436,
-        "goals": 16,
+        "goalsPer90": 0.667,
+        "goals": 24,
         "xG": 71,
         "assists": 14,
         "xA": 0.928,
@@ -1084,7 +1084,7 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Goals (16) verified from published season tallies — 16 La Liga goals. Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (45) and goals (24) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
     }
   ]
 }

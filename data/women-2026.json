@@ -13,7 +13,7 @@
       "club": "OL Lyonnes",
       "league": "Première Ligue",
       "role": "FB",
-      "minutes": 2400,
+      "minutes": 2016,
       "stats": {
         "tacklesPer90": 2.893,
         "interceptionsPer90": 3.855,
@@ -24,7 +24,7 @@
         "xA": 0.479,
         "keyPasses": 2.135,
         "passCompletion": 1.665,
-        "goals": 9.9,
+        "goals": 1,
         "yellowCards": 5,
         "redCards": 0,
         "secondYellows": 0,
@@ -34,7 +34,7 @@
       "trophies": [],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (28) and goals (1) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
     },
     {
       "id": "barbra-banda",
@@ -44,10 +44,10 @@
       "club": "Orlando Pride",
       "league": "NWSL",
       "role": "ATT",
-      "minutes": 2200,
+      "minutes": 1512,
       "stats": {
-        "goalsPer90": 1.449,
-        "goals": 35,
+        "goalsPer90": 0.952,
+        "goals": 16,
         "xG": 20,
         "assists": 15,
         "xA": 0.452,
@@ -63,7 +63,7 @@
       "trophies": [],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (21) and goals (16) for season 2026 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md). Calendar-year league (NWSL): the season row overlaps the Aug 2025–Jul 2026 reference window only partially."
     },
     {
       "id": "klara-buhl",
@@ -73,10 +73,10 @@
       "club": "Bayern Munich",
       "league": "Frauen-Bundesliga",
       "role": "ATT",
-      "minutes": 2000,
+      "minutes": 2160,
       "stats": {
-        "goalsPer90": 1.028,
-        "goals": 23,
+        "goalsPer90": 0.333,
+        "goals": 8,
         "xG": 17,
         "assists": 5,
         "xA": 0.237,
@@ -97,7 +97,7 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (30) and goals (8) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
     },
     {
       "id": "esmee-brugts",
@@ -117,7 +117,7 @@
         "passesAttempted": 68.96,
         "duelsWonPct": 0.607,
         "tacklesPlusIntPer90": 3.209,
-        "goals": 4.541,
+        "goals": 4,
         "yellowCards": 7,
         "redCards": 0,
         "secondYellows": 0,
@@ -136,7 +136,7 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. Goals verified from published season statistics (4 UWCL goals); the player's Wikipedia stat table predates the 2025-26 club season. Apps/minutes and remaining stat fields are placeholders (docs/data-refresh.md)."
     },
     {
       "id": "mariona-caldentey",
@@ -146,7 +146,7 @@
       "club": "Arsenal",
       "league": "WSL",
       "role": "MID",
-      "minutes": 2200,
+      "minutes": 2880,
       "stats": {
         "progressivePasses": 9.847,
         "passesIntoPA": 4.887,
@@ -156,7 +156,7 @@
         "passesAttempted": 58.837,
         "duelsWonPct": 0.483,
         "tacklesPlusIntPer90": 2.253,
-        "goals": 9.976,
+        "goals": 7,
         "yellowCards": 7,
         "redCards": 0,
         "secondYellows": 0,
@@ -166,7 +166,7 @@
       "trophies": [],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (40) and goals (7) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
     },
     {
       "id": "scarlett-camberos",
@@ -176,10 +176,10 @@
       "club": "Club América",
       "league": "Liga MX Femenil",
       "role": "ATT",
-      "minutes": 2200,
+      "minutes": 432,
       "stats": {
-        "goalsPer90": 1.598,
-        "goals": 39,
+        "goalsPer90": 0.417,
+        "goals": 2,
         "xG": 38,
         "assists": 4,
         "xA": 0.167,
@@ -195,7 +195,7 @@
       "trophies": [],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (6) and goals (2) for season 2025 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md). Calendar-year league (Liga MX Femenil): the season row overlaps the Aug 2025–Jul 2026 reference window only partially."
     },
     {
       "id": "kerstin-casparij",
@@ -205,7 +205,7 @@
       "club": "Manchester City",
       "league": "WSL",
       "role": "FB",
-      "minutes": 2200,
+      "minutes": 2088,
       "stats": {
         "tacklesPer90": 2.649,
         "interceptionsPer90": 1.059,
@@ -216,7 +216,7 @@
         "xA": 0.375,
         "keyPasses": 1.764,
         "passCompletion": 0.85,
-        "goals": 3.141,
+        "goals": 3,
         "yellowCards": 6,
         "redCards": 0,
         "secondYellows": 0,
@@ -231,7 +231,7 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (29) and goals (3) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
     },
     {
       "id": "temwa-chawinga",
@@ -260,7 +260,7 @@
       "trophies": [],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26 (official 2026 Ballon d'Or shortlist). No reachable source carried this player's 2025-26 club stat line at collection time — apps, goals and remaining stat fields are placeholders (docs/data-refresh.md). Calendar-year league (NWSL): the season row overlaps the Aug 2025–Jul 2026 reference window only partially."
     },
     {
       "id": "cata-coll",
@@ -284,7 +284,8 @@
         "redCards": 0,
         "secondYellows": 0,
         "suspensionsServed": 1,
-        "teamGoalShare": 0.123
+        "teamGoalShare": 0.123,
+        "goals": 0
       },
       "trophies": [
         {
@@ -298,7 +299,7 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. Goals verified from published season statistics (goalkeeper; 11 Liga F clean sheets (2nd)); the player's Wikipedia stat table predates the 2025-26 club season. Apps/minutes and remaining stat fields are placeholders (docs/data-refresh.md)."
     },
     {
       "id": "melchie-dumornay",
@@ -308,7 +309,7 @@
       "club": "OL Lyonnes",
       "league": "Première Ligue",
       "role": "MID",
-      "minutes": 2100,
+      "minutes": 2304,
       "stats": {
         "progressivePasses": 7.18,
         "passesIntoPA": 3.126,
@@ -318,7 +319,7 @@
         "passesAttempted": 91.119,
         "duelsWonPct": 0.995,
         "tacklesPlusIntPer90": 2.651,
-        "goals": 8.536,
+        "goals": 15,
         "yellowCards": 12,
         "redCards": 0,
         "secondYellows": 0,
@@ -328,7 +329,7 @@
       "trophies": [],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (32) and goals (15) for season 2025-26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
     },
     {
       "id": "caroline-graham-hansen",
@@ -366,7 +367,7 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Goals (10) verified from published season tallies — 10 Liga F goals; 10 Liga F assists (both league-leading). Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. Goals verified from published season statistics (10 Liga F goals; 10 Liga F assists (league-leading)); the player's Wikipedia stat table predates the 2025-26 club season. Apps/minutes and remaining stat fields are placeholders (docs/data-refresh.md)."
     },
     {
       "id": "alex-greenwood",
@@ -376,7 +377,7 @@
       "club": "Manchester City",
       "league": "WSL",
       "role": "CB",
-      "minutes": 2200,
+      "minutes": 1944,
       "stats": {
         "tacklesPer90": 4.057,
         "interceptionsPer90": 3.359,
@@ -386,7 +387,7 @@
         "progressivePasses": 16.138,
         "passCompletion": 1.592,
         "passesFinalThird": 10.876,
-        "goals": 3.635,
+        "goals": 1,
         "yellowCards": 8,
         "redCards": 0,
         "secondYellows": 0,
@@ -401,7 +402,7 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (27) and goals (1) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
     },
     {
       "id": "patri-guijarro",
@@ -440,7 +441,7 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26 (official 2026 Ballon d'Or shortlist). No reachable source carried this player's 2025-26 club stat line at collection time — apps, goals and remaining stat fields are placeholders (docs/data-refresh.md)."
     },
     {
       "id": "pernille-harder",
@@ -450,10 +451,10 @@
       "club": "Bayern Munich",
       "league": "Frauen-Bundesliga",
       "role": "ATT",
-      "minutes": 2100,
+      "minutes": 2808,
       "stats": {
-        "goalsPer90": 0.686,
-        "goals": 16,
+        "goalsPer90": 0.897,
+        "goals": 28,
         "xG": 69,
         "assists": 15,
         "xA": 0.823,
@@ -474,7 +475,7 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Goals (16) verified from published season tallies — 16 Frauen-Bundesliga goals plus 8 in the Women’s Champions League. Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (39) and goals (28) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
     },
     {
       "id": "yui-hasegawa",
@@ -484,7 +485,7 @@
       "club": "Manchester City",
       "league": "WSL",
       "role": "MID",
-      "minutes": 2100,
+      "minutes": 2088,
       "stats": {
         "progressivePasses": 9.503,
         "passesIntoPA": 2.903,
@@ -494,7 +495,7 @@
         "passesAttempted": 54.209,
         "duelsWonPct": 0.616,
         "tacklesPlusIntPer90": 1.58,
-        "goals": 7.79,
+        "goals": 4,
         "yellowCards": 2,
         "redCards": 0,
         "secondYellows": 0,
@@ -509,7 +510,7 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (29) and goals (4) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
     },
     {
       "id": "rose-lavelle",
@@ -519,7 +520,7 @@
       "club": "Gotham FC",
       "league": "NWSL",
       "role": "MID",
-      "minutes": 1800,
+      "minutes": 1080,
       "stats": {
         "progressivePasses": 10.296,
         "passesIntoPA": 4.187,
@@ -529,7 +530,7 @@
         "passesAttempted": 66.151,
         "duelsWonPct": 0.512,
         "tacklesPlusIntPer90": 1.834,
-        "goals": 12.21,
+        "goals": 4,
         "yellowCards": 4,
         "redCards": 0,
         "secondYellows": 0,
@@ -539,7 +540,7 @@
       "trophies": [],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (15) and goals (4) for season 2025 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md). Calendar-year league (NWSL): the season row overlaps the Aug 2025–Jul 2026 reference window only partially."
     },
     {
       "id": "mapi-leon",
@@ -549,7 +550,7 @@
       "club": "London City Lionesses",
       "league": "WSL",
       "role": "CB",
-      "minutes": 2000,
+      "minutes": 2376,
       "stats": {
         "tacklesPer90": 1.223,
         "interceptionsPer90": 1.241,
@@ -559,7 +560,7 @@
         "progressivePasses": 5.373,
         "passCompletion": 0.853,
         "passesFinalThird": 6.804,
-        "goals": 3.897,
+        "goals": 2,
         "yellowCards": 5,
         "redCards": 0,
         "secondYellows": 0,
@@ -569,7 +570,7 @@
       "trophies": [],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (33) and goals (2) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
     },
     {
       "id": "lorena",
@@ -593,12 +594,13 @@
         "redCards": 0,
         "secondYellows": 0,
         "suspensionsServed": 0,
-        "teamGoalShare": 0.075
+        "teamGoalShare": 0.075,
+        "goals": 0
       },
       "trophies": [],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. Goals verified from published season statistics (goalkeeper); the player's Wikipedia stat table predates the 2025-26 club season. Apps/minutes and remaining stat fields are placeholders (docs/data-refresh.md). Calendar-year league (NWSL): the season row overlaps the Aug 2025–Jul 2026 reference window only partially."
     },
     {
       "id": "melvine-malard",
@@ -608,10 +610,10 @@
       "club": "Manchester United",
       "league": "WSL",
       "role": "ATT",
-      "minutes": 1800,
+      "minutes": 2880,
       "stats": {
-        "goalsPer90": 2.01,
-        "goals": 40,
+        "goalsPer90": 0.313,
+        "goals": 10,
         "xG": 14,
         "assists": 8,
         "xA": 0.477,
@@ -627,7 +629,7 @@
       "trophies": [],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (40) and goals (10) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
     },
     {
       "id": "manaka-matsukubo",
@@ -637,10 +639,10 @@
       "club": "North Carolina Courage",
       "league": "NWSL",
       "role": "ATT",
-      "minutes": 1900,
+      "minutes": 288,
       "stats": {
-        "goalsPer90": 0.94,
-        "goals": 20,
+        "goalsPer90": 0.313,
+        "goals": 1,
         "xG": 16,
         "assists": 7,
         "xA": 0.322,
@@ -656,7 +658,7 @@
       "trophies": [],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (4) and goals (1) for season 2026 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md). Calendar-year league (NWSL): the season row overlaps the Aug 2025–Jul 2026 reference window only partially."
     },
     {
       "id": "vivianne-miedema",
@@ -666,10 +668,10 @@
       "club": "Manchester City",
       "league": "WSL",
       "role": "ATT",
-      "minutes": 1900,
+      "minutes": 1800,
       "stats": {
-        "goalsPer90": 1.609,
-        "goals": 34,
+        "goalsPer90": 0.7,
+        "goals": 14,
         "xG": 13,
         "assists": 15,
         "xA": 0.671,
@@ -690,7 +692,7 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (25) and goals (14) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
     },
     {
       "id": "ewa-pajor",
@@ -700,10 +702,10 @@
       "club": "Barcelona",
       "league": "Liga F",
       "role": "ATT",
-      "minutes": 2200,
+      "minutes": 2880,
       "stats": {
-        "goalsPer90": 0.655,
-        "goals": 16,
+        "goalsPer90": 0.969,
+        "goals": 31,
         "xG": 60,
         "assists": 22,
         "xA": 1.003,
@@ -728,7 +730,7 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Goals (16) verified from published season tallies — 16 Liga F goals plus 11 in the Women’s Champions League (top scorer). Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (40) and goals (31) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
     },
     {
       "id": "claudia-pina",
@@ -738,10 +740,10 @@
       "club": "Barcelona",
       "league": "Liga F",
       "role": "ATT",
-      "minutes": 2100,
+      "minutes": 3240,
       "stats": {
-        "goalsPer90": 0.9,
-        "goals": 21,
+        "goalsPer90": 0.667,
+        "goals": 24,
         "xG": 72,
         "assists": 20,
         "xA": 1.187,
@@ -766,7 +768,7 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Goals (21) verified from published season tallies — 21 Liga F goals. Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (45) and goals (24) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
     },
     {
       "id": "alexia-putellas",
@@ -776,7 +778,7 @@
       "club": "Barcelona",
       "league": "Liga F",
       "role": "MID",
-      "minutes": 2300,
+      "minutes": 3096,
       "stats": {
         "progressivePasses": 8.427,
         "passesIntoPA": 7.84,
@@ -786,7 +788,7 @@
         "passesAttempted": 164.727,
         "duelsWonPct": 0.99,
         "tacklesPlusIntPer90": 6.65,
-        "goals": 7,
+        "goals": 20,
         "yellowCards": 6,
         "redCards": 0,
         "secondYellows": 0,
@@ -805,7 +807,7 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Goals (7) verified from published season tallies — 7 Liga F goals; UWCL Player of the Season. Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (43) and goals (20) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
     },
     {
       "id": "wendie-renard",
@@ -815,7 +817,7 @@
       "club": "OL Lyonnes",
       "league": "Première Ligue",
       "role": "CB",
-      "minutes": 2100,
+      "minutes": 1296,
       "stats": {
         "tacklesPer90": 2.891,
         "interceptionsPer90": 2.031,
@@ -825,7 +827,7 @@
         "progressivePasses": 7.344,
         "passCompletion": 1.317,
         "passesFinalThird": 8.409,
-        "goals": 5.526,
+        "goals": 7,
         "yellowCards": 5,
         "redCards": 1,
         "secondYellows": 0,
@@ -835,7 +837,7 @@
       "trophies": [],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (18) and goals (7) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
     },
     {
       "id": "alessia-russo",
@@ -845,10 +847,10 @@
       "club": "Arsenal",
       "league": "WSL",
       "role": "ATT",
-      "minutes": 2200,
+      "minutes": 2880,
       "stats": {
-        "goalsPer90": 0.532,
-        "goals": 13,
+        "goalsPer90": 0.75,
+        "goals": 24,
         "xG": 65,
         "assists": 28,
         "xA": 0.304,
@@ -864,7 +866,7 @@
       "trophies": [],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Goals (13) verified from published season tallies — 13 WSL goals plus 9 in the Women’s Champions League. Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (40) and goals (24) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
     },
     {
       "id": "khadija-shaw",
@@ -874,10 +876,10 @@
       "club": "Manchester City",
       "league": "WSL",
       "role": "ATT",
-      "minutes": 1800,
+      "minutes": 2304,
       "stats": {
-        "goalsPer90": 1.05,
-        "goals": 21,
+        "goalsPer90": 1.055,
+        "goals": 27,
         "xG": 28,
         "assists": 9,
         "xA": 0.756,
@@ -898,7 +900,7 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Goals (21) verified from published season tallies — 21 WSL goals (Player of the Season). Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (32) and goals (27) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
     },
     {
       "id": "momoko-tanikawa",
@@ -908,7 +910,7 @@
       "club": "Bayern Munich",
       "league": "Frauen-Bundesliga",
       "role": "MID",
-      "minutes": 1800,
+      "minutes": 2664,
       "stats": {
         "progressivePasses": 9.511,
         "passesIntoPA": 1.818,
@@ -918,7 +920,7 @@
         "passesAttempted": 45.702,
         "duelsWonPct": 0.633,
         "tacklesPlusIntPer90": 2.113,
-        "goals": 5.497,
+        "goals": 13,
         "yellowCards": 5,
         "redCards": 0,
         "secondYellows": 0,
@@ -933,7 +935,7 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (37) and goals (13) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
     },
     {
       "id": "caroline-weir",
@@ -943,7 +945,7 @@
       "club": "Real Madrid",
       "league": "Liga F",
       "role": "MID",
-      "minutes": 2200,
+      "minutes": 2952,
       "stats": {
         "progressivePasses": 7.135,
         "passesIntoPA": 3.992,
@@ -953,7 +955,7 @@
         "passesAttempted": 45.092,
         "duelsWonPct": 0.593,
         "tacklesPlusIntPer90": 2.158,
-        "goals": 14,
+        "goals": 20,
         "yellowCards": 5,
         "redCards": 0,
         "secondYellows": 0,
@@ -963,7 +965,7 @@
       "trophies": [],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Goals (14) verified from published season tallies — 14 Liga F goals. Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (41) and goals (20) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
     },
     {
       "id": "tessa-wullaert",
@@ -992,7 +994,7 @@
       "trophies": [],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season. Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md)."
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26 (official 2026 Ballon d'Or shortlist). No reachable source carried this player's 2025-26 club stat line at collection time — apps, goals and remaining stat fields are placeholders (docs/data-refresh.md)."
     }
   ]
 }
