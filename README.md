@@ -34,9 +34,9 @@ The quant core is **role-relative normalization**: each stat is converted to a p
 - Shareable URL hash (edition + weights), text & JSON export
 - Clickable fair-play flags with sourced events
 
-## ⚠️ Data status: DRAFT
+## ⚠️ Data status: PARTIAL REAL
 
-The rosters follow the **reported 2026 shortlists** (30 men, 30 women), but the stat lines shipped in `data/men-2026.json` and `data/women-2026.json` are **generated placeholders** so the engine and UI could be built and tested end-to-end. Before public launch, run the data refresh pass described in [docs/data-refresh.md](docs/data-refresh.md) and replace them with real FBref/Transfermarkt exports for the Aug 3, 2025 – Jul 19, 2026 reference period. The conduct log likewise ships example events only.
+The rosters match the **official 2026 shortlists** (announced 8 Sep 2026), with verified clubs, leagues, roles and 2025–26 trophies. Real all-competition **appearances and goals for the 2025–26 season** are now in the datasets — scraped from each player's Wikipedia career-statistics table (cross-checked against published league statistics), plus published tallies where the Wikipedia table is stale. Minutes are estimated from appearances (~72 min/app). What is still placeholder: per-90 rates, xG/xA, discipline counts and the conduct log — FBref/Understat/FotMob block automated export, so those need a manual CSV pass per [docs/data-refresh.md](docs/data-refresh.md). Every player carries a `dataNotes` line saying exactly which fields are real and which are placeholder.
 
 Being honest about this is deliberate — see [docs/methodology.md](docs/methodology.md) for the full methodology and known limitations.
 

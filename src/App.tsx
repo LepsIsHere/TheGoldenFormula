@@ -102,8 +102,9 @@ export default function App() {
       )}
       <footer className="footer">
         <p>
-          Scores are computed live from your weights. Roster per the reported 2026
-          shortlists; stat lines are draft placeholders pending the FBref data pass —
+          Scores are computed live from your weights. Rosters match the official
+          2026 shortlists with verified clubs and trophies; goals are verified where
+          noted, other stat lines are placeholders pending the FBref data pass —
           see the methodology page. Fair-play events cite sources so you can judge
           credibility yourself.
         </p>

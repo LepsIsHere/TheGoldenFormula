@@ -2,708 +2,63 @@
   "edition": "men",
   "season": "2025-26",
   "referencePeriod": "2025-08-03 to 2026-07-19",
-  "status": "draft",
-  "note": "DRAFT dataset: roster names follow the reported 2026 shortlists; stat lines are generated placeholders for engine development. Run the Week 1 FBref/Transfermarkt data pass and replace stats before public launch. See docs/data-refresh.md.",
+  "status": "partial-real",
+  "note": "Rosters match the official 2026 Ballon d’Or shortlists (announced 8 Sep 2026) with verified clubs and 2025–26 trophies and, where noted per player, verified goal tallies. Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md).",
   "players": [
-    {
-      "id": "harry-kane",
-      "name": "Harry Kane",
-      "country": "England",
-      "flag": "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f",
-      "club": "Bayern Munich",
-      "league": "Bundesliga",
-      "role": "ATT",
-      "minutes": 4200,
-      "stats": {
-        "goals": 36.0,
-        "xG": 34.5,
-        "assists": 10.9,
-        "xA": 0.529,
-        "shotsOnTarget": 2.365,
-        "dribblesCompleted": 2.833,
-        "touchesInBox": 9.256,
-        "yellowCards": 8,
-        "redCards": 0,
-        "secondYellows": 0,
-        "suspensionsServed": 1,
-        "teamGoalShare": 0.373
-      },
-      "trophies": [
-        {
-          "title": "League title",
-          "tier": "top-league"
-        },
-        {
-          "title": "Domestic cup",
-          "tier": "domestic-cup"
-        },
-        {
-          "title": "UEFA Champions League",
-          "tier": "ucl"
-        }
-      ],
-      "conductEventIds": [],
-      "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
-      "avgOpponentRating": 40.8
-    },
-    {
-      "id": "kylian-mbappe",
-      "name": "Kylian Mbapp\u00e9",
-      "country": "France",
-      "flag": "\ud83c\uddeb\ud83c\uddf7",
-      "club": "Real Madrid",
-      "league": "La Liga",
-      "role": "ATT",
-      "minutes": 3800,
-      "stats": {
-        "goals": 37.4,
-        "xG": 34.1,
-        "assists": 13.3,
-        "xA": 0.549,
-        "shotsOnTarget": 2.211,
-        "dribblesCompleted": 2.949,
-        "touchesInBox": 9.999,
-        "yellowCards": 3,
-        "redCards": 0,
-        "secondYellows": 0,
-        "suspensionsServed": 0,
-        "teamGoalShare": 0.322
-      },
-      "trophies": [
-        {
-          "title": "League title",
-          "tier": "top-league"
-        }
-      ],
-      "conductEventIds": [],
-      "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
-      "avgOpponentRating": 46.6
-    },
-    {
-      "id": "lamine-yamal",
-      "name": "Lamine Yamal",
-      "country": "Spain",
-      "flag": "\ud83c\uddea\ud83c\uddf8",
-      "club": "Barcelona",
-      "league": "La Liga",
-      "role": "ATT",
-      "minutes": 3600,
-      "stats": {
-        "goals": 30.9,
-        "xG": 31.4,
-        "assists": 11.8,
-        "xA": 0.553,
-        "shotsOnTarget": 2.093,
-        "dribblesCompleted": 2.542,
-        "touchesInBox": 8.918,
-        "yellowCards": 9,
-        "redCards": 0,
-        "secondYellows": 0,
-        "suspensionsServed": 0,
-        "teamGoalShare": 0.679
-      },
-      "trophies": [
-        {
-          "title": "League title",
-          "tier": "top-league"
-        },
-        {
-          "title": "Domestic cup",
-          "tier": "domestic-cup"
-        }
-      ],
-      "conductEventIds": [],
-      "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
-      "avgOpponentRating": 58.6
-    },
-    {
-      "id": "lionel-messi",
-      "name": "Lionel Messi",
-      "country": "Argentina",
-      "flag": "\ud83c\udde6\ud83c\uddf7",
-      "club": "Inter Miami",
-      "league": "MLS",
-      "role": "ATT",
-      "minutes": 3000,
-      "stats": {
-        "goals": 29.6,
-        "xG": 23.0,
-        "assists": 5.164,
-        "xA": 0.403,
-        "shotsOnTarget": 2.275,
-        "dribblesCompleted": 2.28,
-        "touchesInBox": 7.71,
-        "yellowCards": 7,
-        "redCards": 0,
-        "secondYellows": 0,
-        "suspensionsServed": 1,
-        "teamGoalShare": 0.779
-      },
-      "trophies": [
-        {
-          "title": "League title (other)",
-          "tier": "other-league"
-        }
-      ],
-      "conductEventIds": [],
-      "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
-      "avgOpponentRating": 34.7
-    },
-    {
-      "id": "erling-haaland",
-      "name": "Erling Haaland",
-      "country": "Norway",
-      "flag": "\ud83c\uddf3\ud83c\uddf4",
-      "club": "Manchester City",
-      "league": "Premier League",
-      "role": "ATT",
-      "minutes": 3400,
-      "stats": {
-        "goals": 39.5,
-        "xG": 16.7,
-        "assists": 8.2,
-        "xA": 0.57,
-        "shotsOnTarget": 1.923,
-        "dribblesCompleted": 2.132,
-        "touchesInBox": 5.614,
-        "yellowCards": 2,
-        "redCards": 0,
-        "secondYellows": 0,
-        "suspensionsServed": 1,
-        "teamGoalShare": 0.327
-      },
-      "trophies": [],
-      "conductEventIds": [],
-      "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
-      "avgOpponentRating": 45.9
-    },
     {
       "id": "jude-bellingham",
       "name": "Jude Bellingham",
       "country": "England",
-      "flag": "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f",
+      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
       "club": "Real Madrid",
       "league": "La Liga",
       "role": "MID",
-      "minutes": 3500,
+      "minutes": 2880,
       "stats": {
-        "progressivePasses": 6.123,
-        "passesIntoPA": 1.822,
-        "throughBalls": 0.12,
-        "xA": 0.397,
-        "keyPasses": 2.619,
-        "passesAttempted": 53.1,
-        "duelsWonPct": 0.581,
-        "tacklesPlusIntPer90": 2.458,
-        "goals": 7.857,
-        "yellowCards": 7,
-        "redCards": 1,
-        "secondYellows": 0,
-        "suspensionsServed": 1,
-        "teamGoalShare": 0.219
-      },
-      "trophies": [
-        {
-          "title": "League title",
-          "tier": "top-league"
-        }
-      ],
-      "conductEventIds": [],
-      "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
-      "avgOpponentRating": 51.8
-    },
-    {
-      "id": "vinicius-junior",
-      "name": "Vin\u00edcius J\u00fanior",
-      "country": "Brazil",
-      "flag": "\ud83c\udde7\ud83c\uddf7",
-      "club": "Real Madrid",
-      "league": "La Liga",
-      "role": "ATT",
-      "minutes": 3200,
-      "stats": {
-        "goals": 18.9,
-        "xG": 33.0,
-        "assists": 10.3,
-        "xA": 0.383,
-        "shotsOnTarget": 1.91,
-        "dribblesCompleted": 2.873,
-        "touchesInBox": 9.943,
-        "yellowCards": 9,
-        "redCards": 0,
-        "secondYellows": 0,
-        "suspensionsServed": 1,
-        "teamGoalShare": 0.364
-      },
-      "trophies": [
-        {
-          "title": "League title",
-          "tier": "top-league"
-        }
-      ],
-      "conductEventIds": [],
-      "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
-      "avgOpponentRating": 44.4
-    },
-    {
-      "id": "ousmane-dembele",
-      "name": "Ousmane Demb\u00e9l\u00e9",
-      "country": "France",
-      "flag": "\ud83c\uddeb\ud83c\uddf7",
-      "club": "Paris Saint-Germain",
-      "league": "Ligue 1",
-      "role": "ATT",
-      "minutes": 3300,
-      "stats": {
-        "goals": 36.7,
-        "xG": 28.8,
-        "assists": 12.0,
-        "xA": 0.582,
-        "shotsOnTarget": 2.233,
-        "dribblesCompleted": 2.304,
-        "touchesInBox": 9.275,
-        "yellowCards": 9,
-        "redCards": 0,
-        "secondYellows": 0,
-        "suspensionsServed": 1,
-        "teamGoalShare": 0.65
-      },
-      "trophies": [
-        {
-          "title": "UEFA Champions League",
-          "tier": "ucl"
-        },
-        {
-          "title": "League title",
-          "tier": "top-league"
-        }
-      ],
-      "conductEventIds": [],
-      "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
-      "avgOpponentRating": 55.2
-    },
-    {
-      "id": "achraf-hakimi",
-      "name": "Achraf Hakimi",
-      "country": "Morocco",
-      "flag": "\ud83c\uddf2\ud83c\udde6",
-      "club": "Paris Saint-Germain",
-      "league": "Ligue 1",
-      "role": "FB",
-      "minutes": 3600,
-      "stats": {
-        "tacklesPer90": 2.196,
-        "interceptionsPer90": 1.627,
-        "aerialsWonPct": 0.578,
-        "progressiveCarries": 4.304,
-        "progressivePasses": 5.04,
-        "assists": 6.399,
-        "xA": 0.303,
-        "keyPasses": 1.991,
-        "passCompletion": 0.873,
-        "goals": 5.347,
-        "yellowCards": 10,
-        "redCards": 1,
-        "secondYellows": 0,
-        "suspensionsServed": 1,
-        "teamGoalShare": 0.258
-      },
-      "trophies": [
-        {
-          "title": "UEFA Champions League",
-          "tier": "ucl"
-        },
-        {
-          "title": "League title",
-          "tier": "top-league"
-        }
-      ],
-      "conductEventIds": [],
-      "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
-      "avgOpponentRating": 43.9
-    },
-    {
-      "id": "khvicha-kvaratskhelia",
-      "name": "Khvicha Kvaratskhelia",
-      "country": "Georgia",
-      "flag": "\ud83c\uddec\ud83c\uddea",
-      "club": "Paris Saint-Germain",
-      "league": "Ligue 1",
-      "role": "ATT",
-      "minutes": 3100,
-      "stats": {
-        "goals": 39.2,
-        "xG": 31.6,
-        "assists": 7.167,
-        "xA": 0.567,
-        "shotsOnTarget": 1.428,
-        "dribblesCompleted": 2.441,
-        "touchesInBox": 9.033,
-        "yellowCards": 6,
-        "redCards": 0,
-        "secondYellows": 0,
-        "suspensionsServed": 0,
-        "teamGoalShare": 0.538
-      },
-      "trophies": [
-        {
-          "title": "UEFA Champions League",
-          "tier": "ucl"
-        },
-        {
-          "title": "League title",
-          "tier": "top-league"
-        }
-      ],
-      "conductEventIds": [],
-      "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
-      "avgOpponentRating": 53.4
-    },
-    {
-      "id": "marquinhos",
-      "name": "Marquinhos",
-      "country": "Brazil",
-      "flag": "\ud83c\udde7\ud83c\uddf7",
-      "club": "Paris Saint-Germain",
-      "league": "Ligue 1",
-      "role": "CB",
-      "minutes": 3400,
-      "stats": {
-        "tacklesPer90": 1.867,
-        "interceptionsPer90": 1.398,
-        "blocksPer90": 1.769,
-        "clearancesPer90": 3.741,
-        "aerialsWonPct": 0.698,
-        "progressivePasses": 5.917,
-        "passCompletion": 0.865,
-        "passesFinalThird": 3.433,
-        "goals": 3.994,
-        "yellowCards": 6,
-        "redCards": 1,
-        "secondYellows": 0,
-        "suspensionsServed": 2,
-        "teamGoalShare": 0.148
-      },
-      "trophies": [
-        {
-          "title": "UEFA Champions League",
-          "tier": "ucl"
-        },
-        {
-          "title": "League title",
-          "tier": "top-league"
-        }
-      ],
-      "conductEventIds": [],
-      "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
-      "avgOpponentRating": 44.7
-    },
-    {
-      "id": "nuno-mendes",
-      "name": "Nuno Mendes",
-      "country": "Portugal",
-      "flag": "\ud83c\uddf5\ud83c\uddf9",
-      "club": "Paris Saint-Germain",
-      "league": "Ligue 1",
-      "role": "FB",
-      "minutes": 3300,
-      "stats": {
-        "tacklesPer90": 1.726,
-        "interceptionsPer90": 1.897,
-        "aerialsWonPct": 0.566,
-        "progressiveCarries": 3.123,
-        "progressivePasses": 4.056,
-        "assists": 3.001,
-        "xA": 0.324,
-        "keyPasses": 2.119,
-        "passCompletion": 0.807,
-        "goals": 6.763,
-        "yellowCards": 8,
-        "redCards": 0,
-        "secondYellows": 0,
-        "suspensionsServed": 1,
-        "teamGoalShare": 0.302
-      },
-      "trophies": [
-        {
-          "title": "UEFA Champions League",
-          "tier": "ucl"
-        },
-        {
-          "title": "League title",
-          "tier": "top-league"
-        }
-      ],
-      "conductEventIds": [],
-      "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
-      "avgOpponentRating": 45.2
-    },
-    {
-      "id": "joao-neves",
-      "name": "Jo\u00e3o Neves",
-      "country": "Portugal",
-      "flag": "\ud83c\uddf5\ud83c\uddf9",
-      "club": "Paris Saint-Germain",
-      "league": "Ligue 1",
-      "role": "MID",
-      "minutes": 3800,
-      "stats": {
-        "progressivePasses": 6.239,
-        "passesIntoPA": 3.053,
-        "throughBalls": 0.401,
-        "xA": 0.485,
-        "keyPasses": 2.27,
-        "passesAttempted": 69.1,
-        "duelsWonPct": 0.52,
-        "tacklesPlusIntPer90": 2.239,
-        "goals": 8.665,
-        "yellowCards": 8,
-        "redCards": 1,
-        "secondYellows": 0,
-        "suspensionsServed": 0,
-        "teamGoalShare": 0.311
-      },
-      "trophies": [
-        {
-          "title": "UEFA Champions League",
-          "tier": "ucl"
-        },
-        {
-          "title": "League title",
-          "tier": "top-league"
-        }
-      ],
-      "conductEventIds": [],
-      "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
-      "avgOpponentRating": 53.2
-    },
-    {
-      "id": "willian-pacho",
-      "name": "Willian Pacho",
-      "country": "Ecuador",
-      "flag": "\ud83c\uddea\ud83c\udde8",
-      "club": "Paris Saint-Germain",
-      "league": "Ligue 1",
-      "role": "CB",
-      "minutes": 3500,
-      "stats": {
-        "tacklesPer90": 2.146,
-        "interceptionsPer90": 1.945,
-        "blocksPer90": 1.343,
-        "clearancesPer90": 3.297,
-        "aerialsWonPct": 0.599,
-        "progressivePasses": 4.892,
-        "passCompletion": 0.901,
-        "passesFinalThird": 5.854,
-        "goals": 5.504,
-        "yellowCards": 10,
-        "redCards": 0,
-        "secondYellows": 0,
-        "suspensionsServed": 2,
-        "teamGoalShare": 0.062
-      },
-      "trophies": [
-        {
-          "title": "UEFA Champions League",
-          "tier": "ucl"
-        },
-        {
-          "title": "League title",
-          "tier": "top-league"
-        }
-      ],
-      "conductEventIds": [],
-      "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
-      "avgOpponentRating": 62.8
-    },
-    {
-      "id": "ferran-torres",
-      "name": "Ferran Torres",
-      "country": "Spain",
-      "flag": "\ud83c\uddea\ud83c\uddf8",
-      "club": "Barcelona",
-      "league": "La Liga",
-      "role": "ATT",
-      "minutes": 2800,
-      "stats": {
-        "goals": 27.1,
-        "xG": 12.2,
-        "assists": 10.7,
-        "xA": 0.574,
-        "shotsOnTarget": 2.318,
-        "dribblesCompleted": 2.847,
-        "touchesInBox": 6.877,
+        "progressivePasses": 14.151,
+        "passesIntoPA": 8.227,
+        "throughBalls": 0.33,
+        "xA": 0.429,
+        "keyPasses": 4.741,
+        "passesAttempted": 106.751,
+        "duelsWonPct": 1.003,
+        "tacklesPlusIntPer90": 3.316,
+        "goals": 8,
         "yellowCards": 4,
-        "redCards": 0,
+        "redCards": 1,
         "secondYellows": 0,
-        "suspensionsServed": 1,
-        "teamGoalShare": 0.282
+        "suspensionsServed": 0,
+        "teamGoalShare": 0.229
       },
-      "trophies": [
-        {
-          "title": "League title",
-          "tier": "top-league"
-        },
-        {
-          "title": "Domestic cup",
-          "tier": "domestic-cup"
-        }
-      ],
+      "trophies": [],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
-      "avgOpponentRating": 46.0
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (40) and goals (8) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
     },
     {
-      "id": "fabian-ruiz",
-      "name": "Fabi\u00e1n Ruiz",
+      "id": "pau-cubarsi",
+      "name": "Pau Cubarsí",
       "country": "Spain",
-      "flag": "\ud83c\uddea\ud83c\uddf8",
-      "club": "Paris Saint-Germain",
-      "league": "Ligue 1",
-      "role": "MID",
-      "minutes": 3500,
-      "stats": {
-        "progressivePasses": 7.06,
-        "passesIntoPA": 3.52,
-        "throughBalls": 0.308,
-        "xA": 0.219,
-        "keyPasses": 1.223,
-        "passesAttempted": 53.2,
-        "duelsWonPct": 0.615,
-        "tacklesPlusIntPer90": 1.872,
-        "goals": 6.776,
-        "yellowCards": 5,
-        "redCards": 0,
-        "secondYellows": 0,
-        "suspensionsServed": 0,
-        "teamGoalShare": 0.201
-      },
-      "trophies": [
-        {
-          "title": "UEFA Champions League",
-          "tier": "ucl"
-        },
-        {
-          "title": "League title",
-          "tier": "top-league"
-        }
-      ],
-      "conductEventIds": [],
-      "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
-      "avgOpponentRating": 48.4
-    },
-    {
-      "id": "vitinha",
-      "name": "Vitinha",
-      "country": "Portugal",
-      "flag": "\ud83c\uddf5\ud83c\uddf9",
-      "club": "Paris Saint-Germain",
-      "league": "Ligue 1",
-      "role": "MID",
-      "minutes": 3900,
-      "stats": {
-        "progressivePasses": 6.767,
-        "passesIntoPA": 3.424,
-        "throughBalls": 0.11,
-        "xA": 0.329,
-        "keyPasses": 1.724,
-        "passesAttempted": 59.1,
-        "duelsWonPct": 0.542,
-        "tacklesPlusIntPer90": 1.97,
-        "goals": 11.6,
-        "yellowCards": 12,
-        "redCards": 0,
-        "secondYellows": 0,
-        "suspensionsServed": 1,
-        "teamGoalShare": 0.234
-      },
-      "trophies": [
-        {
-          "title": "UEFA Champions League",
-          "tier": "ucl"
-        },
-        {
-          "title": "League title",
-          "tier": "top-league"
-        }
-      ],
-      "conductEventIds": [],
-      "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
-      "avgOpponentRating": 58.1
-    },
-    {
-      "id": "mohamed-salah",
-      "name": "Mohamed Salah",
-      "country": "Egypt",
-      "flag": "\ud83c\uddea\ud83c\uddec",
-      "club": "Liverpool",
-      "league": "Premier League",
-      "role": "ATT",
-      "minutes": 3600,
-      "stats": {
-        "goals": 39.7,
-        "xG": 31.0,
-        "assists": 11.3,
-        "xA": 0.549,
-        "shotsOnTarget": 2.288,
-        "dribblesCompleted": 2.943,
-        "touchesInBox": 9.181,
-        "yellowCards": 6,
-        "redCards": 0,
-        "secondYellows": 0,
-        "suspensionsServed": 0,
-        "teamGoalShare": 0.417
-      },
-      "trophies": [
-        {
-          "title": "League title",
-          "tier": "top-league"
-        }
-      ],
-      "conductEventIds": [],
-      "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
-      "avgOpponentRating": 55.7
-    },
-    {
-      "id": "raphinha",
-      "name": "Raphinha",
-      "country": "Brazil",
-      "flag": "\ud83c\udde7\ud83c\uddf7",
+      "flag": "🇪🇸",
       "club": "Barcelona",
       "league": "La Liga",
-      "role": "ATT",
-      "minutes": 3500,
+      "role": "CB",
+      "minutes": 3456,
       "stats": {
-        "goals": 37.2,
-        "xG": 21.7,
-        "assists": 11.5,
-        "xA": 0.275,
-        "shotsOnTarget": 2.224,
-        "dribblesCompleted": 2.78,
-        "touchesInBox": 6.081,
+        "tacklesPer90": 2.94,
+        "interceptionsPer90": 2.002,
+        "blocksPer90": 2.638,
+        "clearancesPer90": 3.965,
+        "aerialsWonPct": 0.851,
+        "progressivePasses": 11.401,
+        "passCompletion": 1.576,
+        "passesFinalThird": 5.034,
+        "goals": 1,
         "yellowCards": 7,
         "redCards": 0,
         "secondYellows": 0,
-        "suspensionsServed": 1,
-        "teamGoalShare": 0.715
+        "suspensionsServed": 2,
+        "teamGoalShare": 0.175
       },
       "trophies": [
         {
@@ -711,174 +66,39 @@
           "tier": "top-league"
         },
         {
-          "title": "Domestic cup",
-          "tier": "domestic-cup"
+          "title": "World Cup",
+          "tier": "world-cup"
         }
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
-      "avgOpponentRating": 56.9
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (48) and goals (1) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
     },
     {
-      "id": "pedri",
-      "name": "Pedri",
+      "id": "marc-cucurella",
+      "name": "Marc Cucurella",
       "country": "Spain",
-      "flag": "\ud83c\uddea\ud83c\uddf8",
-      "club": "Barcelona",
+      "flag": "🇪🇸",
+      "club": "Real Madrid",
       "league": "La Liga",
-      "role": "MID",
-      "minutes": 3700,
+      "role": "FB",
+      "minutes": 3600,
       "stats": {
-        "progressivePasses": 7.65,
-        "passesIntoPA": 3.464,
-        "throughBalls": 0.307,
-        "xA": 0.485,
-        "keyPasses": 1.457,
-        "passesAttempted": 75.3,
-        "duelsWonPct": 0.551,
-        "tacklesPlusIntPer90": 2.395,
-        "goals": 7.313,
+        "tacklesPer90": 5.326,
+        "interceptionsPer90": 3.629,
+        "aerialsWonPct": 0.717,
+        "progressiveCarries": 4.807,
+        "progressivePasses": 11.815,
+        "assists": 5.162,
+        "xA": 0.777,
+        "keyPasses": 3.069,
+        "passCompletion": 1.61,
+        "goals": 1,
         "yellowCards": 11,
         "redCards": 0,
         "secondYellows": 0,
-        "suspensionsServed": 2,
-        "teamGoalShare": 0.512
-      },
-      "trophies": [
-        {
-          "title": "League title",
-          "tier": "top-league"
-        },
-        {
-          "title": "Domestic cup",
-          "tier": "domestic-cup"
-        }
-      ],
-      "conductEventIds": [],
-      "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
-      "avgOpponentRating": 52.5
-    },
-    {
-      "id": "rodri",
-      "name": "Rodri",
-      "country": "Spain",
-      "flag": "\ud83c\uddea\ud83c\uddf8",
-      "club": "Manchester City",
-      "league": "Premier League",
-      "role": "MID",
-      "minutes": 2600,
-      "stats": {
-        "progressivePasses": 5.393,
-        "passesIntoPA": 2.262,
-        "throughBalls": 0.238,
-        "xA": 0.242,
-        "keyPasses": 1.996,
-        "passesAttempted": 73.4,
-        "duelsWonPct": 0.554,
-        "tacklesPlusIntPer90": 2.455,
-        "goals": 6.606,
-        "yellowCards": 4,
-        "redCards": 0,
-        "secondYellows": 0,
         "suspensionsServed": 1,
-        "teamGoalShare": 0.224
-      },
-      "trophies": [],
-      "conductEventIds": [],
-      "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
-      "avgOpponentRating": 56.4
-    },
-    {
-      "id": "thibaut-courtois",
-      "name": "Thibaut Courtois",
-      "country": "Belgium",
-      "flag": "\ud83c\udde7\ud83c\uddea",
-      "club": "Real Madrid",
-      "league": "La Liga",
-      "role": "GK",
-      "minutes": 3300,
-      "stats": {
-        "psxgMinusGa": 3.41,
-        "savePct": 0.694,
-        "cleanSheets": 16.0,
-        "penaltySaves": 2.39,
-        "crossesStoppedPct": 8.081,
-        "defActionsOutsideBox": 1.617,
-        "passCompletion": 0.689,
-        "launches": 8.768,
-        "yellowCards": 3,
-        "redCards": 0,
-        "secondYellows": 0,
-        "suspensionsServed": 1,
-        "teamGoalShare": 0.168
-      },
-      "trophies": [
-        {
-          "title": "League title",
-          "tier": "top-league"
-        }
-      ],
-      "conductEventIds": [],
-      "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
-      "avgOpponentRating": 44.1
-    },
-    {
-      "id": "gianluigi-donnarumma",
-      "name": "Gianluigi Donnarumma",
-      "country": "Italy",
-      "flag": "\ud83c\uddee\ud83c\uddf9",
-      "club": "Manchester City",
-      "league": "Premier League",
-      "role": "GK",
-      "minutes": 3400,
-      "stats": {
-        "psxgMinusGa": 5.393,
-        "savePct": 0.757,
-        "cleanSheets": 12.1,
-        "penaltySaves": 2.35,
-        "crossesStoppedPct": 8.247,
-        "defActionsOutsideBox": 1.404,
-        "passCompletion": 0.813,
-        "launches": 5.76,
-        "yellowCards": 3,
-        "redCards": 0,
-        "secondYellows": 0,
-        "suspensionsServed": 0,
-        "teamGoalShare": 0.126
-      },
-      "trophies": [],
-      "conductEventIds": [],
-      "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
-      "avgOpponentRating": 53.6
-    },
-    {
-      "id": "vozinha",
-      "name": "Vozinha",
-      "country": "Cape Verde",
-      "flag": "\ud83c\udde8\ud83c\uddfb",
-      "club": "Ava\u00ed",
-      "league": "Brasileir\u00e3o",
-      "role": "GK",
-      "minutes": 2800,
-      "stats": {
-        "psxgMinusGa": 1.784,
-        "savePct": 0.747,
-        "cleanSheets": 13.7,
-        "penaltySaves": 1.615,
-        "crossesStoppedPct": 4.548,
-        "defActionsOutsideBox": 1.459,
-        "passCompletion": 0.744,
-        "launches": 6.84,
-        "yellowCards": 3,
-        "redCards": 0,
-        "secondYellows": 0,
-        "suspensionsServed": 0,
-        "teamGoalShare": 0.291
+        "teamGoalShare": 0.2
       },
       "trophies": [
         {
@@ -888,184 +108,69 @@
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
-      "avgOpponentRating": 40.0
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (50) and goals (1) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
     },
     {
-      "id": "alessandro-bastoni",
-      "name": "Alessandro Bastoni",
-      "country": "Italy",
-      "flag": "\ud83c\uddee\ud83c\uddf9",
-      "club": "Inter Milan",
-      "league": "Serie A",
-      "role": "CB",
-      "minutes": 3500,
-      "stats": {
-        "tacklesPer90": 1.536,
-        "interceptionsPer90": 1.224,
-        "blocksPer90": 1.141,
-        "clearancesPer90": 3.0,
-        "aerialsWonPct": 0.594,
-        "progressivePasses": 5.055,
-        "passCompletion": 0.927,
-        "passesFinalThird": 3.099,
-        "goals": 4.738,
-        "yellowCards": 5,
-        "redCards": 0,
-        "secondYellows": 0,
-        "suspensionsServed": 1,
-        "teamGoalShare": 0.113
-      },
-      "trophies": [],
-      "conductEventIds": [],
-      "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
-      "avgOpponentRating": 36.5
-    },
-    {
-      "id": "declan-rice",
-      "name": "Declan Rice",
-      "country": "England",
-      "flag": "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f",
-      "club": "Arsenal",
-      "league": "Premier League",
-      "role": "MID",
-      "minutes": 3700,
-      "stats": {
-        "progressivePasses": 8.796,
-        "passesIntoPA": 3.306,
-        "throughBalls": 0.174,
-        "xA": 0.371,
-        "keyPasses": 2.011,
-        "passesAttempted": 58.3,
-        "duelsWonPct": 0.609,
-        "tacklesPlusIntPer90": 2.207,
-        "goals": 6.517,
-        "yellowCards": 8,
-        "redCards": 0,
-        "secondYellows": 0,
-        "suspensionsServed": 0,
-        "teamGoalShare": 0.288
-      },
-      "trophies": [],
-      "conductEventIds": [],
-      "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
-      "avgOpponentRating": 35.8
-    },
-    {
-      "id": "bruno-fernandes",
-      "name": "Bruno Fernandes",
-      "country": "Portugal",
-      "flag": "\ud83c\uddf5\ud83c\uddf9",
-      "club": "Manchester United",
-      "league": "Premier League",
-      "role": "MID",
-      "minutes": 3800,
-      "stats": {
-        "progressivePasses": 6.304,
-        "passesIntoPA": 1.657,
-        "throughBalls": 0.265,
-        "xA": 0.464,
-        "keyPasses": 2.443,
-        "passesAttempted": 62.4,
-        "duelsWonPct": 0.502,
-        "tacklesPlusIntPer90": 1.935,
-        "goals": 4.184,
-        "yellowCards": 4,
-        "redCards": 0,
-        "secondYellows": 0,
-        "suspensionsServed": 1,
-        "teamGoalShare": 0.278
-      },
-      "trophies": [],
-      "conductEventIds": [],
-      "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
-      "avgOpponentRating": 40.4
-    },
-    {
-      "id": "lautaro-martinez",
-      "name": "Lautaro Mart\u00ednez",
-      "country": "Argentina",
-      "flag": "\ud83c\udde6\ud83c\uddf7",
-      "club": "Inter Milan",
-      "league": "Serie A",
-      "role": "ATT",
-      "minutes": 3200,
-      "stats": {
-        "goals": 15.7,
-        "xG": 27.8,
-        "assists": 9.765,
-        "xA": 0.574,
-        "shotsOnTarget": 1.755,
-        "dribblesCompleted": 2.604,
-        "touchesInBox": 8.233,
-        "yellowCards": 4,
-        "redCards": 0,
-        "secondYellows": 0,
-        "suspensionsServed": 0,
-        "teamGoalShare": 0.211
-      },
-      "trophies": [],
-      "conductEventIds": [],
-      "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
-      "avgOpponentRating": 52.6
-    },
-    {
-      "id": "ruben-dias",
-      "name": "R\u00faben Dias",
-      "country": "Portugal",
-      "flag": "\ud83c\uddf5\ud83c\uddf9",
-      "club": "Manchester City",
-      "league": "Premier League",
-      "role": "CB",
-      "minutes": 3600,
-      "stats": {
-        "tacklesPer90": 2.02,
-        "interceptionsPer90": 1.577,
-        "blocksPer90": 1.732,
-        "clearancesPer90": 2.569,
-        "aerialsWonPct": 0.61,
-        "progressivePasses": 5.851,
-        "passCompletion": 0.929,
-        "passesFinalThird": 5.574,
-        "goals": 4.746,
-        "yellowCards": 4,
-        "redCards": 0,
-        "secondYellows": 0,
-        "suspensionsServed": 1,
-        "teamGoalShare": 0.049
-      },
-      "trophies": [],
-      "conductEventIds": [],
-      "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
-      "avgOpponentRating": 37.3
-    },
-    {
-      "id": "michael-olise",
-      "name": "Michael Olise",
+      "id": "ousmane-dembele",
+      "name": "Ousmane Dembélé",
       "country": "France",
-      "flag": "\ud83c\uddeb\ud83c\uddf7",
+      "flag": "🇫🇷",
+      "club": "Paris Saint-Germain",
+      "league": "Ligue 1",
+      "role": "ATT",
+      "minutes": 2880,
+      "stats": {
+        "goalsPer90": 0.625,
+        "goals": 20,
+        "xG": 41,
+        "assists": 11,
+        "xA": 0.883,
+        "shotsOnTarget": 4.798,
+        "dribblesCompleted": 2.144,
+        "touchesInBox": 15.543,
+        "yellowCards": 9,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 0,
+        "teamGoalShare": 0.429
+      },
+      "trophies": [
+        {
+          "title": "UEFA Champions League",
+          "tier": "ucl"
+        },
+        {
+          "title": "League title",
+          "tier": "top-league"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (40) and goals (20) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
+    },
+    {
+      "id": "luis-diaz",
+      "name": "Luis Díaz",
+      "country": "Colombia",
+      "flag": "🇨🇴",
       "club": "Bayern Munich",
       "league": "Bundesliga",
       "role": "ATT",
-      "minutes": 3400,
+      "minutes": 3672,
       "stats": {
-        "goals": 37.8,
-        "xG": 27.7,
-        "assists": 13.2,
-        "xA": 0.356,
-        "shotsOnTarget": 2.531,
-        "dribblesCompleted": 1.841,
-        "touchesInBox": 8.809,
-        "yellowCards": 2,
+        "goalsPer90": 0.78,
+        "goals": 26,
+        "xG": 34,
+        "assists": 24,
+        "xA": 0.29,
+        "shotsOnTarget": 4.295,
+        "dribblesCompleted": 5.247,
+        "touchesInBox": 15.045,
+        "yellowCards": 3,
         "redCards": 0,
         "secondYellows": 0,
-        "suspensionsServed": 1,
-        "teamGoalShare": 0.483
+        "suspensionsServed": 0,
+        "teamGoalShare": 0.454
       },
       "trophies": [
         {
@@ -1075,16 +180,911 @@
         {
           "title": "Domestic cup",
           "tier": "domestic-cup"
-        },
-        {
-          "title": "UEFA Champions League",
-          "tier": "ucl"
         }
       ],
       "conductEventIds": [],
       "dataConfidence": "partial",
-      "dataNotes": "DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.",
-      "avgOpponentRating": 47.0
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (51) and goals (26) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
+    },
+    {
+      "id": "bruno-fernandes",
+      "name": "Bruno Fernandes",
+      "country": "Portugal",
+      "flag": "🇵🇹",
+      "club": "Manchester United",
+      "league": "Premier League",
+      "role": "MID",
+      "minutes": 2664,
+      "stats": {
+        "progressivePasses": 8.006,
+        "passesIntoPA": 4.96,
+        "throughBalls": 0.182,
+        "xA": 0.185,
+        "keyPasses": 2.122,
+        "passesAttempted": 56.7,
+        "duelsWonPct": 0.547,
+        "tacklesPlusIntPer90": 2.369,
+        "goals": 9,
+        "yellowCards": 6,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 1,
+        "teamGoalShare": 0.152
+      },
+      "trophies": [],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (37) and goals (9) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
+    },
+    {
+      "id": "gabriel-magalhaes",
+      "name": "Gabriel Magalhães",
+      "country": "Brazil",
+      "flag": "🇧🇷",
+      "club": "Arsenal",
+      "league": "Premier League",
+      "role": "CB",
+      "minutes": 3672,
+      "stats": {
+        "tacklesPer90": 3.418,
+        "interceptionsPer90": 2.808,
+        "blocksPer90": 1.8,
+        "clearancesPer90": 3.731,
+        "aerialsWonPct": 1.101,
+        "progressivePasses": 7.419,
+        "passCompletion": 1.362,
+        "passesFinalThird": 5.429,
+        "goals": 4,
+        "yellowCards": 7,
+        "redCards": 1,
+        "secondYellows": 0,
+        "suspensionsServed": 0,
+        "teamGoalShare": 0.148
+      },
+      "trophies": [
+        {
+          "title": "League title",
+          "tier": "top-league"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (51) and goals (4) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
+    },
+    {
+      "id": "erling-haaland",
+      "name": "Erling Haaland",
+      "country": "Norway",
+      "flag": "🇳🇴",
+      "club": "Manchester City",
+      "league": "Premier League",
+      "role": "ATT",
+      "minutes": 3744,
+      "stats": {
+        "goalsPer90": 0.913,
+        "goals": 38,
+        "xG": 55,
+        "assists": 14,
+        "xA": 1.207,
+        "shotsOnTarget": 4.948,
+        "dribblesCompleted": 4.365,
+        "touchesInBox": 8.583,
+        "yellowCards": 6,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 1,
+        "teamGoalShare": 0.603
+      },
+      "trophies": [
+        {
+          "title": "Domestic cup",
+          "tier": "domestic-cup"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (52) and goals (38) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
+    },
+    {
+      "id": "achraf-hakimi",
+      "name": "Achraf Hakimi",
+      "country": "Morocco",
+      "flag": "🇲🇦",
+      "club": "Paris Saint-Germain",
+      "league": "Ligue 1",
+      "role": "FB",
+      "minutes": 2304,
+      "stats": {
+        "tacklesPer90": 4.382,
+        "interceptionsPer90": 3.218,
+        "aerialsWonPct": 1.207,
+        "progressiveCarries": 5.099,
+        "progressivePasses": 6.324,
+        "assists": 3.394,
+        "xA": 0.669,
+        "keyPasses": 4.519,
+        "passCompletion": 1.55,
+        "goals": 3,
+        "yellowCards": 4,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 2,
+        "teamGoalShare": 0.178
+      },
+      "trophies": [
+        {
+          "title": "UEFA Champions League",
+          "tier": "ucl"
+        },
+        {
+          "title": "League title",
+          "tier": "top-league"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (32) and goals (3) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
+    },
+    {
+      "id": "harry-kane",
+      "name": "Harry Kane",
+      "country": "England",
+      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+      "club": "Bayern Munich",
+      "league": "Bundesliga",
+      "role": "ATT",
+      "minutes": 3672,
+      "stats": {
+        "goalsPer90": 1.495,
+        "goals": 61,
+        "xG": 38,
+        "assists": 11,
+        "xA": 0.698,
+        "shotsOnTarget": 3.635,
+        "dribblesCompleted": 4.5,
+        "touchesInBox": 8.724,
+        "yellowCards": 3,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 0,
+        "teamGoalShare": 0.286
+      },
+      "trophies": [
+        {
+          "title": "League title",
+          "tier": "top-league"
+        },
+        {
+          "title": "Domestic cup",
+          "tier": "domestic-cup"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (51) and goals (61) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
+    },
+    {
+      "id": "khvicha-kvaratskhelia",
+      "name": "Khvicha Kvaratskhelia",
+      "country": "Georgia",
+      "flag": "🇬🇪",
+      "club": "Paris Saint-Germain",
+      "league": "Ligue 1",
+      "role": "ATT",
+      "minutes": 3456,
+      "stats": {
+        "goalsPer90": 0.495,
+        "goals": 19,
+        "xG": 73,
+        "assists": 22,
+        "xA": 0.86,
+        "shotsOnTarget": 3.246,
+        "dribblesCompleted": 1.85,
+        "touchesInBox": 8.74,
+        "yellowCards": 8,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 0,
+        "teamGoalShare": 0.781
+      },
+      "trophies": [
+        {
+          "title": "UEFA Champions League",
+          "tier": "ucl"
+        },
+        {
+          "title": "League title",
+          "tier": "top-league"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (48) and goals (19) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
+    },
+    {
+      "id": "sadio-mane",
+      "name": "Sadio Mané",
+      "country": "Senegal",
+      "flag": "🇸🇳",
+      "club": "Al Nassr",
+      "league": "Saudi Pro League",
+      "role": "ATT",
+      "minutes": 2592,
+      "stats": {
+        "goalsPer90": 0.486,
+        "goals": 14,
+        "xG": 39,
+        "assists": 6,
+        "xA": 0.435,
+        "shotsOnTarget": 2.576,
+        "dribblesCompleted": 3.338,
+        "touchesInBox": 9.11,
+        "yellowCards": 4,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 0,
+        "teamGoalShare": 0.413
+      },
+      "trophies": [],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (36) and goals (14) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
+    },
+    {
+      "id": "marquinhos",
+      "name": "Marquinhos",
+      "country": "Brazil",
+      "flag": "🇧🇷",
+      "club": "Paris Saint-Germain",
+      "league": "Ligue 1",
+      "role": "CB",
+      "minutes": 2304,
+      "stats": {
+        "tacklesPer90": 1.97,
+        "interceptionsPer90": 1.762,
+        "blocksPer90": 1.465,
+        "clearancesPer90": 2.865,
+        "aerialsWonPct": 0.743,
+        "progressivePasses": 8.906,
+        "passCompletion": 0.917,
+        "passesFinalThird": 3.544,
+        "goals": 2,
+        "yellowCards": 5,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 1,
+        "teamGoalShare": 0.059
+      },
+      "trophies": [
+        {
+          "title": "UEFA Champions League",
+          "tier": "ucl"
+        },
+        {
+          "title": "League title",
+          "tier": "top-league"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (32) and goals (2) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
+    },
+    {
+      "id": "lautaro-martinez",
+      "name": "Lautaro Martínez",
+      "country": "Argentina",
+      "flag": "🇦🇷",
+      "club": "Inter Milan",
+      "league": "Serie A",
+      "role": "ATT",
+      "minutes": 2952,
+      "stats": {
+        "goalsPer90": 0.671,
+        "goals": 22,
+        "xG": 63,
+        "assists": 26,
+        "xA": 0.383,
+        "shotsOnTarget": 4.774,
+        "dribblesCompleted": 3.063,
+        "touchesInBox": 17.995,
+        "yellowCards": 7,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 0,
+        "teamGoalShare": 0.85
+      },
+      "trophies": [
+        {
+          "title": "League title",
+          "tier": "top-league"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (41) and goals (22) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
+    },
+    {
+      "id": "kylian-mbappe",
+      "name": "Kylian Mbappé",
+      "country": "France",
+      "flag": "🇫🇷",
+      "club": "Real Madrid",
+      "league": "La Liga",
+      "role": "ATT",
+      "minutes": 3168,
+      "stats": {
+        "goalsPer90": 1.193,
+        "goals": 42,
+        "xG": 39,
+        "assists": 8,
+        "xA": 0.366,
+        "shotsOnTarget": 4.845,
+        "dribblesCompleted": 4.177,
+        "touchesInBox": 8.498,
+        "yellowCards": 7,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 0,
+        "teamGoalShare": 0.599
+      },
+      "trophies": [],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (44) and goals (42) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
+    },
+    {
+      "id": "nuno-mendes",
+      "name": "Nuno Mendes",
+      "country": "Portugal",
+      "flag": "🇵🇹",
+      "club": "Paris Saint-Germain",
+      "league": "Ligue 1",
+      "role": "FB",
+      "minutes": 2952,
+      "stats": {
+        "tacklesPer90": 3.797,
+        "interceptionsPer90": 2.4,
+        "aerialsWonPct": 0.993,
+        "progressiveCarries": 5.552,
+        "progressivePasses": 12.745,
+        "assists": 17.431,
+        "xA": 0.187,
+        "keyPasses": 2.179,
+        "passCompletion": 1.611,
+        "goals": 6,
+        "yellowCards": 7,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 0,
+        "teamGoalShare": 0.245
+      },
+      "trophies": [
+        {
+          "title": "UEFA Champions League",
+          "tier": "ucl"
+        },
+        {
+          "title": "League title",
+          "tier": "top-league"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (41) and goals (6) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
+    },
+    {
+      "id": "lionel-messi",
+      "name": "Lionel Messi",
+      "country": "Argentina",
+      "flag": "🇦🇷",
+      "club": "Inter Miami",
+      "league": "MLS",
+      "role": "ATT",
+      "minutes": 2088,
+      "stats": {
+        "goalsPer90": 1.078,
+        "goals": 25,
+        "xG": 59,
+        "assists": 24,
+        "xA": 0.409,
+        "shotsOnTarget": 3.655,
+        "dribblesCompleted": 4.741,
+        "touchesInBox": 10.632,
+        "yellowCards": 7,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 0,
+        "teamGoalShare": 0.58
+      },
+      "trophies": [
+        {
+          "title": "League title (other)",
+          "tier": "other-league"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (29) and goals (25) for season 2026 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md). Calendar-year league (MLS): the season row overlaps the Aug 2025–Jul 2026 reference window only partially."
+    },
+    {
+      "id": "joao-neves",
+      "name": "João Neves",
+      "country": "Portugal",
+      "flag": "🇵🇹",
+      "club": "Paris Saint-Germain",
+      "league": "Ligue 1",
+      "role": "MID",
+      "minutes": 2736,
+      "stats": {
+        "progressivePasses": 7.2,
+        "passesIntoPA": 7.507,
+        "throughBalls": 0.436,
+        "xA": 0.522,
+        "keyPasses": 4.008,
+        "passesAttempted": 101.196,
+        "duelsWonPct": 0.776,
+        "tacklesPlusIntPer90": 5.604,
+        "goals": 7,
+        "yellowCards": 10,
+        "redCards": 0,
+        "secondYellows": 1,
+        "suspensionsServed": 1,
+        "teamGoalShare": 0.365
+      },
+      "trophies": [
+        {
+          "title": "UEFA Champions League",
+          "tier": "ucl"
+        },
+        {
+          "title": "League title",
+          "tier": "top-league"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (38) and goals (7) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
+    },
+    {
+      "id": "michael-olise",
+      "name": "Michael Olise",
+      "country": "France",
+      "flag": "🇫🇷",
+      "club": "Bayern Munich",
+      "league": "Bundesliga",
+      "role": "ATT",
+      "minutes": 3744,
+      "stats": {
+        "goalsPer90": 0.529,
+        "goals": 22,
+        "xG": 21,
+        "assists": 13,
+        "xA": 0.505,
+        "shotsOnTarget": 2.32,
+        "dribblesCompleted": 2.266,
+        "touchesInBox": 17.52,
+        "yellowCards": 8,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 1,
+        "teamGoalShare": 0.531
+      },
+      "trophies": [
+        {
+          "title": "League title",
+          "tier": "top-league"
+        },
+        {
+          "title": "Domestic cup",
+          "tier": "domestic-cup"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (52) and goals (22) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
+    },
+    {
+      "id": "willian-pacho",
+      "name": "Willian Pacho",
+      "country": "Ecuador",
+      "flag": "🇪🇨",
+      "club": "Paris Saint-Germain",
+      "league": "Ligue 1",
+      "role": "CB",
+      "minutes": 3168,
+      "stats": {
+        "tacklesPer90": 3.291,
+        "interceptionsPer90": 2.813,
+        "blocksPer90": 2.315,
+        "clearancesPer90": 6.276,
+        "aerialsWonPct": 1.314,
+        "progressivePasses": 8.791,
+        "passCompletion": 1.567,
+        "passesFinalThird": 7.301,
+        "goals": 2,
+        "yellowCards": 10,
+        "redCards": 1,
+        "secondYellows": 0,
+        "suspensionsServed": 2,
+        "teamGoalShare": 0.133
+      },
+      "trophies": [
+        {
+          "title": "UEFA Champions League",
+          "tier": "ucl"
+        },
+        {
+          "title": "League title",
+          "tier": "top-league"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (44) and goals (2) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
+    },
+    {
+      "id": "julian-quinones",
+      "name": "Julián Quiñones",
+      "country": "Mexico",
+      "flag": "🇲🇽",
+      "club": "Al-Qadsiah",
+      "league": "Saudi Pro League",
+      "role": "ATT",
+      "minutes": 2520,
+      "stats": {
+        "goalsPer90": 1.321,
+        "goals": 37,
+        "xG": 28,
+        "assists": 14,
+        "xA": 0.515,
+        "shotsOnTarget": 2.775,
+        "dribblesCompleted": 3.449,
+        "touchesInBox": 10.803,
+        "yellowCards": 5,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 0,
+        "teamGoalShare": 0.181
+      },
+      "trophies": [],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (35) and goals (37) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
+    },
+    {
+      "id": "declan-rice",
+      "name": "Declan Rice",
+      "country": "England",
+      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+      "club": "Arsenal",
+      "league": "Premier League",
+      "role": "MID",
+      "minutes": 3960,
+      "stats": {
+        "progressivePasses": 16.616,
+        "passesIntoPA": 6.236,
+        "throughBalls": 0.83,
+        "xA": 0.507,
+        "keyPasses": 3.742,
+        "passesAttempted": 115.766,
+        "duelsWonPct": 0.855,
+        "tacklesPlusIntPer90": 4.498,
+        "goals": 5,
+        "yellowCards": 10,
+        "redCards": 1,
+        "secondYellows": 0,
+        "suspensionsServed": 1,
+        "teamGoalShare": 0.447
+      },
+      "trophies": [
+        {
+          "title": "League title",
+          "tier": "top-league"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (55) and goals (5) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
+    },
+    {
+      "id": "rodri",
+      "name": "Rodri",
+      "country": "Spain",
+      "flag": "🇪🇸",
+      "club": "Manchester City",
+      "league": "Premier League",
+      "role": "MID",
+      "minutes": 2376,
+      "stats": {
+        "progressivePasses": 10.383,
+        "passesIntoPA": 8.057,
+        "throughBalls": 0.558,
+        "xA": 0.689,
+        "keyPasses": 3.404,
+        "passesAttempted": 134.575,
+        "duelsWonPct": 0.893,
+        "tacklesPlusIntPer90": 5.291,
+        "goals": 2,
+        "yellowCards": 12,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 1,
+        "teamGoalShare": 0.363
+      },
+      "trophies": [
+        {
+          "title": "Domestic cup",
+          "tier": "domestic-cup"
+        },
+        {
+          "title": "World Cup",
+          "tier": "world-cup"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (33) and goals (2) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
+    },
+    {
+      "id": "fabian-ruiz",
+      "name": "Fabián Ruiz",
+      "country": "Spain",
+      "flag": "🇪🇸",
+      "club": "Paris Saint-Germain",
+      "league": "Ligue 1",
+      "role": "MID",
+      "minutes": 2448,
+      "stats": {
+        "progressivePasses": 8.412,
+        "passesIntoPA": 4.636,
+        "throughBalls": 0.486,
+        "xA": 0.1,
+        "keyPasses": 1.121,
+        "passesAttempted": 48.823,
+        "duelsWonPct": 0.635,
+        "tacklesPlusIntPer90": 1.5,
+        "goals": 2,
+        "yellowCards": 5,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 1,
+        "teamGoalShare": 0.08
+      },
+      "trophies": [
+        {
+          "title": "UEFA Champions League",
+          "tier": "ucl"
+        },
+        {
+          "title": "League title",
+          "tier": "top-league"
+        },
+        {
+          "title": "World Cup",
+          "tier": "world-cup"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (34) and goals (2) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
+    },
+    {
+      "id": "william-saliba",
+      "name": "William Saliba",
+      "country": "France",
+      "flag": "🇫🇷",
+      "club": "Arsenal",
+      "league": "Premier League",
+      "role": "CB",
+      "minutes": 3600,
+      "stats": {
+        "tacklesPer90": 1.768,
+        "interceptionsPer90": 1.956,
+        "blocksPer90": 1.215,
+        "clearancesPer90": 1.996,
+        "aerialsWonPct": 0.699,
+        "progressivePasses": 6.916,
+        "passCompletion": 0.845,
+        "passesFinalThird": 5.131,
+        "goals": 1,
+        "yellowCards": 6,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 1,
+        "teamGoalShare": 0.067
+      },
+      "trophies": [
+        {
+          "title": "League title",
+          "tier": "top-league"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (50) and goals (1) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
+    },
+    {
+      "id": "ferran-torres",
+      "name": "Ferran Torres",
+      "country": "Spain",
+      "flag": "🇪🇸",
+      "club": "Barcelona",
+      "league": "La Liga",
+      "role": "ATT",
+      "minutes": 3528,
+      "stats": {
+        "goalsPer90": 0.536,
+        "goals": 21,
+        "xG": 14,
+        "assists": 12,
+        "xA": 0.553,
+        "shotsOnTarget": 1.651,
+        "dribblesCompleted": 3.308,
+        "touchesInBox": 10.66,
+        "yellowCards": 3,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 1,
+        "teamGoalShare": 0.493
+      },
+      "trophies": [
+        {
+          "title": "League title",
+          "tier": "top-league"
+        },
+        {
+          "title": "World Cup",
+          "tier": "world-cup"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (49) and goals (21) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
+    },
+    {
+      "id": "dayot-upamecano",
+      "name": "Dayot Upamecano",
+      "country": "France",
+      "flag": "🇫🇷",
+      "club": "Bayern Munich",
+      "league": "Bundesliga",
+      "role": "CB",
+      "minutes": 3024,
+      "stats": {
+        "tacklesPer90": 2.448,
+        "interceptionsPer90": 1.77,
+        "blocksPer90": 1.212,
+        "clearancesPer90": 3.773,
+        "aerialsWonPct": 0.652,
+        "progressivePasses": 8.505,
+        "passCompletion": 0.863,
+        "passesFinalThird": 2.754,
+        "goals": 2,
+        "yellowCards": 7,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 0,
+        "teamGoalShare": 0.089
+      },
+      "trophies": [
+        {
+          "title": "League title",
+          "tier": "top-league"
+        },
+        {
+          "title": "Domestic cup",
+          "tier": "domestic-cup"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (42) and goals (2) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
+    },
+    {
+      "id": "vinicius-junior",
+      "name": "Vinícius Júnior",
+      "country": "Brazil",
+      "flag": "🇧🇷",
+      "club": "Real Madrid",
+      "league": "La Liga",
+      "role": "ATT",
+      "minutes": 3816,
+      "stats": {
+        "goalsPer90": 0.519,
+        "goals": 22,
+        "xG": 33,
+        "assists": 12,
+        "xA": 0.586,
+        "shotsOnTarget": 3.275,
+        "dribblesCompleted": 4.257,
+        "touchesInBox": 13.565,
+        "yellowCards": 5,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 1,
+        "teamGoalShare": 0.773
+      },
+      "trophies": [],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (53) and goals (22) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
+    },
+    {
+      "id": "vitinha",
+      "name": "Vitinha",
+      "country": "Portugal",
+      "flag": "🇵🇹",
+      "club": "Paris Saint-Germain",
+      "league": "Ligue 1",
+      "role": "MID",
+      "minutes": 3600,
+      "stats": {
+        "progressivePasses": 14.539,
+        "passesIntoPA": 6.512,
+        "throughBalls": 0.704,
+        "xA": 0.28,
+        "keyPasses": 4.093,
+        "passesAttempted": 87.644,
+        "duelsWonPct": 0.915,
+        "tacklesPlusIntPer90": 3.138,
+        "goals": 7,
+        "yellowCards": 5,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 1,
+        "teamGoalShare": 0.349
+      },
+      "trophies": [
+        {
+          "title": "UEFA Champions League",
+          "tier": "ucl"
+        },
+        {
+          "title": "League title",
+          "tier": "top-league"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (50) and goals (7) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
+    },
+    {
+      "id": "lamine-yamal",
+      "name": "Lamine Yamal",
+      "country": "Spain",
+      "flag": "🇪🇸",
+      "club": "Barcelona",
+      "league": "La Liga",
+      "role": "ATT",
+      "minutes": 3240,
+      "stats": {
+        "goalsPer90": 0.667,
+        "goals": 24,
+        "xG": 71,
+        "assists": 14,
+        "xA": 0.928,
+        "shotsOnTarget": 4.735,
+        "dribblesCompleted": 3.398,
+        "touchesInBox": 11.655,
+        "yellowCards": 6,
+        "redCards": 0,
+        "secondYellows": 0,
+        "suspensionsServed": 1,
+        "teamGoalShare": 0.867
+      },
+      "trophies": [
+        {
+          "title": "League title",
+          "tier": "top-league"
+        },
+        {
+          "title": "World Cup",
+          "tier": "world-cup"
+        }
+      ],
+      "conductEventIds": [],
+      "dataConfidence": "partial",
+      "dataNotes": "Roster, club, league, role and trophies verified for 2025-26. All-competition apps (45) and goals (24) for season 2025–26 from the player's Wikipedia career-statistics table. Minutes estimated from appearances (~72 min/app); per-90/xG/xA and discipline fields remain placeholders (docs/data-refresh.md)."
     }
   ]
 }

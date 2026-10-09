@@ -76,7 +76,7 @@ export default function ShareModal({
 
     ctx.fillStyle = '#9aa0b0';
     ctx.font = '14px "SF Mono", "Cascadia Code", Consolas, monospace';
-    ctx.fillText('Data: draft placeholders · lepsishere.github.io/TheGoldenFormula', 40, height - 40);
+    ctx.fillText('Data: official shortlists, partial real stats · lepsishere.github.io/TheGoldenFormula', 40, height - 40);
 
     canvas.toBlob((blob) => setPngBlob(blob), 'image/png');
   }, [scored, edition]);

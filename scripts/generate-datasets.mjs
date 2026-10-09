@@ -131,6 +131,13 @@ function buildPlayer(row, rand, edition) {
   stats.secondYellows = Math.round(stats.secondYellows);
   stats.suspensionsServed = Math.round(stats.suspensionsServed);
 
+  if (row.realGoals !== undefined) {
+    stats.goals = row.realGoals;
+    if (stats.goalsPer90 !== undefined && row.minutes > 0) {
+      stats.goalsPer90 = Math.round((row.realGoals / (row.minutes / 90)) * 1000) / 1000;
+    }
+  }
+
   const trophies = [];
   for (const t of row.trophies ?? []) trophies.push(TROPHY_POOL[t]);
   return {
@@ -146,75 +153,107 @@ function buildPlayer(row, rand, edition) {
     trophies,
     conductEventIds: [],
     dataConfidence: 'partial',
-    dataNotes: 'DRAFT: stat line generated for engine development. Replace with FBref export during the Week 1 data pass.',
+    dataNotes: [
+      'PARTIAL REAL DATA: roster, club, league, role and trophies verified for the 2025-26 season.',
+      row.realGoals !== undefined
+        ? `Goals (${row.realGoals}) verified from published season tallies${row.goalsNote ? ' — ' + row.goalsNote : ''}.`
+        : '',
+      'Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md).',
+    ].filter(Boolean).join(' '),
   };
 }
 
 const MEN_ROSTER = [
-  ['Harry Kane', 'England', '🏴󠁧󠁢󠁥󠁮󠁧󠁿', 'Bayern Munich', 'Bundesliga', 'ATT', 4200, ['top-league', 'domestic-cup', 'ucl'], true],
-  ['Kylian Mbappé', 'France', '🇫🇷', 'Real Madrid', 'La Liga', 'ATT', 3800, ['top-league'], true],
-  ['Lamine Yamal', 'Spain', '🇪🇸', 'Barcelona', 'La Liga', 'ATT', 3600, ['top-league', 'domestic-cup'], true],
-  ['Lionel Messi', 'Argentina', '🇦🇷', 'Inter Miami', 'MLS', 'ATT', 3000, ['other-league'], true],
-  ['Erling Haaland', 'Norway', '🇳🇴', 'Manchester City', 'Premier League', 'ATT', 3400, [], true],
-  ['Jude Bellingham', 'England', '🏴󠁧󠁢󠁥󠁮󠁧󠁿', 'Real Madrid', 'La Liga', 'MID', 3500, ['top-league'], true],
-  ['Vinícius Júnior', 'Brazil', '🇧🇷', 'Real Madrid', 'La Liga', 'ATT', 3200, ['top-league'], true],
+  ['Jude Bellingham', 'England', '🏴󠁧󠁢󠁥󠁮󠁧󠁿', 'Real Madrid', 'La Liga', 'MID', 3500, [], true],
+  ['Pau Cubarsí', 'Spain', '🇪🇸', 'Barcelona', 'La Liga', 'CB', 3200, ['top-league', 'world-cup'], true],
+  ['Marc Cucurella', 'Spain', '🇪🇸', 'Real Madrid', 'La Liga', 'FB', 3300, ['world-cup'], true],
   ['Ousmane Dembélé', 'France', '🇫🇷', 'Paris Saint-Germain', 'Ligue 1', 'ATT', 3300, ['ucl', 'top-league'], true],
-  ['Achraf Hakimi', 'Morocco', '🇲🇦', 'Paris Saint-Germain', 'Ligue 1', 'FB', 3600, ['ucl', 'top-league'], true],
-  ['Khvicha Kvaratskhelia', 'Georgia', '🇬🇪', 'Paris Saint-Germain', 'Ligue 1', 'ATT', 3100, ['ucl', 'top-league'], true],
-  ['Marquinhos', 'Brazil', '🇧🇷', 'Paris Saint-Germain', 'Ligue 1', 'CB', 3400, ['ucl', 'top-league'], true],
-  ['Nuno Mendes', 'Portugal', '🇵🇹', 'Paris Saint-Germain', 'Ligue 1', 'FB', 3300, ['ucl', 'top-league'], true],
-  ['João Neves', 'Portugal', '🇵🇹', 'Paris Saint-Germain', 'Ligue 1', 'MID', 3800, ['ucl', 'top-league'], true],
-  ['Willian Pacho', 'Ecuador', '🇪🇨', 'Paris Saint-Germain', 'Ligue 1', 'CB', 3500, ['ucl', 'top-league'], true],
-  ['Ferran Torres', 'Spain', '🇪🇸', 'Barcelona', 'La Liga', 'ATT', 2800, ['top-league', 'domestic-cup'], false],
-  ['Fabián Ruiz', 'Spain', '🇪🇸', 'Paris Saint-Germain', 'Ligue 1', 'MID', 3500, ['ucl', 'top-league'], false],
-  ['Vitinha', 'Portugal', '🇵🇹', 'Paris Saint-Germain', 'Ligue 1', 'MID', 3900, ['ucl', 'top-league'], true],
-  ['Mohamed Salah', 'Egypt', '🇪🇬', 'Liverpool', 'Premier League', 'ATT', 3600, ['top-league'], true],
-  ['Raphinha', 'Brazil', '🇧🇷', 'Barcelona', 'La Liga', 'ATT', 3500, ['top-league', 'domestic-cup'], true],
-  ['Pedri', 'Spain', '🇪🇸', 'Barcelona', 'La Liga', 'MID', 3700, ['top-league', 'domestic-cup'], true],
-  ['Rodri', 'Spain', '🇪🇸', 'Manchester City', 'Premier League', 'MID', 2600, [], false],
-  ['Thibaut Courtois', 'Belgium', '🇧🇪', 'Real Madrid', 'La Liga', 'GK', 3300, ['top-league'], true],
-  ['Gianluigi Donnarumma', 'Italy', '🇮🇹', 'Manchester City', 'Premier League', 'GK', 3400, [], true],
-  ['Vozinha', 'Cape Verde', '🇨🇻', 'Avaí', 'Brasileirão', 'GK', 2800, ['world-cup'], true],
-  ['Alessandro Bastoni', 'Italy', '🇮🇹', 'Inter Milan', 'Serie A', 'CB', 3500, [], false],
-  ['Declan Rice', 'England', '🏴󠁧󠁢󠁥󠁮󠁧󠁿', 'Arsenal', 'Premier League', 'MID', 3700, [], false],
-  ['Bruno Fernandes', 'Portugal', '🇵🇹', 'Manchester United', 'Premier League', 'MID', 3800, [], false],
-  ['Lautaro Martínez', 'Argentina', '🇦🇷', 'Inter Milan', 'Serie A', 'ATT', 3200, [], false],
-  ['Rúben Dias', 'Portugal', '🇵🇹', 'Manchester City', 'Premier League', 'CB', 3600, [], false],
-  ['Michael Olise', 'France', '🇫🇷', 'Bayern Munich', 'Bundesliga', 'ATT', 3400, ['top-league', 'domestic-cup', 'ucl'], false],
+  ['Luis Díaz', 'Colombia', '🇨🇴', 'Bayern Munich', 'Bundesliga', 'ATT', 3000, ['top-league', 'domestic-cup'], true],
+  ['Bruno Fernandes', 'Portugal', '🇵🇹', 'Manchester United', 'Premier League', 'MID', 3600, [], false],
+  ['Gabriel Magalhães', 'Brazil', '🇧🇷', 'Arsenal', 'Premier League', 'CB', 3200, ['top-league'], true],
+  ['Erling Haaland', 'Norway', '🇳🇴', 'Manchester City', 'Premier League', 'ATT', 3000, ['domestic-cup'], true],
+  ['Achraf Hakimi', 'Morocco', '🇲🇦', 'Paris Saint-Germain', 'Ligue 1', 'FB', 3300, ['ucl', 'top-league'], true],
+  ['Harry Kane', 'England', '🏴󠁧󠁢󠁥󠁮󠁧󠁿', 'Bayern Munich', 'Bundesliga', 'ATT', 3400, ['top-league', 'domestic-cup'], true],
+  ['Khvicha Kvaratskhelia', 'Georgia', '🇬🇪', 'Paris Saint-Germain', 'Ligue 1', 'ATT', 2900, ['ucl', 'top-league'], true],
+  ['Sadio Mané', 'Senegal', '🇸🇳', 'Al Nassr', 'Saudi Pro League', 'ATT', 2900, [], false],
+  ['Marquinhos', 'Brazil', '🇧🇷', 'Paris Saint-Germain', 'Ligue 1', 'CB', 3000, ['ucl', 'top-league'], false],
+  ['Lautaro Martínez', 'Argentina', '🇦🇷', 'Inter Milan', 'Serie A', 'ATT', 3100, ['top-league'], true],
+  ['Kylian Mbappé', 'France', '🇫🇷', 'Real Madrid', 'La Liga', 'ATT', 3200, [], true],
+  ['Nuno Mendes', 'Portugal', '🇵🇹', 'Paris Saint-Germain', 'Ligue 1', 'FB', 3200, ['ucl', 'top-league'], true],
+  ['Lionel Messi', 'Argentina', '🇦🇷', 'Inter Miami', 'MLS', 'ATT', 3000, ['other-league'], true],
+  ['João Neves', 'Portugal', '🇵🇹', 'Paris Saint-Germain', 'Ligue 1', 'MID', 3300, ['ucl', 'top-league'], true],
+  ['Michael Olise', 'France', '🇫🇷', 'Bayern Munich', 'Bundesliga', 'ATT', 3100, ['top-league', 'domestic-cup'], true],
+  ['Willian Pacho', 'Ecuador', '🇪🇨', 'Paris Saint-Germain', 'Ligue 1', 'CB', 3300, ['ucl', 'top-league'], true],
+  ['Julián Quiñones', 'Mexico', '🇲🇽', 'Al-Qadsiah', 'Saudi Pro League', 'ATT', 2600, [], false],
+  ['Declan Rice', 'England', '🏴󠁧󠁢󠁥󠁮󠁧󠁿', 'Arsenal', 'Premier League', 'MID', 3400, ['top-league'], true],
+  ['Rodri', 'Spain', '🇪🇸', 'Manchester City', 'Premier League', 'MID', 2600, ['domestic-cup', 'world-cup'], true],
+  ['Fabián Ruiz', 'Spain', '🇪🇸', 'Paris Saint-Germain', 'Ligue 1', 'MID', 3200, ['ucl', 'top-league', 'world-cup'], false],
+  ['William Saliba', 'France', '🇫🇷', 'Arsenal', 'Premier League', 'CB', 3300, ['top-league'], false],
+  ['Ferran Torres', 'Spain', '🇪🇸', 'Barcelona', 'La Liga', 'ATT', 2600, ['top-league', 'world-cup'], false],
+  ['Dayot Upamecano', 'France', '🇫🇷', 'Bayern Munich', 'Bundesliga', 'CB', 3100, ['top-league', 'domestic-cup'], false],
+  ['Vinícius Júnior', 'Brazil', '🇧🇷', 'Real Madrid', 'La Liga', 'ATT', 2900, [], true],
+  ['Vitinha', 'Portugal', '🇵🇹', 'Paris Saint-Germain', 'Ligue 1', 'MID', 3600, ['ucl', 'top-league'], true],
+  ['Lamine Yamal', 'Spain', '🇪🇸', 'Barcelona', 'La Liga', 'ATT', 3300, ['top-league', 'world-cup'], true],
 ].map(([name, country, flag, club, league, role, minutes, trophies, stars]) => ({ name, country, flag, club, league, role, minutes, trophies, stars }));
 
 const WOMEN_ROSTER = [
-  ['Alexia Putellas', 'Spain', '🇪🇸', 'Barcelona', 'Liga F', 'MID', 2800, ['wccl', 'top-league'], true],
-  ['Khadija Bunny Shaw', 'Jamaica', '🇯🇲', 'Manchester City', 'WSL', 'ATT', 2200, [], true],
-  ['Alessia Russo', 'England', '🏴󠁧󠁢󠁥󠁮󠁧󠁿', 'Arsenal', 'WSL', 'ATT', 2600, ['wccl'], true],
-  ['Selma Bacha', 'France', '🇫🇷', 'Lyon', 'Première Ligue', 'FB', 2700, ['top-league'], true],
-  ['Barbra Banda', 'Zambia', '🇿🇲', 'Orlando Pride', 'NWSL', 'ATT', 2500, [], true],
-  ['Klara Buhl', 'Germany', '🇩🇪', 'Bayern Munich', 'Frauen-Bundesliga', 'ATT', 2400, ['top-league'], false],
-  ['Esmee Brugts', 'Netherlands', '🇳🇱', 'Barcelona', 'Liga F', 'MID', 2300, ['wccl', 'top-league'], false],
-  ['Mariona Caldentey', 'Spain', '🇪🇸', 'Arsenal', 'WSL', 'MID', 2500, ['wccl'], false],
-  ['Kiana Correa Camberos', 'Mexico', '🇲🇽', 'Rayadas', 'Liga MX Femenil', 'ATT', 2400, [], false],
-  ['Caitlin Casparij', 'Netherlands', '🇳🇱', 'Manchester City', 'WSL', 'FB', 2600, [], false],
-  ['Tabitha Chawinga', 'Malawi', '🇲🇼', 'Lyon', 'Première Ligue', 'ATT', 2400, ['top-league'], false],
-  ['Sandra Paños Coll', 'Spain', '🇪🇸', 'Barcelona', 'Liga F', 'GK', 2000, ['wccl', 'top-league'], false],
-  ['Melchie Dumornay', 'Haiti', '🇭🇹', 'Lyon', 'Première Ligue', 'MID', 2400, ['top-league'], false],
-  ['Caroline Graham Hansen', 'Norway', '🇳🇴', 'Barcelona', 'Liga F', 'ATT', 2600, ['wccl', 'top-league'], true],
-  ['Alex Greenwood', 'England', '🏴󠁧󠁢󠁥󠁮󠁧󠁿', 'Manchester City', 'WSL', 'CB', 2700, [], true],
-  ['Maya Le Tissier Guilbert', 'England', '🏴󠁧󠁢󠁥󠁮󠁧󠁿', 'Manchester City', 'WSL', 'CB', 2800, [], true],
-  ['Christian Press', 'United States', '🇺🇸', 'Angel City', 'NWSL', 'ATT', 1800, [], false],
-  ['Trinity Rodman', 'United States', '🇺🇸', 'Washington Spirit', 'NWSL', 'ATT', 2000, [], false],
-  ['Keira Walsh', 'England', '🏴󠁧󠁢󠁥󠁮󠁧󠁿', 'Chelsea', 'WSL', 'MID', 2600, ['top-league', 'domestic-cup'], false],
-  ['Lauren James', 'England', '🏴󠁧󠁢󠁥󠁮󠁧󠁿', 'Chelsea', 'WSL', 'ATT', 2000, ['top-league', 'domestic-cup'], true],
-  ['Beth Mead', 'England', '🏴󠁧󠁢󠁥󠁮󠁧󠁿', 'Arsenal', 'WSL', 'ATT', 2300, ['wccl'], false],
-  ['Lucy Bronze', 'England', '🏴󠁧󠁢󠁥󠁮󠁧󠁿', 'Chelsea', 'WSL', 'FB', 2300, ['top-league', 'domestic-cup'], false],
-  ['Irene Paredes', 'Spain', '🇪🇸', 'Barcelona', 'Liga F', 'CB', 2400, ['wccl', 'top-league'], false],
-  ['Patri Guijarro', 'Spain', '🇪🇸', 'Barcelona', 'Liga F', 'MID', 2600, ['wccl', 'top-league'], false],
-  ['Clàudia Pina', 'Spain', '🇪🇸', 'Barcelona', 'Liga F', 'ATT', 2400, ['wccl', 'top-league'], true],
-  ['Salma Paralluelo', 'Spain', '🇪🇸', 'Barcelona', 'Liga F', 'ATT', 1900, ['wccl', 'top-league'], false],
-  ['Mary Earps', 'England', '🏴󠁧󠁢󠁥󠁮󠁧󠁿', 'Paris FC', 'Première Ligue', 'GK', 2200, [], false],
-  ['Naomi Girma', 'United States', '🇺🇸', 'Chelsea', 'WSL', 'CB', 2400, ['top-league', 'domestic-cup'], false],
-  ['Sakina Karchaoui', 'France', '🇫🇷', 'Lyon', 'Première Ligue', 'FB', 2600, ['top-league'], false],
-  ['Lena Oberdorf', 'Germany', '🇩🇪', 'Bayern Munich', 'Frauen-Bundesliga', 'MID', 2200, ['top-league'], false],
+  ['Selma Bacha', 'France', '🇫🇷', 'OL Lyonnes', 'Première Ligue', 'FB', 2400, [], true],
+  ['Barbra Banda', 'Zambia', '🇿🇲', 'Orlando Pride', 'NWSL', 'ATT', 2200, [], true],
+  ['Klara Buhl', 'Germany', '🇩🇪', 'Bayern Munich', 'Frauen-Bundesliga', 'ATT', 2000, ['top-league'], false],
+  ['Esmee Brugts', 'Netherlands', '🇳🇱', 'Barcelona', 'Liga F', 'MID', 1900, ['wccl', 'top-league'], false],
+  ['Mariona Caldentey', 'Spain', '🇪🇸', 'Arsenal', 'WSL', 'MID', 2200, [], false],
+  ['Scarlett Camberos', 'Mexico', '🇲🇽', 'Club América', 'Liga MX Femenil', 'ATT', 2200, [], false],
+  ['Kerstin Casparij', 'Netherlands', '🇳🇱', 'Manchester City', 'WSL', 'FB', 2200, ['top-league'], false],
+  ['Temwa Chawinga', 'Malawi', '🇲🇼', 'Kansas City Current', 'NWSL', 'ATT', 2200, [], true],
+  ['Cata Coll', 'Spain', '🇪🇸', 'Barcelona', 'Liga F', 'GK', 1900, ['wccl', 'top-league'], true],
+  ['Melchie Dumornay', 'Haiti', '🇭🇹', 'OL Lyonnes', 'Première Ligue', 'MID', 2100, [], true],
+  ['Caroline Graham Hansen', 'Norway', '🇳🇴', 'Barcelona', 'Liga F', 'ATT', 2300, ['wccl', 'top-league'], true],
+  ['Alex Greenwood', 'England', '🏴󠁧󠁢󠁥󠁮󠁧󠁿', 'Manchester City', 'WSL', 'CB', 2200, ['top-league'], true],
+  ['Patri Guijarro', 'Spain', '🇪🇸', 'Barcelona', 'Liga F', 'MID', 2000, ['wccl', 'top-league'], false],
+  ['Pernille Harder', 'Denmark', '🇩🇰', 'Bayern Munich', 'Frauen-Bundesliga', 'ATT', 2100, ['top-league'], true],
+  ['Yui Hasegawa', 'Japan', '🇯🇵', 'Manchester City', 'WSL', 'MID', 2100, ['top-league'], false],
+  ['Rose Lavelle', 'United States', '🇺🇸', 'Gotham FC', 'NWSL', 'MID', 1800, [], false],
+  ['Mapi León', 'Spain', '🇪🇸', 'London City Lionesses', 'WSL', 'CB', 2000, [], false],
+  ['Lorena', 'Brazil', '🇧🇷', 'Kansas City Current', 'NWSL', 'GK', 1900, [], false],
+  ['Melvine Malard', 'France', '🇫🇷', 'Manchester United', 'WSL', 'ATT', 1800, [], false],
+  ['Manaka Matsukubo', 'Japan', '🇯🇵', 'North Carolina Courage', 'NWSL', 'ATT', 1900, [], false],
+  ['Vivianne Miedema', 'Netherlands', '🇳🇱', 'Manchester City', 'WSL', 'ATT', 1900, ['top-league'], false],
+  ['Ewa Pajor', 'Poland', '🇵🇱', 'Barcelona', 'Liga F', 'ATT', 2200, ['wccl', 'top-league'], true],
+  ['Clàudia Pina', 'Spain', '🇪🇸', 'Barcelona', 'Liga F', 'ATT', 2100, ['wccl', 'top-league'], true],
+  ['Alexia Putellas', 'Spain', '🇪🇸', 'Barcelona', 'Liga F', 'MID', 2300, ['wccl', 'top-league'], true],
+  ['Wendie Renard', 'France', '🇫🇷', 'OL Lyonnes', 'Première Ligue', 'CB', 2100, [], true],
+  ['Alessia Russo', 'England', '🏴󠁧󠁢󠁥󠁮󠁧󠁿', 'Arsenal', 'WSL', 'ATT', 2200, [], true],
+  ['Khadija Shaw', 'Jamaica', '🇯🇲', 'Manchester City', 'WSL', 'ATT', 1800, ['top-league'], true],
+  ['Momoko Tanikawa', 'Japan', '🇯🇵', 'Bayern Munich', 'Frauen-Bundesliga', 'MID', 1800, ['top-league'], false],
+  ['Caroline Weir', 'Scotland', '🏴󠁧󠁢󠁳󠁣󠁴󠁿', 'Real Madrid', 'Liga F', 'MID', 2200, [], false],
+  ['Tessa Wullaert', 'Belgium', '🇧🇪', 'Inter Milan', 'Serie A', 'ATT', 2100, [], false],
 ].map(([name, country, flag, club, league, role, minutes, trophies, stars]) => ({ name, country, flag, club, league, role, minutes, trophies, stars }));
+
+const VERIFIED_GOALS = {
+  'harry-kane': { goals: 36, note: '36 Bundesliga goals (plus 10 in the DFB-Pokal)' },
+  'erling-haaland': { goals: 27, note: '27 Premier League goals (Golden Boot)' },
+  'kylian-mbappe': { goals: 25, note: '25 La Liga goals' },
+  'lautaro-martinez': { goals: 17, note: '17 Serie A goals (capocannoniere)' },
+  'luis-diaz': { goals: 15, note: '15 Bundesliga goals' },
+  'michael-olise': { goals: 15, note: '15 Bundesliga goals' },
+  'ferran-torres': { goals: 16, note: '16 La Liga goals; scored the winning goal in the World Cup final' },
+  'vinicius-junior': { goals: 16, note: '16 La Liga goals' },
+  'lamine-yamal': { goals: 16, note: '16 La Liga goals' },
+  'lionel-messi': { goals: 8, note: '8 goals at the 2026 World Cup (Silver Boot)' },
+  'claudia-pina': { goals: 21, note: '21 Liga F goals' },
+  'ewa-pajor': { goals: 16, note: '16 Liga F goals plus 11 in the Women\u2019s Champions League (top scorer)' },
+  'pernille-harder': { goals: 16, note: '16 Frauen-Bundesliga goals plus 8 in the Women\u2019s Champions League' },
+  'khadija-shaw': { goals: 21, note: '21 WSL goals (Player of the Season)' },
+  'alessia-russo': { goals: 13, note: '13 WSL goals plus 9 in the Women\u2019s Champions League' },
+  'caroline-weir': { goals: 14, note: '14 Liga F goals' },
+  'caroline-graham-hansen': { goals: 10, note: '10 Liga F goals; 10 Liga F assists (both league-leading)' },
+  'alexia-putellas': { goals: 7, note: '7 Liga F goals; UWCL Player of the Season' },
+};
+
+for (const row of [...MEN_ROSTER, ...WOMEN_ROSTER]) {
+  const v = VERIFIED_GOALS[slug(row.name)];
+  if (v) { row.realGoals = v.goals; row.goalsNote = v.note; }
+}
 
 function buildDataset(edition, roster, seed) {
   const rand = mulberry32(seed);
@@ -222,8 +261,8 @@ function buildDataset(edition, roster, seed) {
     edition,
     season: '2025-26',
     referencePeriod: '2025-08-03 to 2026-07-19',
-    status: 'draft',
-    note: 'DRAFT dataset: roster names follow the reported 2026 shortlists; stat lines are generated placeholders for engine development. Run the Week 1 FBref/Transfermarkt data pass and replace stats before public launch. See docs/data-refresh.md.',
+    status: 'partial-real',
+    note: 'Rosters match the official 2026 Ballon d\u2019Or shortlists (announced 8 Sep 2026) with verified clubs and 2025\u201326 trophies and, where noted per player, verified goal tallies. Minutes and remaining stat fields are placeholders pending the FBref/Transfermarkt pass (docs/data-refresh.md).',
     players: roster.map((row) => buildPlayer(row, rand, edition)),
   };
 }
