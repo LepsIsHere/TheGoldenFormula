@@ -1,33 +1,51 @@
 {
-  "note": "Conduct event log (fair play Layer 2). Each event is an editorial judgment — mitigate by citing a reputable source per event and by exposing events to the user, not hiding the judgment. See docs/methodology.md. This file ships with example/scaffold events only: run the Week 1 news-search editorial pass (Aug 2025 – Jul 2026, all 60 shortlisted players) and replace these before launch. Community edits via PR are welcome.",
+  "note": "Conduct event log (fair play Layer 2). Each event is an editorial judgment — mitigate by citing a reputable source per event and by exposing events to the user, not hiding the judgment. See docs/methodology.md. Pilot batch: sourced events for the first 10 shortlisted players researched (men's edition); remaining players pending the ongoing editorial pass (Aug 2025 – Jul 2026). Community edits via PR are welcome.",
   "referencePeriod": "2025-08-03 to 2026-07-19",
   "events": [
     {
-      "id": "example-neg-1",
-      "playerId": "kylian-mbappe",
+      "id": "vinicius-getafe-nyom-red-card-2025",
+      "playerId": "vinicius-junior",
+      "date": "2025-10-19",
+      "kind": "simulation",
+      "severity": -2,
+      "description": "Went down under minimal contact, leading to Allan Nyom's controversial red card for Getafe; widely called out as a dive in the press.",
+      "source": "https://www.indiatoday.in/sports/football/story/vinicius-nyom-red-card-controversy-real-madrid-getafe-2025-laliga-2805778-2025-10-20"
+    },
+    {
+      "id": "vinicius-anfield-dive-2025",
+      "playerId": "vinicius-junior",
+      "date": "2025-11-04",
+      "kind": "simulation",
+      "severity": -1,
+      "description": "Went down theatrically at Anfield in the Champions League; the dive was widely mocked and flooded social media with memes.",
+      "source": "https://www.mundodeportivo.com/en/20251105/734142/internet-flooded-with-memes-as-vinicius-jr-s-dive-sparks-global-banter.html"
+    },
+    {
+      "id": "vinicius-sevilla-penalty-dive-2026",
+      "playerId": "vinicius-junior",
       "date": "2026-02-14",
       "kind": "simulation",
       "severity": -2,
-      "description": "EXAMPLE EVENT — placeholder pending editorial pass. Dive in the box leading to a converted penalty; widely covered in the press.",
-      "source": "https://example.com/replace-with-real-source"
+      "description": "Won a second penalty against Sevilla with a theatrical dive; VAR declined to overturn it because there was contact after he had already gone down.",
+      "source": "https://www.mundodeportivo.com/en/20260215/740435/var-intervention-on-second-penalty-following-vinicius-dive.html"
     },
     {
-      "id": "example-pos-1",
-      "playerId": "harry-kane",
-      "date": "2026-04-05",
-      "kind": "sportsmanship",
+      "id": "mbappe-morocco-quarterfinal-penalty-2026",
+      "playerId": "kylian-mbappe",
+      "date": "2026-07-09",
+      "kind": "simulation",
+      "severity": -2,
+      "description": "Won a contested penalty in the World Cup quarterfinal against Morocco; replays appeared to show he had gone down before contact from Mazraoui, and Moroccan players argued he had dived.",
+      "source": "https://sports.ndtv.com/fifa-world-cup-2026/why-kylian-mbappes-penalty-take-delayed-against-morocco-in-fifa-world-cup-quarterfinals-11751396"
+    },
+    {
+      "id": "cubarsi-premi-barca-jugadors-2026",
+      "playerId": "pau-cubarsi",
+      "date": "2026-07-07",
+      "kind": "fair-play-recognition",
       "severity": 2,
-      "description": "EXAMPLE EVENT — placeholder pending editorial pass. Told the referee the opponent did not touch him for a penalty award; award overturned.",
-      "source": "https://example.com/replace-with-real-source"
-    },
-    {
-      "id": "example-neg-2",
-      "playerId": "alexia-putellas",
-      "date": "2026-03-22",
-      "kind": "dissent",
-      "severity": -1,
-      "description": "EXAMPLE EVENT — placeholder pending editorial pass. Heated confrontation with the referee after a disallowed goal.",
-      "source": "https://example.com/replace-with-real-source"
+      "description": "Named winner of the 2026 Barça Players' Association Award (Premi Barça Jugadors), recognizing the first-team player who showed the most fair play throughout the 2025–26 season.",
+      "source": "https://barcauniversal.com/barca-players-association-award-pau-cubarsi-and-cata-coll-to-be-honoured/"
     }
   ]
 }
