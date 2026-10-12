@@ -1,5 +1,5 @@
 {
-  "note": "Conduct event log (fair play Layer 2). Each event is an editorial judgment — mitigate by citing a reputable source per event and by exposing events to the user, not hiding the judgment. See docs/methodology.md. Pilot batch: sourced events for the first 10 shortlisted players researched (men's edition); remaining players pending the ongoing editorial pass (Aug 2025 – Jul 2026). Community edits via PR are welcome.",
+  "note": "Conduct event log (fair play Layer 2). Each event is an editorial judgment — mitigate by citing a reputable source per event and by exposing events to the user, not hiding the judgment. See docs/methodology.md. Editorial pass in progress (Aug 2025 – Jul 2026 window): sourced events for shortlisted players researched so far; remaining players pending. Community edits via PR are welcome.",
   "referencePeriod": "2025-08-03 to 2026-07-19",
   "events": [
     {
@@ -82,6 +82,51 @@
       "severity": -2,
       "description": "Pushed his head into Erling Haaland's face during the 2-1 loss at Manchester City; escaped with a yellow on the field, but the Premier League's key match incidents panel later voted 3-2 that it was violent conduct deserving a red card.",
       "source": "https://www.bbc.com/sport/football/articles/cnvpjd62286o"
+    },
+    {
+      "id": "messi-algeria-mandi-challenge-2026",
+      "playerId": "lionel-messi",
+      "date": "2026-06-17",
+      "kind": "violent-conduct",
+      "severity": -2,
+      "description": "Late challenge on Algeria captain Aïssa Mandi in the World Cup group stage that many commentators argued deserved a red card; no card was shown and Algeria lodged a formal complaint with FIFA over refereeing consistency.",
+      "source": "https://sports.ndtv.com/fifa-world-cup-2026/lionel-messi-escapes-red-card-despite-nasty-challenge-controversy-erupts-11647468"
+    },
+    {
+      "id": "messi-final-cucurella-complaint-2026",
+      "playerId": "lionel-messi",
+      "date": "2026-07-19",
+      "kind": "dissent",
+      "severity": -1,
+      "description": "After Enzo Fernández's red card in the World Cup final, attempted to have Spain's Marc Cucurella sent off by complaining to the referee over his reaction; widely discussed as a flashpoint of the final.",
+      "source": "https://www.nine.com.au/sport/football/fifa-world-cup-final-lionel-messi-marc-cucurella-clash-referee-complaint-20260720-p60gra.html"
+    },
+    {
+      "id": "lautaro-robertson-tackle-2025",
+      "playerId": "lautaro-martinez",
+      "date": "2025-12-09",
+      "kind": "violent-conduct",
+      "severity": -1,
+      "description": "Heavy 13th-minute challenge on Andy Robertson in the Champions League tie at Liverpool sparked widespread red-card appeals; only a yellow was shown.",
+      "source": "https://www.football.london/arsenal-fc/news/lautaro-martinez-wasnt-sent-during-30315113"
+    },
+    {
+      "id": "lautaro-switzerland-celebration-2026",
+      "playerId": "lautaro-martinez",
+      "date": "2026-07-11",
+      "kind": "dissent",
+      "severity": -1,
+      "description": "Already on a yellow, celebrated his extra-time goal against Switzerland by climbing into the stands — a normally cautionable offence that would have triggered a second yellow and a semifinal suspension; the referee let it slide, sparking controversy.",
+      "source": "https://sports.ndtv.com/fifa-world-cup-2026/argentina-star-escapes-red-card-vs-switzerland-referees-oversight-triggers-row-11761361"
+    },
+    {
+      "id": "cata-coll-premi-barca-jugadors-2026",
+      "playerId": "cata-coll",
+      "date": "2026-07-07",
+      "kind": "fair-play-recognition",
+      "severity": 2,
+      "description": "Named winner of the 2026 Barça Players' Association Award (Premi Barça Jugadors, women's edition), recognizing the first-team player who showed the most fair play throughout the 2025–26 season.",
+      "source": "https://barcauniversal.com/barca-players-association-award-pau-cubarsi-and-cata-coll-to-be-honoured/"
     }
   ]
 }
