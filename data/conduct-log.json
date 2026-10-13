@@ -1,5 +1,5 @@
 {
-  "note": "Conduct event log (fair play Layer 2). Each event is an editorial judgment — mitigate by citing a reputable source per event and by exposing events to the user, not hiding the judgment. See docs/methodology.md. Editorial pass in progress (Aug 2025 – Jul 2026 window): sourced events for shortlisted players researched so far; remaining players pending. Community edits via PR are welcome.",
+  "note": "Editorial pass in progress (Aug 2025 - Jul 2026 window): sourced events for shortlisted players researched so far; remaining pending.",
   "referencePeriod": "2025-08-03 to 2026-07-19",
   "events": [
     {
@@ -127,6 +127,42 @@
       "severity": 2,
       "description": "Named winner of the 2026 Barça Players' Association Award (Premi Barça Jugadors, women's edition), recognizing the first-team player who showed the most fair play throughout the 2025–26 season.",
       "source": "https://barcauniversal.com/barca-players-association-award-pau-cubarsi-and-cata-coll-to-be-honoured/"
+    },
+    {
+      "id": "bellingham-ghana-mouth-covering-2026",
+      "playerId": "jude-bellingham",
+      "date": "2026-06-23",
+      "kind": "dissent",
+      "severity": -1,
+      "description": "Caught on camera covering his mouth while speaking to Ghana's Jordan Ayew during England's 0-0 World Cup group draw, sparking a 'Vinicius Law' outcry and a formal Paraguayan FA complaint over inconsistent application of FIFA's mouth-covering rule.",
+      "source": "https://en.as.com/soccer/world-cup/why-was-jude-bellingham-not-shown-red-card-against-ghana-outcry-over-england-star-and-the-vinicius-law-f202606-n/"
+    },
+    {
+      "id": "yamal-france-semifinal-dive-2026",
+      "playerId": "lamine-yamal",
+      "date": "2026-07-14",
+      "kind": "simulation",
+      "severity": -2,
+      "description": "Went down under minimal contact from Lucas Digne in the World Cup semifinal to win Spain's opening penalty; replays showed he initiated the contact and analysts widely called it a dive.",
+      "source": "https://sports.yahoo.com/articles/lamine-yamal-just-threw-himself-232021495.html"
+    },
+    {
+      "id": "fernandes-leeds-referee-comments-2026",
+      "playerId": "bruno-fernandes",
+      "date": "2026-04-13",
+      "kind": "dissent",
+      "severity": -1,
+      "description": "Publicly criticised referee Paul Tierney after Lisandro Martinez's red card against Leeds, telling Sky Sports 'the rules are different for everyone' in comments widely read as accusing officials of bias against Manchester United.",
+      "source": "https://www.sportbible.com/football/football-news/man-utd/bruno-fernandes-lisandro-martinez-red-card-man-utd-leeds-091416-20260413"
+    },
+    {
+      "id": "haaland-gabriel-ball-throw-2026",
+      "playerId": "erling-haaland",
+      "date": "2026-04-19",
+      "kind": "unsporting-behaviour",
+      "severity": -1,
+      "description": "Threw the ball at Gabriel Magalhaes' head after Manchester City's stoppage-time equaliser against Arsenal; avoided retrospective punishment but the incident stoked a scuffle that saw both players booked.",
+      "source": "https://sports.yahoo.com/articles/erling-haaland-gives-view-gabriel-120500651.html"
     }
   ]
 }
