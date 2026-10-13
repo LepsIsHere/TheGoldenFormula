@@ -1,33 +1,132 @@
 {
-  "note": "Conduct event log (fair play Layer 2). Each event is an editorial judgment — mitigate by citing a reputable source per event and by exposing events to the user, not hiding the judgment. See docs/methodology.md. This file ships with example/scaffold events only: run the Week 1 news-search editorial pass (Aug 2025 – Jul 2026, all 60 shortlisted players) and replace these before launch. Community edits via PR are welcome.",
+  "note": "Conduct event log (fair play Layer 2). Each event is an editorial judgment — mitigate by citing a reputable source per event and by exposing events to the user, not hiding the judgment. See docs/methodology.md. Editorial pass in progress (Aug 2025 – Jul 2026 window): sourced events for shortlisted players researched so far; remaining players pending. Community edits via PR are welcome.",
   "referencePeriod": "2025-08-03 to 2026-07-19",
   "events": [
     {
-      "id": "example-neg-1",
-      "playerId": "kylian-mbappe",
+      "id": "vinicius-getafe-nyom-red-card-2025",
+      "playerId": "vinicius-junior",
+      "date": "2025-10-19",
+      "kind": "simulation",
+      "severity": -2,
+      "description": "Went down under minimal contact, leading to Allan Nyom's controversial red card for Getafe; widely called out as a dive in the press.",
+      "source": "https://www.indiatoday.in/sports/football/story/vinicius-nyom-red-card-controversy-real-madrid-getafe-2025-laliga-2805778-2025-10-20"
+    },
+    {
+      "id": "vinicius-anfield-dive-2025",
+      "playerId": "vinicius-junior",
+      "date": "2025-11-04",
+      "kind": "simulation",
+      "severity": -1,
+      "description": "Went down theatrically at Anfield in the Champions League; the dive was widely mocked and flooded social media with memes.",
+      "source": "https://www.mundodeportivo.com/en/20251105/734142/internet-flooded-with-memes-as-vinicius-jr-s-dive-sparks-global-banter.html"
+    },
+    {
+      "id": "vinicius-sevilla-penalty-dive-2026",
+      "playerId": "vinicius-junior",
       "date": "2026-02-14",
       "kind": "simulation",
       "severity": -2,
-      "description": "EXAMPLE EVENT — placeholder pending editorial pass. Dive in the box leading to a converted penalty; widely covered in the press.",
-      "source": "https://example.com/replace-with-real-source"
+      "description": "Won a second penalty against Sevilla with a theatrical dive; VAR declined to overturn it because there was contact after he had already gone down.",
+      "source": "https://www.mundodeportivo.com/en/20260215/740435/var-intervention-on-second-penalty-following-vinicius-dive.html"
     },
     {
-      "id": "example-pos-1",
-      "playerId": "harry-kane",
-      "date": "2026-04-05",
-      "kind": "sportsmanship",
+      "id": "mbappe-morocco-quarterfinal-penalty-2026",
+      "playerId": "kylian-mbappe",
+      "date": "2026-07-09",
+      "kind": "simulation",
+      "severity": -2,
+      "description": "Won a contested penalty in the World Cup quarterfinal against Morocco; replays appeared to show he had gone down before contact from Mazraoui, and Moroccan players argued he had dived.",
+      "source": "https://sports.ndtv.com/fifa-world-cup-2026/why-kylian-mbappes-penalty-take-delayed-against-morocco-in-fifa-world-cup-quarterfinals-11751396"
+    },
+    {
+      "id": "cubarsi-premi-barca-jugadors-2026",
+      "playerId": "pau-cubarsi",
+      "date": "2026-07-07",
+      "kind": "fair-play-recognition",
       "severity": 2,
-      "description": "EXAMPLE EVENT — placeholder pending editorial pass. Told the referee the opponent did not touch him for a penalty award; award overturned.",
-      "source": "https://example.com/replace-with-real-source"
+      "description": "Named winner of the 2026 Barça Players' Association Award (Premi Barça Jugadors), recognizing the first-team player who showed the most fair play throughout the 2025–26 season.",
+      "source": "https://barcauniversal.com/barca-players-association-award-pau-cubarsi-and-cata-coll-to-be-honoured/"
     },
     {
-      "id": "example-neg-2",
-      "playerId": "alexia-putellas",
-      "date": "2026-03-22",
+      "id": "cubarsi-atletico-ucl-red-card-2026",
+      "playerId": "pau-cubarsi",
+      "date": "2026-04-08",
+      "kind": "violent-conduct",
+      "severity": -2,
+      "description": "Sent off in the first leg of the Champions League quarter-final at Atlético Madrid after a VAR review overturned his initial yellow card; Julián Alvarez converted the resulting free kick as Barcelona lost 2-0.",
+      "source": "https://en.wikipedia.org/wiki/Pau_Cubars%C3%AD"
+    },
+    {
+      "id": "mbappe-morocco-quarterfinal-referee-frustration-2026",
+      "playerId": "kylian-mbappe",
+      "date": "2026-07-09",
       "kind": "dissent",
       "severity": -1,
-      "description": "EXAMPLE EVENT — placeholder pending editorial pass. Heated confrontation with the referee after a disallowed goal.",
-      "source": "https://example.com/replace-with-real-source"
+      "description": "Visibly directed frustration at the referee after missing the World Cup quarter-final penalty against Morocco, unhappy with the three-minute VAR delay before the kick.",
+      "source": "https://sports.yahoo.com/articles/kylian-mbappe-responds-missed-penalty-215548328.html"
+    },
+    {
+      "id": "rodri-fa-fine-referee-comments-2026",
+      "playerId": "rodri",
+      "date": "2026-02-01",
+      "kind": "dissent",
+      "severity": -2,
+      "description": "Questioned a referee's neutrality after the 2-2 draw at Tottenham (\"the people, they don't want us to win, but the referee has to be neutral\"); admitted an FA charge and was fined £80,000 in March 2026.",
+      "source": "https://apnews.com/article/rodri-man-city-fine-bf42bf21a3d38992344bdd93d79ca189"
+    },
+    {
+      "id": "gabriel-haaland-headbutt-2026",
+      "playerId": "gabriel-magalhaes",
+      "date": "2026-04-19",
+      "kind": "violent-conduct",
+      "severity": -2,
+      "description": "Pushed his head into Erling Haaland's face during the 2-1 loss at Manchester City; escaped with a yellow on the field, but the Premier League's key match incidents panel later voted 3-2 that it was violent conduct deserving a red card.",
+      "source": "https://www.bbc.com/sport/football/articles/cnvpjd62286o"
+    },
+    {
+      "id": "messi-algeria-mandi-challenge-2026",
+      "playerId": "lionel-messi",
+      "date": "2026-06-17",
+      "kind": "violent-conduct",
+      "severity": -2,
+      "description": "Late challenge on Algeria captain Aïssa Mandi in the World Cup group stage that many commentators argued deserved a red card; no card was shown and Algeria lodged a formal complaint with FIFA over refereeing consistency.",
+      "source": "https://sports.ndtv.com/fifa-world-cup-2026/lionel-messi-escapes-red-card-despite-nasty-challenge-controversy-erupts-11647468"
+    },
+    {
+      "id": "messi-final-cucurella-complaint-2026",
+      "playerId": "lionel-messi",
+      "date": "2026-07-19",
+      "kind": "dissent",
+      "severity": -1,
+      "description": "After Enzo Fernández's red card in the World Cup final, attempted to have Spain's Marc Cucurella sent off by complaining to the referee over his reaction; widely discussed as a flashpoint of the final.",
+      "source": "https://www.nine.com.au/sport/football/fifa-world-cup-final-lionel-messi-marc-cucurella-clash-referee-complaint-20260720-p60gra.html"
+    },
+    {
+      "id": "lautaro-robertson-tackle-2025",
+      "playerId": "lautaro-martinez",
+      "date": "2025-12-09",
+      "kind": "violent-conduct",
+      "severity": -1,
+      "description": "Heavy 13th-minute challenge on Andy Robertson in the Champions League tie at Liverpool sparked widespread red-card appeals; only a yellow was shown.",
+      "source": "https://www.football.london/arsenal-fc/news/lautaro-martinez-wasnt-sent-during-30315113"
+    },
+    {
+      "id": "lautaro-switzerland-celebration-2026",
+      "playerId": "lautaro-martinez",
+      "date": "2026-07-11",
+      "kind": "dissent",
+      "severity": -1,
+      "description": "Already on a yellow, celebrated his extra-time goal against Switzerland by climbing into the stands — a normally cautionable offence that would have triggered a second yellow and a semifinal suspension; the referee let it slide, sparking controversy.",
+      "source": "https://sports.ndtv.com/fifa-world-cup-2026/argentina-star-escapes-red-card-vs-switzerland-referees-oversight-triggers-row-11761361"
+    },
+    {
+      "id": "cata-coll-premi-barca-jugadors-2026",
+      "playerId": "cata-coll",
+      "date": "2026-07-07",
+      "kind": "fair-play-recognition",
+      "severity": 2,
+      "description": "Named winner of the 2026 Barça Players' Association Award (Premi Barça Jugadors, women's edition), recognizing the first-team player who showed the most fair play throughout the 2025–26 season.",
+      "source": "https://barcauniversal.com/barca-players-association-award-pau-cubarsi-and-cata-coll-to-be-honoured/"
     }
   ]
 }
