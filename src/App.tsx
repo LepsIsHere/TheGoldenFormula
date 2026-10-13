@@ -36,6 +36,33 @@ export default function App() {
     () => scorePlayers(dataset.players, eventsByPlayer, state.weights),
     [dataset, eventsByPlayer, state.weights]
   );
+  const coverage = useMemo(() => {
+    const statCoverage: Record<string, Record<string, [number, number]>> = {};
+    const playersByRole: Record<string, typeof dataset.players> = {};
+    for (const p of dataset.players) {
+      (playersByRole[p.role] ??= []).push(p);
+    }
+    for (const [role, group] of Object.entries(playersByRole)) {
+      const perStat: Record<string, [number, number]> = {};
+      const keys = new Set<string>();
+      for (const p of group) {
+        for (const k of Object.keys(p.stats)) keys.add(k);
+      }
+      for (const k of keys) {
+        let withData = 0;
+        for (const p of group) {
+          const v = p.stats[k];
+          if (typeof v === 'number' && v !== 0) withData += 1;
+        }
+        perStat[k] = [withData, group.length];
+      }
+      statCoverage[role] = perStat;
+    }
+    const oppositionDataCount = dataset.players.filter(
+      (p) => typeof p.avgOpponentRating === 'number'
+    ).length;
+    return { statCoverage, oppositionDataCount };
+  }, [dataset]);
 
   const setWeights = (w: Weights) => updateState({ ...state, weights: w });
   const setEdition = (edition: 'men' | 'women') => updateState({ ...state, edition });
@@ -77,6 +104,7 @@ export default function App() {
           presets={PRESETS}
           onPreset={(p) => setWeights(p.weights)}
           onReset={() => setWeights(defaultWeights())}
+          coverage={coverage}
         />
         <Leaderboard
           scored={scored}

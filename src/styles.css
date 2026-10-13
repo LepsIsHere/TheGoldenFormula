@@ -257,3 +257,26 @@ button.reset:hover { background: var(--red); color: #14120a; }
 .share-actions .gold { background: var(--gold); color: #14120a; border-color: var(--gold); font-weight: 700; }
 .share-actions .gold:hover { color: #14120a; }
 .share-hint { color: var(--muted); font-size: 0.68rem; font-family: var(--mono); margin: 0 0 0.9rem; }
+
+/* Data-coverage honesty indicators */
+.stat-slider.no-data {
+  opacity: 0.45;
+}
+.stat-slider .coverage {
+  margin-left: auto;
+  font-size: 0.65rem;
+  color: #8a8f98;
+  font-variant-numeric: tabular-nums;
+}
+.stat-slider .coverage.none {
+  color: #d29922;
+}
+.stat-slider .coverage.partial {
+  color: #8a8f98;
+}
+.slider-row.no-data {
+  opacity: 0.45;
+}
+.advanced-panel[aria-disabled='true'] {
+  opacity: 0.6;
+}
